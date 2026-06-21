@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casas de Madera Prefabricadas — Venta y Montaje en Toda España | MaderaRey</title>
+<meta name="description" content="Casas de madera prefabricadas desde 3.400€. Viviendas, cabañas, casetas y garajes de madera con montaje profesional en toda España. Garantía 5 años. Consulta precio sin compromiso.">
+<meta name="keywords" content="casas de madera, casas prefabricadas de madera, viviendas de madera, cabañas de madera, casetas de jardín, garajes de madera, casa de madera precio, casa de madera kit, casa de madera llave en mano, madera maciza, casa de madera España">
+<meta property="og:title" content="Casas de Madera Prefabricadas — MaderaRey">
+<meta property="og:description" content="Desde 3.400€. Viviendas, cabañas, casetas y garajes con montaje en toda España. Garantía 5 años.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://casasdemaderarey.es/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MaderaRey",
+  "description": "Venta y construcción de casas de madera prefabricadas en toda España",
+  "telephone": "+34664033098",
+  "email": "info@maderarey.es",
+  "address": {"@type": "PostalAddress","streetAddress": "Autovía del Suroeste, km 27","addressLocality": "Madrid","addressCountry": "ES"},
+  "url": "https://casasdemaderarey.es",
+  "foundingDate": "2012",
+  "areaServed": "España",
+  "priceRange": "€€"
+}
+</script>
+<style>
+  :root {
+    --green: #2E7D32;
+    --green-light: #4CAF50;
+    --green-dark: #1B5E20;
+    --green-bg: #F1F8E9;
+    --black: #1A1A1A;
+    --gray: #555;
+    --gray-light: #f5f5f5;
+    --white: #fff;
+    --border: #e0e0e0;
+    --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font); color: var(--black); background: var(--white); }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  /* ── NAVBAR ── */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+  }
+  .navbar-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 20px; height: 60px;
+  }
+  .logo {
+    display: flex; flex-direction: row; align-items: center; gap: 12px;
+    text-decoration: none;
+  }
+  .logo-name {
+    font-size: 22px; font-weight: 800; color: var(--green-dark);
+    letter-spacing: -0.5px; white-space: nowrap; line-height: 1;
+  }
+  .logo-name span { color: var(--green-light); }
+  .logo-divider {
+    width: 1px; height: 24px; background: var(--border); flex-shrink: 0;
+  }
+  .logo-tagline {
+    font-size: 11px; font-weight: 600; color: var(--green-dark);
+    line-height: 1.35; opacity: 0.8;
+  }
+  @media (max-width: 480px) {
+    .logo-tagline { font-size: 9px; line-height: 1.3; }
+    .logo-divider { height: 20px; }
+    .logo-name { font-size: 18px; }
+  }
+  .logo span { color: var(--green-light); }
+  .nav-links { display: flex; align-items: center; gap: 6px; }
+  .nav-links a {
+    font-size: 14px; font-weight: 500; color: var(--black);
+    padding: 6px 12px; border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .nav-links a:hover { background: var(--gray-light); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu {
+    display: none; position: absolute; top: 100%; left: 0;
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius); min-width: 200px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1); padding: 8px 0;
+  }
+  .dropdown-menu a {
+    display: block; padding: 8px 16px; font-size: 13px;
+    color: var(--black); border-radius: 0;
+  }
+  .dropdown-menu a:hover { background: var(--green-bg); color: var(--green-dark); }
+  .nav-cta {
+    background: var(--green); color: var(--white) !important;
+    padding: 8px 16px !important; border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--green-dark) !important; }
+  .nav-wa {
+    display: flex; align-items: center; gap: 6px;
+    background: #25D366; color: var(--white) !important;
+    padding: 8px 14px !important; border-radius: 6px !important;
+    font-weight: 600 !important; font-size: 13px !important;
+  }
+  .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; padding: 4px; }
+  .hamburger span { width: 22px; height: 2px; background: var(--black); border-radius: 2px; display: block; }
+
+  /* ── BANNER OFERTA ── */
+  .promo-bar {
+    background: var(--green-dark); color: var(--white);
+    text-align: center; padding: 9px 20px;
+    font-size: 13px; font-weight: 500;
+    margin-top: 60px;
+  }
+  .promo-bar a { color: #A5D6A7; font-weight: 700; margin-left: 8px; text-decoration: underline; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; min-height: 520px;
+    display: flex; align-items: center;
+    background: linear-gradient(135deg, #1B2A1C 0%, #2E3B2E 50%, transparent 100%),
+                url('https://maderarey.es/wp-content/uploads/2025/03/107-Gustav_B_6x8_series_71592-571x398.jpg') center/cover no-repeat;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to right, rgba(27,42,28,0.85) 0%, rgba(27,42,28,0.5) 60%, rgba(27,42,28,0.1) 100%);
+  }
+  .hero-content {
+    position: relative; z-index: 1;
+    max-width: 1200px; margin: 0 auto; padding: 60px 20px;
+    max-width: 620px; margin-left: clamp(20px, 8vw, 120px);
+  }
+  .hero-badge {
+    display: inline-block; background: var(--green-light);
+    color: var(--white); font-size: 11px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 20px; margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 48px); font-weight: 800;
+    color: var(--white); line-height: 1.15; margin-bottom: 14px;
+    letter-spacing: -1px;
+  }
+  .hero h1 span { color: #A5D6A7; }
+  .hero p {
+    font-size: 16px; color: rgba(255,255,255,0.85);
+    line-height: 1.6; margin-bottom: 28px; max-width: 480px;
+  }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--green); color: var(--white);
+    padding: 14px 28px; border-radius: 8px;
+    font-size: 15px; font-weight: 700;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+  .btn-wa {
+    background: #25D366; color: var(--white);
+    padding: 14px 24px; border-radius: 8px;
+    font-size: 15px; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: background 0.2s;
+  }
+  .btn-wa:hover { background: #1da851; }
+  .hero-stats {
+    display: flex; gap: 24px; margin-top: 32px; flex-wrap: wrap;
+  }
+  .hero-stat { color: rgba(255,255,255,0.9); }
+  .hero-stat strong { display: block; font-size: 22px; font-weight: 800; color: #A5D6A7; }
+  .hero-stat span { font-size: 12px; opacity: 0.8; }
+
+  /* ── CATALOG ── */
+  .catalog { padding: 60px 20px; background: var(--white); }
+  .section-header { max-width: 1200px; margin: 0 auto 32px; }
+  .section-title { font-size: clamp(22px, 4vw, 32px); font-weight: 800; color: var(--black); margin-bottom: 6px; }
+  .section-sub { font-size: 15px; color: var(--gray); }
+
+  /* tabs */
+  .cat-tabs {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    max-width: 1200px; margin: 0 auto 32px;
+  }
+  .cat-tab {
+    padding: 9px 20px; border-radius: 24px;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+    border: 1.5px solid var(--border);
+    background: var(--white); color: var(--gray);
+    transition: all 0.2s;
+  }
+  .cat-tab.active, .cat-tab:hover {
+    background: var(--green); color: var(--white); border-color: var(--green);
+  }
+
+  /* grid */
+  .cards-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden; background: var(--white);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.1); transform: translateY(-3px); }
+  .card[data-cat] { display: none; }
+  .card[data-cat].visible { display: block; }
+  .card-img { position: relative; height: 200px; overflow: hidden; background: var(--gray-light); }
+  .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .card:hover .card-img img { transform: scale(1.04); }
+  .card-badge {
+    position: absolute; top: 10px; left: 10px;
+    background: var(--green); color: var(--white);
+    font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px;
+  }
+  .card-body { padding: 16px; }
+  .card-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--black); }
+  .card-meta { font-size: 12px; color: var(--gray); margin-bottom: 12px; display: flex; gap: 12px; }
+  .card-price { font-size: 22px; font-weight: 800; color: var(--green-dark); margin-bottom: 12px; }
+  .card-price span { font-size: 12px; color: var(--gray); font-weight: 400; }
+  .card-btn {
+    display: block; text-align: center;
+    background: var(--green); color: var(--white);
+    padding: 10px; border-radius: 7px;
+    font-size: 13px; font-weight: 700;
+    transition: background 0.2s;
+  }
+  .card-btn:hover { background: var(--green-dark); }
+
+  /* ── FEATURES ── */
+  .features { padding: 60px 20px; background: var(--green-bg); }
+  .features-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;
+    margin-top: 32px;
+  }
+  .feature { text-align: center; padding: 28px 20px; background: var(--white); border-radius: 10px; }
+  .feature-icon { font-size: 36px; margin-bottom: 12px; }
+  .feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .feature p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+
+  /* ── PROCESO ── */
+  .proceso { padding: 60px 20px; background: var(--white); }
+  .steps {
+    max-width: 1200px; margin: 32px auto 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;
+  }
+  .step { position: relative; padding: 24px; border: 1.5px solid var(--border); border-radius: 10px; }
+  .step-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--green); color: var(--white);
+    font-size: 16px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+  }
+  .step h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .step p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+
+  /* ── GARANTÍAS ── */
+  .garantias { padding: 60px 20px; background: var(--green-dark); color: var(--white); }
+  .garantias .section-title { color: var(--white); }
+  .garantias .section-sub { color: rgba(255,255,255,0.7); }
+  .garantias-grid {
+    max-width: 1200px; margin: 32px auto 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+  }
+  .garantia-item {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px; padding: 20px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .garantia-icon { font-size: 28px; flex-shrink: 0; }
+  .garantia-item h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .garantia-item p { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.4; }
+  .exposicion {
+    max-width: 1200px; margin: 32px auto 0;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px; padding: 24px 28px;
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  }
+  .exposicion p { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6; }
+  .exposicion strong { color: var(--white); }
+
+  /* ── FAQ ── */
+  .faq { padding: 60px 20px; background: var(--gray-light); }
+  .faq-list { max-width: 800px; margin: 32px auto 0; display: flex; flex-direction: column; gap: 12px; }
+  .faq-item { background: var(--white); border-radius: 8px; border: 1px solid var(--border); overflow: hidden; }
+  .faq-q {
+    padding: 16px 20px; font-size: 15px; font-weight: 600;
+    cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+    gap: 12px;
+  }
+  .faq-q::after { content: '+'; font-size: 20px; color: var(--green); flex-shrink: 0; }
+  .faq-item.open .faq-q::after { content: '−'; }
+  .faq-a { display: none; padding: 0 20px 16px; font-size: 14px; color: var(--gray); line-height: 1.6; }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── CTA FINAL ── */
+  .cta-final {
+    padding: 60px 20px; background: var(--white);
+    text-align: center;
+  }
+  .cta-final h2 { font-size: clamp(22px, 4vw, 34px); font-weight: 800; margin-bottom: 12px; }
+  .cta-final p { font-size: 16px; color: var(--gray); margin-bottom: 28px; }
+  .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black); color: rgba(255,255,255,0.7);
+    padding: 40px 20px 24px;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px;
+    margin-bottom: 32px;
+  }
+  .footer-col h4 { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+  .footer-col a:hover { color: var(--white); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 12px; }
+
+  /* ── UTM TRACKING ── */
+  /* All links get UTM appended via JS */
+
+
+  /* ── OFERTA BANNER ── */
+  .oferta-banner {
+    position: relative; margin-top: 60px;
+    height: clamp(280px, 45vw, 480px); overflow: hidden;
+  }
+  .oferta-img {
+    width: 100%; height: 100%;
+  }
+  .oferta-img img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center;
+  }
+  .oferta-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to right, rgba(20,40,20,0.88) 0%, rgba(20,40,20,0.7) 50%, rgba(20,40,20,0.1) 100%);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 32px 40px; max-width: 520px;
+  }
+  .oferta-tag {
+    display: inline-block; background: var(--green-light);
+    color: var(--white); font-size: 11px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
+    width: fit-content;
+  }
+  .oferta-title {
+    font-size: 26px; font-weight: 800; color: var(--white);
+    line-height: 1.2; margin-bottom: 8px;
+  }
+  .oferta-desc {
+    font-size: 13px; color: rgba(255,255,255,0.8);
+    margin-bottom: 16px; line-height: 1.5;
+  }
+  .oferta-prices {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .oferta-old {
+    font-size: 18px; color: rgba(255,255,255,0.5);
+    text-decoration: line-through;
+  }
+  .oferta-new {
+    font-size: 32px; font-weight: 800; color: #A5D6A7;
+  }
+  .oferta-save {
+    background: rgba(255,255,255,0.15); color: var(--white);
+    font-size: 12px; font-weight: 600; padding: 3px 10px;
+    border-radius: 20px;
+  }
+  .oferta-btn {
+    display: inline-block; background: var(--green);
+    color: var(--white); padding: 12px 28px;
+    border-radius: 8px; font-size: 15px; font-weight: 700;
+    width: fit-content; transition: background 0.2s;
+  }
+  .oferta-btn:hover { background: var(--green-dark); }
+
+  @media (max-width: 768px) {
+    .oferta-banner { height: 380px; }
+    .oferta-overlay {
+      position: absolute; inset: 0; max-width: 100%;
+      background: linear-gradient(to bottom,
+        rgba(10,30,10,0.15) 0%,
+        rgba(10,30,10,0.55) 40%,
+        rgba(10,30,10,0.88) 100%);
+      justify-content: flex-end;
+      padding: 20px 20px 28px;
+    }
+    .oferta-title { font-size: 20px; }
+    .oferta-new { font-size: 26px; }
+    .oferta-desc { font-size: 12px; margin-bottom: 10px; }
+    .oferta-prices { margin-bottom: 14px; gap: 8px; }
+    .oferta-btn { padding: 10px 22px; font-size: 14px; }
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 0; gap: 0; }
+    .nav-links.open a { padding: 10px 20px; border-radius: 0; }
+    .hamburger { display: flex; }
+    .hero-content { margin-left: 20px; }
+    .hero-stats { gap: 16px; }
+    .exposicion { flex-direction: column; }
+  }
+
+  /* WhatsApp floating button */
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 200;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #25D366; color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+    transition: transform 0.2s;
+  }
+  .wa-float:hover { transform: scale(1.1); }
+</style>
+</head>
+<body>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+una+casa+de+madera" target="_blank" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.35A9.95 9.95 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.5 13.5c-.2.56-1.17 1.07-1.6 1.13-.43.06-.86.08-2.77-.58-2.32-.81-3.8-3.17-3.92-3.32-.12-.15-.96-1.28-.96-2.44s.61-1.73.83-1.97c.22-.24.48-.3.64-.3l.46.01c.15 0 .35-.06.54.41l.77 1.88c.06.15.1.32.01.48l-.28.41-.36.38c-.12.12-.24.25-.1.48.14.23.6.98 1.28 1.58.88.78 1.62 1.02 1.85 1.14.23.12.36.1.5-.06l.6-.7c.16-.2.32-.14.54-.05l1.7.8c.2.1.33.14.38.22.05.1.05.53-.15 1.09z"/></svg></a>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="logo">
+      <span class="logo-name">Madera<span>Rey</span></span>
+      <span class="logo-divider"></span>
+      <span class="logo-tagline">Casas de madera<br>en toda España</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <div class="nav-dropdown">
+        <a href="#catalogo">Viviendas ▾</a>
+        <div class="dropdown-menu">
+          <a href="#catalogo" onclick="filterCat('viviendas')">Todas las viviendas</a>
+          <a href="#catalogo" onclick="filterCat('viviendas')">Madera maciza 68mm</a>
+          <a href="#catalogo" onclick="filterCat('premium')">Premium</a>
+        </div>
+      </div>
+      <a href="#catalogo" onclick="filterCat('cabanas')">Cabañas</a>
+      <a href="#catalogo" onclick="filterCat('casetas')">Casetas</a>
+      <a href="#catalogo" onclick="filterCat('garajes')">Garajes</a>
+      <a href="#garantias">Garantías</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/34664033098?text=Hola%2C+quiero+informaci%C3%B3n+sobre+precios" class="nav-wa" target="_blank">WhatsApp</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- OFERTA BANNER -->
+<div class="oferta-banner">
+  <div class="oferta-img">
+    <img src="hero1.jpg" alt="Caseta de madera Erna 2.5x4.5 oferta especial">
+  </div>
+  <div class="oferta-overlay">
+    <span class="oferta-tag">OFERTA LIMITADA</span>
+    <h2 class="oferta-title">Caseta Erna 2,5×4,5 m</h2>
+    <p class="oferta-desc">Abeto nórdico 44mm · Puerta doble + ventana · Lista para jardín</p>
+    <div class="oferta-prices">
+      <span class="oferta-old">4.500€</span>
+      <span class="oferta-new">3.500€</span>
+      <span class="oferta-save">Ahorras 1.000€</span>
+    </div>
+    <a href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+oferta+Caseta+Erna+2.5x4.5+a+3500%E2%82%AC" class="oferta-btn" target="_blank">Consultar ahora</a>
+  </div>
+</div>
+
+
+
+<!-- CATALOGO -->
+<section class="catalog" id="catalogo">
+  <div class="section-header">
+    <h2 class="section-title">Catálogo de casas de madera</h2>
+    <p class="section-sub">Selecciona la categoría · Precio indicado sin tejas ni pintura</p>
+  </div>
+
+  <div class="cat-tabs">
+    <div class="cat-tab active" onclick="filterCat('todas')">Todas</div>
+    <div class="cat-tab" onclick="filterCat('viviendas')">Viviendas</div>
+    <div class="cat-tab" onclick="filterCat('cabanas')">Cabañas</div>
+    <div class="cat-tab" onclick="filterCat('casetas')">Casetas</div>
+    <div class="cat-tab" onclick="filterCat('garajes')">Garajes</div>
+    <div class="cat-tab" onclick="filterCat('premium')">Premium</div>
+  </div>
+
+  <div class="cards-grid" id="cardsGrid">
+
+    <!-- VIVIENDAS -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Veronica-571x398.jpg" alt="Vivienda Veronica 5x6 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Veronica 5×6</div>
+        <div class="card-meta"><span>5×6 m</span><span>30 m²</span></div>
+        <div class="card-price">12.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Veronica+5x6.+%C2%BFPueden+darme+m%C3%A1s+info?" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Luise-571x398.jpg" alt="Vivienda Luise 6x6 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Luise 6×6</div>
+        <div class="card-meta"><span>6×6 m</span><span>36 m²</span></div>
+        <div class="card-price">14.050€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Luise+6x6.+%C2%BFPueden+informarme?" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/12/Gustav-44-6x8-571x398.jpg" alt="Vivienda Gustav 6x8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Gustav 6×8</div>
+        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
+        <div class="card-price">14.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+6x8.+%C2%BFPueden+informarme?" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/almeria--571x398.jpg" alt="Vivienda Almeria 6x8.8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Almeria 6×8,8</div>
+        <div class="card-meta"><span>6×8,8 m</span><span>53 m²</span></div>
+        <div class="card-price">15.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Almeria+6x8.8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Lukas-571x398.jpg" alt="Vivienda Lukas 6.5x7.7 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Lukas 6,5×7,7</div>
+        <div class="card-meta"><span>6,5×7,7 m</span><span>50 m²</span></div>
+        <div class="card-price">15.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Lukas+6.5x7.7" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/03/107-Gustav_B_6x8_series_71592-571x398.jpg" alt="Vivienda Gustav 6x8 con WC casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Gustav 6×8 + WC</div>
+        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
+        <div class="card-price">16.040€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+6x8+con+WC" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Gustav-68-571x398.jpg" alt="Vivienda Gustav 68 6x6+2 casa de madera maciza" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Gustav 68 · 6×6+2</div>
+        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
+        <div class="card-price">16.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+68+6x6%2B2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/11/107-Typ_2_5_2x10_2__6__23503-571x398.jpg" alt="Vivienda Typ 2 5.2x10.2 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Typ 2 · 5,2×10,2</div>
+        <div class="card-meta"><span>5,2×10,2 m</span><span>53 m²</span></div>
+        <div class="card-price">16.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Typ+2+5.2x10.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2024/02/Screenshot_20240219-170313_Samsung-Notes-571x398.jpg" alt="Orchidea 6x11.5 casa de madera grande España" loading="lazy">
+        <span class="card-badge">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Orchidea 6×11,5</div>
+        <div class="card-meta"><span>6×11,5 m</span><span>69 m²</span></div>
+        <div class="card-price">20.420€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orchidea+6x11.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- CABAÑAS -->
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250515-171022_Chrome-571x398.jpg" alt="Cabaña Nuuk 5x3.84 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Nuuk 5×3,84</div>
+        <div class="card-meta"><span>5×3,84 m</span><span>19 m²</span></div>
+        <div class="card-price">4.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Nuuk+5x3.84" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus-4x5-571x398.jpg" alt="Cabaña Linus 4x5 madera 44mm jardín" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Linus 4×5</div>
+        <div class="card-meta"><span>4×5 m</span><span>20 m²</span></div>
+        <div class="card-price">4.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Linus+4x5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus-5x5-571x398.jpg" alt="Cabaña Linus 5x5 madera prefabricada" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Linus 5×5</div>
+        <div class="card-meta"><span>5×5 m</span><span>25 m²</span></div>
+        <div class="card-price">5.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Linus+5x5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250515-171057_Chrome-571x398.jpg" alt="Cabaña Lille 6x3.5 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Lille 6×3,5</div>
+        <div class="card-meta"><span>6×3,5 m</span><span>21 m²</span></div>
+        <div class="card-price">6.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Lille+6x3.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/07/107-Ottawa_6x4_5_44mm-E_Exter-571x398.jpg" alt="Cabaña Ottawa 6x4.5 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Ottawa 6×4,5</div>
+        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span></div>
+        <div class="card-price">7.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Ottawa+6x4.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="cabanas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/107-Emilly_4_04x7_08_44mm_76330-571x398.jpg" alt="Cabaña Emily 7.8x4.04 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Cabaña Emily 7,8×4,04</div>
+        <div class="card-meta"><span>7,8×4 m</span><span>32 m²</span></div>
+        <div class="card-price">7.520€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Emily+7.8x4" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- CASETAS -->
+    <div class="card visible" data-cat="casetas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Erna-25x45-571x398.jpg" alt="Caseta de jardín Erna 2.5x4.5 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Caseta Erna 2,5×4,5</div>
+        <div class="card-meta"><span>2,5×4,5 m</span><span>11 m²</span></div>
+        <div class="card-price">3.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Erna+2.5x4.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="casetas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2016/02/Victoria-44-4x3-139x117.jpg" alt="Caseta jardín Linus 4x3 madera prefabricada" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Caseta Linus 4×3</div>
+        <div class="card-meta"><span>4×3 m</span><span>12 m²</span></div>
+        <div class="card-price">3.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Linus+4x3" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="casetas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus_4x4-perspective-571x398.jpg" alt="Caseta jardín Linus 4x4 madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Caseta Linus 4×4</div>
+        <div class="card-meta"><span>4×4 m</span><span>16 m²</span></div>
+        <div class="card-price">4.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Linus+4x4" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="casetas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/08/107-Stable_Nr.1_56957-571x398.jpg" alt="Caseta Stable 6x3 madera 44mm jardín cobertizo" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Caseta Stable 6×3</div>
+        <div class="card-meta"><span>6×3 m</span><span>18 m²</span></div>
+        <div class="card-price">4.650€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Stable+6x3" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- GARAJES -->
+    <div class="card visible" data-cat="garajes">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/107-Garage_3_2x5_2_44mm__2__37314-571x398.jpg" alt="Garaje de madera 3.2x5.2 44mm prefabricado" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Garaje 3,2×5,2</div>
+        <div class="card-meta"><span>3,2×5,2 m</span><span>17 m²</span></div>
+        <div class="card-price">3.630€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+3.2x5.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="garajes">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/garage-4x6-571x398.jpg" alt="Garaje de madera 6x4 44mm prefabricado España" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Garaje 6×4</div>
+        <div class="card-meta"><span>6×4 m</span><span>24 m²</span></div>
+        <div class="card-price">4.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+6x4" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="garajes">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250514-211835_Samsung-Notes-139x117.jpg" alt="Garaje con carport madera 6.8x5.6 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Garaje + Carport 6,8×5,6</div>
+        <div class="card-meta"><span>6,8×5,6 m</span><span>38 m²</span></div>
+        <div class="card-price">5.950€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+con+carport+6.8x5.6" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="garajes">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Garage-6x6-571x398.jpg" alt="Garaje de madera 6x6 44mm prefabricado" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Garaje 6×6</div>
+        <div class="card-meta"><span>6×6 m</span><span>36 m²</span></div>
+        <div class="card-price">6.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+6x6" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="garajes">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250514-204721_Samsung-Notes-139x117.jpg" alt="Garaje de madera 7x5.5 44mm grande España" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Garaje 7×5,5</div>
+        <div class="card-meta"><span>7×5,5 m</span><span>38 m²</span></div>
+        <div class="card-price">7.550€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+7x5.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+
+    <!-- VIVIENDAS стр.2 -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Scarlet-571x398.jpg" alt="Vivienda Scarlet 7x10.2 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Scarlet 7×10,2</div>
+        <div class="card-meta"><span>7×10,2 m</span><span>71 m²</span></div>
+        <div class="card-price">19.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Scarlet+7x10.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Olga-571x398.jpg" alt="Vivienda Orlando 8x9 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Orlando 8×9</div>
+        <div class="card-meta"><span>8×9 m</span><span>72 m²</span></div>
+        <div class="card-price">20.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orlando+8x9" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Maja-571x398.jpg" alt="Vivienda Maja 7.4x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Maja 7,4×10</div>
+        <div class="card-meta"><span>7,4×10 m</span><span>74 m²</span></div>
+        <div class="card-price">20.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Maja+7.4x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Jenifer-571x398.jpg" alt="Vivienda Jenifer 10.5x8.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Jenifer 10,5×8,5</div>
+        <div class="card-meta"><span>10,5×8,5 m</span><span>89 m²</span></div>
+        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Jenifer+10.5x8.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Marcos-571x398.jpg" alt="Vivienda Marcos 7.1x11.1 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Marcos 7,1×11,1</div>
+        <div class="card-meta"><span>7,1×11,1 m</span><span>79 m²</span></div>
+        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Marcos+7.1x11.1" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Oscar-571x398.jpg" alt="Vivienda Oscar 8.8x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Oscar 8,8×10</div>
+        <div class="card-meta"><span>8,8×10 m</span><span>88 m²</span></div>
+        <div class="card-price">21.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Oscar+8.8x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- VIVIENDAS стр.3 -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152045_Samsung-Internet-139x117.jpg" alt="Vivienda Talinn 5x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Talinn 5×10</div>
+        <div class="card-meta"><span>5×10 m</span><span>50 m²</span></div>
+        <div class="card-price">30.250€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Talinn+5x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Sevilla-571x398.jpg" alt="Vivienda Sevilla 7.8x13.7 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Sevilla 7,8×13,7</div>
+        <div class="card-meta"><span>7,8×13,7 m</span><span>107 m²</span></div>
+        <div class="card-price">30.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sevilla+7.8x13.7" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2024/02/Screenshot_20240212-113033_Samsung-Notes-139x117.jpg" alt="Vivienda Takoma 12x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Takoma 12×8</div>
+        <div class="card-meta"><span>12×8 m</span><span>96 m²</span></div>
+        <div class="card-price">32.670€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Takoma+12x8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152307_Samsung-Internet-139x117.jpg" alt="Vivienda Granada 8.8x14 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Granada 8,8×14</div>
+        <div class="card-meta"><span>8,8×14 m</span><span>123 m²</span></div>
+        <div class="card-price">35.550€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Granada+8.8x14" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152117_Samsung-Internet-139x117.jpg" alt="Vivienda Nagano 10x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Nagano 10×8</div>
+        <div class="card-meta"><span>10×8 m</span><span>80 m²</span></div>
+        <div class="card-price">37.820€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Nagano+10x8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152059_Samsung-Internet-139x117.jpg" alt="Vivienda Sweden 7.5x13.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Sweden 7,5×13,5</div>
+        <div class="card-meta"><span>7,5×13,5 m</span><span>101 m²</span></div>
+        <div class="card-price">49.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sweden+7.5x13.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2024/02/Screenshot_20240219-170313_Samsung-Notes-571x398.jpg" alt="Vivienda Premium Orchidea 6x11.5 casa de madera grande" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Orchidea 6×11,5</div>
+        <div class="card-meta"><span>6×11,5 m</span><span>69 m²</span></div>
+        <div class="card-price">20.420€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orchidea+6x11.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+
+
+    <!-- VIVIENDAS стр.2 -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Scarlet-571x398.jpg" alt="Vivienda Scarlet 7x10.2 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Scarlet 7×10,2</div>
+        <div class="card-meta"><span>7×10,2 m</span><span>71 m²</span></div>
+        <div class="card-price">19.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Scarlet+7x10.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Olga-571x398.jpg" alt="Vivienda Orlando 8x9 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Orlando 8×9</div>
+        <div class="card-meta"><span>8×9 m</span><span>72 m²</span></div>
+        <div class="card-price">20.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orlando+8x9" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Maja-571x398.jpg" alt="Vivienda Maja 7.4x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Maja 7,4×10</div>
+        <div class="card-meta"><span>7,4×10 m</span><span>74 m²</span></div>
+        <div class="card-price">20.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Maja+7.4x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Jenifer-571x398.jpg" alt="Vivienda Jenifer 10.5x8.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Jenifer 10,5×8,5</div>
+        <div class="card-meta"><span>10,5×8,5 m</span><span>89 m²</span></div>
+        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Jenifer+10.5x8.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Marcos-571x398.jpg" alt="Vivienda Marcos 7.1x11.1 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Marcos 7,1×11,1</div>
+        <div class="card-meta"><span>7,1×11,1 m</span><span>79 m²</span></div>
+        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Marcos+7.1x11.1" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Oscar-571x398.jpg" alt="Vivienda Oscar 8.8x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Oscar 8,8×10</div>
+        <div class="card-meta"><span>8,8×10 m</span><span>88 m²</span></div>
+        <div class="card-price">21.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Oscar+8.8x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- VIVIENDAS стр.3 -->
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152045_Samsung-Internet-139x117.jpg" alt="Vivienda Talinn 5x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Talinn 5×10</div>
+        <div class="card-meta"><span>5×10 m</span><span>50 m²</span></div>
+        <div class="card-price">30.250€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Talinn+5x10" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Sevilla-571x398.jpg" alt="Vivienda Sevilla 7.8x13.7 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Sevilla 7,8×13,7</div>
+        <div class="card-meta"><span>7,8×13,7 m</span><span>107 m²</span></div>
+        <div class="card-price">30.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sevilla+7.8x13.7" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2024/02/Screenshot_20240212-113033_Samsung-Notes-139x117.jpg" alt="Vivienda Takoma 12x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Takoma 12×8</div>
+        <div class="card-meta"><span>12×8 m</span><span>96 m²</span></div>
+        <div class="card-price">32.670€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Takoma+12x8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152307_Samsung-Internet-139x117.jpg" alt="Vivienda Granada 8.8x14 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Granada 8,8×14</div>
+        <div class="card-meta"><span>8,8×14 m</span><span>123 m²</span></div>
+        <div class="card-price">35.550€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Granada+8.8x14" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152117_Samsung-Internet-139x117.jpg" alt="Vivienda Nagano 10x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Nagano 10×8</div>
+        <div class="card-meta"><span>10×8 m</span><span>80 m²</span></div>
+        <div class="card-price">37.820€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Nagano+10x8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2023/04/Screenshot_20230429-152059_Samsung-Internet-139x117.jpg" alt="Vivienda Sweden 7.5x13.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Sweden 7,5×13,5</div>
+        <div class="card-meta"><span>7,5×13,5 m</span><span>101 m²</span></div>
+        <div class="card-price">49.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sweden+7.5x13.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/roberto_5_6x4_2-571x398.jpg" alt="Casa Premium Roberto 5.6x4 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Roberto 5,6×4</div>
+        <div class="card-meta"><span>5,6×4 m</span><span>22 m²</span><span>44mm</span></div>
+        <div class="card-price">6.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Roberto+5.6x4" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/murray-6x4-571x398.jpg" alt="Casa Premium Muray 6x4 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Muray 6×4</div>
+        <div class="card-meta"><span>6×4 m</span><span>24 m²</span><span>44mm</span></div>
+        <div class="card-price">6.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Muray+6x4" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Trento-571x398.jpg" alt="Casa Premium Trento 6x5 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Trento 6×5</div>
+        <div class="card-meta"><span>6×5 m</span><span>30 m²</span><span>44mm</span></div>
+        <div class="card-price">7.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Trento+6x5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2022/04/Screenshot_20220428-090616_Chrome-571x398.jpg" alt="Casa Premium Eko 5x6 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Eko 5×6</div>
+        <div class="card-meta"><span>5×6 m</span><span>30 m²</span><span>44mm</span></div>
+        <div class="card-price">7.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Eko+5x6" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus_6x6_with_WC-571x398.jpg" alt="Casa Premium Linus 6x6 WC madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Linus 6×6 + WC</div>
+        <div class="card-meta"><span>6×6 m</span><span>36 m²</span><span>44mm</span></div>
+        <div class="card-price">7.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Linus+6x6+WC" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2025/03/107-medium-Ottawa_6x4_5_44mm-E_209101-1-571x398.jpg" alt="Casa Premium Ottava 6x4.5 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Ottava 6×4,5</div>
+        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span><span>44mm</span></div>
+        <div class="card-price">7.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Ottava+6x4.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/padova_a_6x4_5-571x398.jpg" alt="Casa Premium Padova 6x4.5 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Padova 6×4,5</div>
+        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span><span>44mm</span></div>
+        <div class="card-price">8.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Padova+6x4.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Hakan-_44mm_1-571x398.jpg" alt="Casa Premium Hakan 6x5.2 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Hakan 6×5,2</div>
+        <div class="card-meta"><span>6×5,2 m</span><span>31 m²</span><span>44mm</span></div>
+        <div class="card-price">8.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Hakan+6x5.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Londres_44-571x398.jpg" alt="Casa Premium Torino 4.5x6 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Torino 4,5×6</div>
+        <div class="card-meta"><span>4,5×6 m</span><span>27 m²</span><span>44mm</span></div>
+        <div class="card-price">9.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Torino+4.5x6" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/padova_b_6x6_5-571x398.jpg" alt="Casa Premium Padova B 6x6.5 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Padova B 6×6,5</div>
+        <div class="card-meta"><span>6×6,5 m</span><span>39 m²</span><span>44mm</span></div>
+        <div class="card-price">10.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Padova+B+6x6.5" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Alma_-571x398.jpg" alt="Casa Premium Alma 7x8 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Alma 7×8</div>
+        <div class="card-meta"><span>7×8 m</span><span>56 m²</span><span>44mm</span></div>
+        <div class="card-price">10.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Alma+7x8" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2022/04/hakan-1-571x398.jpg" alt="Casa Premium Hakan B 7x7.2 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Hakan B 7×7,2</div>
+        <div class="card-meta"><span>7×7,2 m</span><span>50 m²</span><span>44mm</span></div>
+        <div class="card-price">11.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Hakan+B+7x7.2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium">
+      <div class="card-img">
+        <img src="https://maderarey.es/wp-content/uploads/2017/11/Gustav-571x398.jpg" alt="Casa Premium Gustav 6x6+2 madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#8B6914">Premium</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">Premium Gustav 6×6+2</div>
+        <div class="card-meta"><span>6×8 m</span><span>48 m²</span><span>44mm</span></div>
+        <div class="card-price">12.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Gustav+6x6%2B2" target="_blank">Consultar precio</a>
+      </div>
+    </div>
+
+  </div><!-- /cards-grid -->
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="section-header">
+    <h2 class="section-title">Por qué elegir MaderaRey</h2>
+    <p class="section-sub">Más de 12 años entregando casas en toda España</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature">
+<h3>Montaje profesional</h3>
+      <p>Nuestro equipo instala en cualquier punto de la Península, Canarias, Baleares y Portugal.</p>
+    </div>
+    <div class="feature">
+<h3>Entrega en 4–8 semanas</h3>
+      <p>Desde la confirmación del pedido hasta las llaves en mano en tu parcela.</p>
+    </div>
+    <div class="feature">
+<h3>Garantía 5 años</h3>
+      <p>Garantía estructural de 5 años y 2 años en el montaje realizado por MaderaRey.</p>
+    </div>
+    <div class="feature">
+<h3>Sin intermediarios</h3>
+      <p>Vendemos directamente desde fábrica. Sin comisiones. Precios competitivos del mercado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso">
+  <div class="section-header">
+    <h2 class="section-title">Cómo funciona</h2>
+    <p class="section-sub">Del catálogo a las llaves en 4 pasos</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Elige tu modelo</h3>
+      <p>Navega el catálogo online o visita nuestra exposición en Madrid (con cita previa).</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Recibe presupuesto en 24h</h3>
+      <p>Sin compromiso. Te confirmamos precio final, fecha de entrega y condiciones.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Fabricación y entrega</h3>
+      <p>En 4–8 semanas tu casa llega a tu parcela. Coordinamos la logística completa.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Montaje y llaves</h3>
+      <p>Nuestro equipo lo instala. Tú recibes las llaves. Garantía desde el día de la factura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTÍAS -->
+<section class="garantias" id="garantias">
+  <div class="section-header">
+    <h2 class="section-title">Garantías y confianza</h2>
+    <p class="section-sub">Llevamos desde 2012 construyendo casas de madera en España</p>
+  </div>
+  <div class="garantias-grid">
+    <div class="garantia-item">
+<div>
+        <h3>5 años — estructura</h3>
+        <p>Garantía completa sobre el kit de madera y la estructura de la vivienda.</p>
+      </div>
+    </div>
+    <div class="garantia-item">
+<div>
+        <h3>2 años — montaje</h3>
+        <p>Garantía sobre el montaje realizado por los profesionales de MaderaRey.</p>
+      </div>
+    </div>
+    <div class="garantia-item">
+<div>
+        <h3>Abeto nórdico certificado</h3>
+        <p>Madera secada al 12–15%, tratada y preparada para el clima español.</p>
+      </div>
+    </div>
+    <div class="garantia-item">
+<div>
+        <h3>Entrega en toda España</h3>
+        <p>Península · Canarias · Baleares · Portugal · Andorra.</p>
+      </div>
+    </div>
+  </div>
+  <div class="exposicion">
+<div>
+      <p><strong>Exposición física en Madrid</strong><br>
+      Autovía del Suroeste, km 27, 28600 Madrid<br>
+      <span style="opacity:0.7">Visita con cita previa — llama o escribe por WhatsApp</span></p>
+    </div>
+    <a href="https://wa.me/34664033098?text=Hola%2C+quiero+pedir+cita+para+visitar+la+exposici%C3%B3n+en+Madrid" class="btn-wa" target="_blank" style="margin-left:auto">Pedir cita</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-header">
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <p class="section-sub">Todo lo que necesitas saber antes de comprar</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Cuánto cuesta una casa de madera prefabricada en España?</div>
+      <div class="faq-a">En MaderaRey los precios empiezan desde 3.400€ para casetas de jardín, desde 4.700€ para cabañas y desde 12.000€ para viviendas habitables. El precio no incluye tejas ni pintura exterior. El montaje se presupuesta según ubicación.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Entregan en toda España?</div>
+      <div class="faq-a">Sí. Entregamos y montamos en toda la Península Ibérica, Islas Canarias, Islas Baleares, Portugal y Andorra. Coordinamos la logística desde nuestras instalaciones en Madrid.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda la entrega?</div>
+      <div class="faq-a">El plazo habitual es de 4 a 8 semanas desde la confirmación del pedido. Te confirmamos la fecha exacta al presupuestar.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿El precio incluye el montaje?</div>
+      <div class="faq-a">El precio del catálogo es el precio del kit de madera sin montaje. El montaje profesional se presupuesta por separado según la ubicación y el modelo. Puedes también optar por montaje propio.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Qué garantía tiene la casa?</div>
+      <div class="faq-a">5 años de garantía sobre la estructura y el kit de madera, y 2 años sobre el montaje realizado por MaderaRey. La garantía corre desde la fecha de factura.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Puedo visitar una casa antes de comprar?</div>
+      <div class="faq-a">Sí, tenemos exposición física en Madrid (Autovía del Suroeste, km 27). La visita es con cita previa — escríbenos por WhatsApp y te la concertamos.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Qué diferencia hay entre 44mm y 68mm?</div>
+      <div class="faq-a">44mm es adecuado para uso estival, casetas, cabañas y segunda residencia en climas cálidos. 68mm ofrece mejor aislamiento térmico y es recomendable para vivienda habitual o zonas con inviernos fríos.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <h2>¿Tienes dudas? Escríbenos ahora</h2>
+  <p>Respuesta en menos de 24h · Sin compromiso · Presupuesto gratuito</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/34664033098?text=Hola%2C+me+interesa+una+casa+de+madera.+%C2%BFPueden+informarme?" class="btn-wa" target="_blank">WhatsApp +34 664 033 098</a>
+    <a href="mailto:info@maderarey.es" class="btn-primary">info@maderarey.es</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>MaderaRey</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Venta y montaje de casas de madera prefabricadas desde 2012. Toda España.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Catálogo</h4>
+      <a href="#catalogo" onclick="filterCat('viviendas')">Viviendas</a>
+      <a href="#catalogo" onclick="filterCat('cabanas')">Cabañas</a>
+      <a href="#catalogo" onclick="filterCat('casetas')">Casetas de jardín</a>
+      <a href="#catalogo" onclick="filterCat('garajes')">Garajes</a>
+      <a href="#catalogo" onclick="filterCat('premium')">Premium</a>
+    </div>
+    <div class="footer-col">
+      <h4>Información</h4>
+      <a href="#garantias">Garantías</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="https://maderarey.es/proceso-de-construccion/" target="_blank">Proceso de construcción</a>
+      <a href="https://maderarey.es/aviso-legal-y-politica-de-privacidad/" target="_blank">Aviso legal</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="tel:+34664033098">+34 664 033 098</a>
+      <a href="https://wa.me/34664033098" target="_blank">WhatsApp</a>
+      <a href="mailto:info@maderarey.es">info@maderarey.es</a>
+      <p style="font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;line-height:1.5">Exposición Madrid<br>Autovía del Suroeste, km 27<br>Con cita previa</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2012–2026 MaderaRey · Casas de madera prefabricadas en España · <a href="https://maderarey.es/aviso-legal-y-politica-de-privacidad/" style="color:rgba(255,255,255,0.4)">Aviso legal</a></p>
+  </div>
+</footer>
+
+<script>
+// ── UTM TRACKING ──
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const src = params.get('utm_source') || 'direct';
+  const med = params.get('utm_medium') || '';
+  const cam = params.get('utm_campaign') || '';
+
+  // Store source in sessionStorage
+  if(src !== 'direct') sessionStorage.setItem('lead_source', src);
+
+  // Append source to all WA links
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(el){
+    const url = new URL(el.href);
+    const txt = url.searchParams.get('text') || '';
+    url.searchParams.set('text', txt + '%0A%0AFuente%3A+' + encodeURIComponent(src));
+    el.href = url.toString();
+  });
+})();
+
+// ── CATALOG TABS ──
+function filterCat(cat) {
+  // Update tabs
+  document.querySelectorAll('.cat-tab').forEach(function(t){
+    t.classList.remove('active');
+    if(t.textContent.toLowerCase().includes(cat === 'todas' ? 'toda' : cat.replace('cabanas','caba').replace('casetas','caseta').replace('garajes','garaj').replace('viviendas','viviend').replace('premium','premium'))) {
+      t.classList.add('active');
+    }
+  });
+  if(cat === 'todas') document.querySelectorAll('.cat-tab')[0].classList.add('active');
+
+  // Show/hide cards
+  document.querySelectorAll('.card[data-cat]').forEach(function(c){
+    if(cat === 'todas' || c.dataset.cat === cat){
+      c.classList.add('visible');
+    } else {
+      c.classList.remove('visible');
+    }
+  });
+
+  // Scroll to catalog
+  document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// Tab click handler — simpler approach
+document.querySelectorAll('.cat-tab').forEach(function(tab, i){
+  tab.addEventListener('click', function(){
+    document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
+    tab.classList.add('active');
+    const cats = ['todas','viviendas','cabanas','casetas','garajes','premium'];
+    const cat = cats[i];
+    document.querySelectorAll('.card[data-cat]').forEach(function(c){
+      c.classList.toggle('visible', cat === 'todas' || c.dataset.cat === cat);
+    });
+  });
+});
+
+// ── FAQ ──
+function toggleFaq(el){
+  el.parentElement.classList.toggle('open');
+}
+
+// ── MOBILE MENU ──
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// ── SCROLL: show all cards initially ──
+document.querySelectorAll('.card[data-cat]').forEach(function(c){
+  c.classList.add('visible');
+});
+</script>
+
+</body>
+</html>

@@ -1539,13 +1539,7 @@
 (function(){
   const params = new URLSearchParams(window.location.search);
   const src = params.get('utm_source') || 'direct';
-  const med = params.get('utm_medium') || '';
-  const cam = params.get('utm_campaign') || '';
-
-  // Store source in sessionStorage
   if(src !== 'direct') sessionStorage.setItem('lead_source', src);
-
-  // Append source to all WA links
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(el){
     const url = new URL(el.href);
     const txt = url.searchParams.get('text') || '';
@@ -1554,66 +1548,29 @@
   });
 })();
 
-// ── CATALOG TABS ──
-function filterCat(cat) {
-  // Update tabs
-  document.querySelectorAll('.cat-tab').forEach(function(t){
-    t.classList.remove('active');
-    if(t.textContent.toLowerCase().includes(cat === 'todas' ? 'toda' : cat.replace('cabanas','caba').replace('casetas','caseta').replace('garajes','garaj').replace('viviendas','viviend').replace('premium','premium'))) {
-      t.classList.add('active');
-    }
-  });
-  if(cat === 'todas') document.querySelectorAll('.cat-tab')[0].classList.add('active');
-
-  // Show/hide cards
-  document.querySelectorAll('.card[data-cat]').forEach(function(c){
-    if(cat === 'todas' || c.dataset.cat === cat){
-      c.classList.add('visible');
-    } else {
-      c.classList.remove('visible');
-    }
-  });
-
-  // Scroll to catalog
-  document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
-}
-
-// Tab click handler — simpler approach
-document.querySelectorAll('.cat-tab').forEach(function(tab, i){
-  tab.addEventListener('click', function(){
-    document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
-    tab.classList.add('active');
-    const cats = ['todas','viviendas','cabanas','casetas','garajes','premium'];
-    currentCat = cats[i];
-    currentShown = CARDS_PER_PAGE;
-    updateCards();
-    document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
-  });
-});
-
 // ── LOAD MORE ──
-const CARDS_PER_PAGE = 10;
-let currentShown = CARDS_PER_PAGE;
-let currentCat = 'todas';
+var CARDS_PER_PAGE = 10;
+var currentShown = CARDS_PER_PAGE;
+var currentCat = 'todas';
 
-function getVisibleCards() {
+function getFilteredCards() {
   return Array.from(document.querySelectorAll('.card[data-cat]')).filter(function(c){
     return currentCat === 'todas' || c.dataset.cat === currentCat;
   });
 }
 
 function updateCards() {
-  const cards = getVisibleCards();
-  // Hide all first
-  document.querySelectorAll('.card[data-cat]').forEach(function(c){ c.classList.remove('visible'); });
-  // Show current batch
+  document.querySelectorAll('.card[data-cat]').forEach(function(c){
+    c.classList.remove('visible');
+  });
+  var cards = getFilteredCards();
   cards.forEach(function(c, i){
     if (i < currentShown) c.classList.add('visible');
   });
-  const wrap = document.getElementById('loadMoreWrap');
-  const count = document.getElementById('loadMoreCount');
+  var wrap = document.getElementById('loadMoreWrap');
+  var count = document.getElementById('loadMoreCount');
   if (!wrap) return;
-  const remaining = cards.length - currentShown;
+  var remaining = cards.length - currentShown;
   if (remaining > 0) {
     wrap.style.display = 'block';
     count.textContent = 'Mostrando ' + Math.min(currentShown, cards.length) + ' de ' + cards.length + ' modelos';
@@ -1627,6 +1584,28 @@ function loadMore() {
   updateCards();
 }
 
+// ── CATALOG TABS ──
+function filterCat(cat) {
+  document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
+  if(cat === 'todas') document.querySelectorAll('.cat-tab')[0].classList.add('active');
+  currentCat = cat;
+  currentShown = CARDS_PER_PAGE;
+  updateCards();
+  document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+document.querySelectorAll('.cat-tab').forEach(function(tab, i){
+  tab.addEventListener('click', function(){
+    document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
+    tab.classList.add('active');
+    var cats = ['todas','viviendas','cabanas','casetas','garajes','premium'];
+    currentCat = cats[i];
+    currentShown = CARDS_PER_PAGE;
+    updateCards();
+    document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+
 // ── FAQ ──
 function toggleFaq(el){
   el.parentElement.classList.toggle('open');
@@ -1637,10 +1616,10 @@ function toggleMenu(){
   document.getElementById('navLinks').classList.toggle('open');
 }
 
-// ── INIT LOAD MORE ──
-currentShown = CARDS_PER_PAGE;
-currentCat = 'todas';
-updateCards();
+// ── INIT ──
+window.addEventListener('DOMContentLoaded', function(){
+  updateCards();
+});
 </script>
 
 </body>

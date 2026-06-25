@@ -218,7 +218,7 @@
   .card[data-cat] { display: none; }
   .card[data-cat].visible { display: block; }
   .card-img { position: relative; height: 200px; overflow: hidden; background: var(--gray-light); }
-  .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.3s; image-rendering: -webkit-optimize-contrast; }
   .card:hover .card-img img { transform: scale(1.04); }
   .card-badge {
     position: absolute; top: 10px; left: 10px;
@@ -331,6 +331,29 @@
   .footer-col a:hover { color: var(--white); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 12px; }
 
+
+  /* ── LOAD MORE ── */
+  .card[data-cat] { display: none; }
+  .card[data-cat].visible { display: block; }
+  .card[data-cat].visible.hidden-more { display: none; }
+
+  .load-more-wrap { 
+    text-align: center; padding: 32px 20px 0; 
+    max-width: 1200px; margin: 0 auto;
+  }
+  .load-more-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--white); color: var(--green);
+    border: 2px solid var(--green);
+    padding: 12px 32px; border-radius: 8px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .load-more-btn:hover { background: var(--green); color: var(--white); }
+  .load-more-count { 
+    font-size: 13px; color: var(--gray); 
+    margin-top: 10px; display: block;
+  }
   /* ── UTM TRACKING ── */
   /* All links get UTM appended via JS */
 
@@ -1324,6 +1347,10 @@
     </div>
 
   </div><!-- /cards-grid -->
+  <div class="load-more-wrap" id="loadMoreWrap">
+    <button class="load-more-btn" onclick="loadMore()">Ver más casas</button>
+    <span class="load-more-count" id="loadMoreCount"></span>
+  </div>
 </section>
 
 <!-- FEATURES -->
@@ -1557,12 +1584,48 @@ document.querySelectorAll('.cat-tab').forEach(function(tab, i){
     document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
     tab.classList.add('active');
     const cats = ['todas','viviendas','cabanas','casetas','garajes','premium'];
-    const cat = cats[i];
-    document.querySelectorAll('.card[data-cat]').forEach(function(c){
-      c.classList.toggle('visible', cat === 'todas' || c.dataset.cat === cat);
-    });
+    currentCat = cats[i];
+    currentShown = CARDS_PER_PAGE;
+    updateCards();
+    document.getElementById('catalogo').scrollIntoView({behavior:'smooth', block:'start'});
   });
 });
+
+// ── LOAD MORE ──
+const CARDS_PER_PAGE = 10;
+let currentShown = CARDS_PER_PAGE;
+let currentCat = 'todas';
+
+function getVisibleCards() {
+  return Array.from(document.querySelectorAll('.card[data-cat]')).filter(function(c){
+    return currentCat === 'todas' || c.dataset.cat === currentCat;
+  });
+}
+
+function updateCards() {
+  const cards = getVisibleCards();
+  // Hide all first
+  document.querySelectorAll('.card[data-cat]').forEach(function(c){ c.classList.remove('visible'); });
+  // Show current batch
+  cards.forEach(function(c, i){
+    if (i < currentShown) c.classList.add('visible');
+  });
+  const wrap = document.getElementById('loadMoreWrap');
+  const count = document.getElementById('loadMoreCount');
+  if (!wrap) return;
+  const remaining = cards.length - currentShown;
+  if (remaining > 0) {
+    wrap.style.display = 'block';
+    count.textContent = 'Mostrando ' + Math.min(currentShown, cards.length) + ' de ' + cards.length + ' modelos';
+  } else {
+    wrap.style.display = 'none';
+  }
+}
+
+function loadMore() {
+  currentShown += CARDS_PER_PAGE;
+  updateCards();
+}
 
 // ── FAQ ──
 function toggleFaq(el){
@@ -1574,10 +1637,10 @@ function toggleMenu(){
   document.getElementById('navLinks').classList.toggle('open');
 }
 
-// ── SCROLL: show all cards initially ──
-document.querySelectorAll('.card[data-cat]').forEach(function(c){
-  c.classList.add('visible');
-});
+// ── INIT LOAD MORE ──
+currentShown = CARDS_PER_PAGE;
+currentCat = 'todas';
+updateCards();
 </script>
 
 </body>

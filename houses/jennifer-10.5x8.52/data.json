@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "10.5x8.52",
   "price": 25720,
-  "description": "kit aislamiento tejado 100mm. CTE.- 4250\ntegola -  1350\nkit aislamiento pared 100mm. CTE .- 6600\nJennifer ofrece 65,4 m² de espacio interior con paredes de 68 mm y suelo de tablones de 28 mm. Su tejado a dos aguas y sus amplios ventanales la convierten en el lugar ideal para una lujosa casa de verano.",
+  "description": "Jennifer ofrece 65,4 m² de espacio interior con paredes de 68 mm y suelo de tablones de 28 mm. Su tejado a dos aguas y sus amplios ventanales la convierten en el lugar ideal para una lujosa casa de verano.",
   "specs": {
     "Huella de la base (m)": "10,3 x 8,32",
     "Ancho x largo del edificio (m)": "10,5 x 8,52",
@@ -33,5 +33,10 @@
     "107-Jennifer_10_5x8_52_68mm_76541.jpg",
     "107-Jennifer_10_5x8_52_68mm_fp_42864.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Jennifer 10.5x8.52"
+  "whatsapp_text": "Hola, me interesa la casa Jennifer 10.5x8.52",
+  "options": {
+    "ins_roof": 4250,
+    "tegola": 1350,
+    "ins_wall": 6600
+  }
 }

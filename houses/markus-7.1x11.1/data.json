@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "7.1x11.1",
   "price": 25000,
-  "description": "kit aislamiento tejado 100mm.  CTE - 4300\ntegola -13500\nkit aislamiento pared 100mm. CTE  - 5810\nMarkus combina 62,1 m² de espacio interior con una terraza cubierta de 12,3 m², construida con paredes de 68 mm, suelo de madera de 28 mm y un tejado a dos aguas que alcanza los 3,24 m de altura. La distribución incluye 2 dormitorios, una amplia sala de estar y un baño, ideal para su uso durante todo el año",
+  "description": "Markus combina 62,1 m² de espacio interior con una terraza cubierta de 12,3 m², construida con paredes de 68 mm, suelo de madera de 28 mm y un tejado a dos aguas que alcanza los 3,24 m de altura. La distribución incluye 2 dormitorios, una amplia sala de estar y un baño, ideal para su uso durante todo el año",
   "specs": {
     "Huella de la base (m)": "6,9 x 9,9",
     "Ancho x largo del edificio (m)": "7,1 x 11,1",
@@ -33,5 +33,10 @@
     "107-Markus_7_1x11_1_3d_1_71909.jpg",
     "107-Markus_7_1x11_1_3d_3_23351.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Markus 7.1x11.1"
+  "whatsapp_text": "Hola, me interesa la casa Markus 7.1x11.1",
+  "options": {
+    "ins_roof": 4300,
+    "tegola": 13500,
+    "ins_wall": 5810
+  }
 }

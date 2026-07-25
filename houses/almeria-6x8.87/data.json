@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "6x8.87",
   "price": 0,
-  "description": "Este elegante chalet abarca 41,8 m² y cuenta con paredes de 68 mm y suelos de 28 mm. Con techo a dos aguas y amplios ventanales, está diseñado para vivienda permanente o como estudio grande. Camión completo 3 casas. Tamaño del paquete (890x6000x1200), (890x6000x1200), (890x6000x1200), (300x3300x1200\nkit aislamiento tejado 100mm.  CTE - 2600eur\ntegola - 850 eur\nkit aisl. pared 100mm. CTE - 4800",
+  "description": "Este elegante chalet abarca 41,8 m² y cuenta con paredes de 68 mm y suelos de 28 mm. Con techo a dos aguas y amplios ventanales, está diseñado para vivienda permanente o como estudio grande. Camión completo 3 casas. Tamaño del paquete (890x6000x1200), (890x6000x1200), (890x6000x1200), (300x3300x1200\nkit aislamiento tejado 100mm.  CTE - 2600eur\ntegola - 850 eur",
   "specs": {
     "Building width x length (m)": "6 x 8,87",
     "Internal area (m²)": "41.8",
@@ -30,5 +30,8 @@
     "107-Almeria_6x8_87_3d_1_80795.jpg",
     "107-Almeria_6x8_87_68mm_99351.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Almeria 6x8.87"
+  "whatsapp_text": "Hola, me interesa la casa Almeria 6x8.87",
+  "options": {
+    "ins_wall": 4800
+  }
 }

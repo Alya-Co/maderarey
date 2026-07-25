@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "",
   "price": 17100,
-  "description": "kit aislamiento tejado 100mm. CTE -2800\ntegola - 960\nkit aislamiento pared 100mm. CTE - 4700\nLa casa de verano de 44 m2 cuenta con un diseño de techo único y superpuesto e incluye 2 dormitorios, un baño, área de cocina y sala de estar. Además, la casa cuenta con una terraza de 6 m2, lo que la convierte en una opción óptima para un retiro de verano compacto y funcional.",
+  "description": "La casa de verano de 44 m2 cuenta con un diseño de techo único y superpuesto e incluye 2 dormitorios, un baño, área de cocina y sala de estar. Además, la casa cuenta con una terraza de 6 m2, lo que la convierte en una opción óptima para un retiro de verano compacto y funcional.",
   "specs": {
     "Espesor de las paredes (mm)": "68",
     "Ancho (m)": "6.36",
@@ -29,5 +29,10 @@
     "Terraza": "Sí"
   },
   "photos": [],
-  "whatsapp_text": "Hola, me interesa la casa Iberica T2 "
+  "whatsapp_text": "Hola, me interesa la casa Iberica T2 ",
+  "options": {
+    "ins_roof": 2800,
+    "tegola": 960,
+    "ins_wall": 4700
+  }
 }

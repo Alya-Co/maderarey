@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "6x10",
   "price": 0,
-  "description": "kit aislamiento tejado 100mm CTE -4100\ntegola - 1350\nkit aislamiento pared 100mm CTE - 6300\nEsta casa de campo de 2 pisos de estilo atemporal ofrece 100m2 de espacio habitable con 4 dormitorios y 2 baños. Es la combinación perfecta de encanto clásico y comodidad moderna.",
+  "description": "Esta casa de campo de 2 pisos de estilo atemporal ofrece 100m2 de espacio habitable con 4 dormitorios y 2 baños. Es la combinación perfecta de encanto clásico y comodidad moderna.",
   "specs": {
     "Espesor de las paredes (mm)": "68",
     "Ancho (m)": "6",
@@ -39,5 +39,10 @@
     "107-Felix_6x10_68mm_fp-2_69050.jpg",
     "107-Felix_6x10_85774.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Felix 6x10"
+  "whatsapp_text": "Hola, me interesa la casa Felix 6x10",
+  "options": {
+    "ins_roof": 4100,
+    "tegola": 1350,
+    "ins_wall": 6300
+  }
 }

@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "5.93x8.75",
   "price": 29000,
-  "description": "kit aislamiento tejado 100mm. CTE - 3600\ntegola -1250\nkit aislamiento pared 100mm. CTE -7800\nVerona cuenta con 90 m² de espacio interior, techo a dos aguas y paredes de 68 mm de espesor. Incluye 3 habitaciones y suelo de madera de 28 mm, ideal para una vida cómoda y funcional.",
+  "description": "Verona cuenta con 90 m² de espacio interior, techo a dos aguas y paredes de 68 mm de espesor. Incluye 3 habitaciones y suelo de madera de 28 mm, ideal para una vida cómoda y funcional.",
   "specs": {
     "Huella de la base (m)": "5,73 x 8,55",
     "Ancho x largo del edificio (m)": "5,93 x 8,75",
@@ -32,5 +32,10 @@
     "107-Verona_5_93x8_75_68mm_fp-2_52475.jpg",
     "107-Verona_5_93x8_75_68mm_fp-1_93367.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Verona 5.93x8.75"
+  "whatsapp_text": "Hola, me interesa la casa Verona 5.93x8.75",
+  "options": {
+    "ins_roof": 3600,
+    "tegola": 1250,
+    "ins_wall": 7800
+  }
 }

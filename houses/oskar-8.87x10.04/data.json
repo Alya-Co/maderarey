@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "8.87x10.04",
   "price": 25300,
-  "description": "kit aislamiento tejado 100mm. CTE - 4300\ntegola - 1600\nkit aislamiento pared 100mm. CTE - 4700\nCon 88,7 m² de espacio interior y una terraza que rodea la vivienda, Oskar está construida con paredes de 68 mm, suelo de madera de 28 mm y un tejado a dos aguas que alcanza los 3,3 m de altura. Incluye 2 dormitorios, una amplia zona de estar/cocina y un baño, ideal para disfrutar de una vida campestre con estilo.",
+  "description": "Con 88,7 m² de espacio interior y una terraza que rodea la vivienda, Oskar está construida con paredes de 68 mm, suelo de madera de 28 mm y un tejado a dos aguas que alcanza los 3,3 m de altura. Incluye 2 dormitorios, una amplia zona de estar/cocina y un baño, ideal para disfrutar de una vida campestre con estilo.",
   "specs": {
     "Huella de la base (m)": "8,67 x 9,84",
     "Ancho x largo del edificio (m)": "8,87 x 10,04",
@@ -26,5 +26,10 @@
     "107-Oskar_8_87x10_04_68mm_60267.jpg",
     "107-Oskar_8_87x10_04_3d_2_90213.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Oskar 8.87x10.04"
+  "whatsapp_text": "Hola, me interesa la casa Oskar 8.87x10.04",
+  "options": {
+    "ins_roof": 4300,
+    "tegola": 1600,
+    "ins_wall": 4700
+  }
 }

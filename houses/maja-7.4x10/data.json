@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "7.4x10",
   "price": 23800,
-  "description": "kit aislamiento tejado 100mm. CTE - 3700\ntegola - 1200\nkit aislamiento pared 100mm. CTE -5900\nEste modelo cuenta con 49,8 m² de espacio interior y una terraza de 16,5 m², construido con paredes de 68 mm, suelo de madera de 28 mm y tejado a dos aguas con una altura máxima de 3,26 m. Incluye 2 dormitorios, un baño y una amplia zona de estar/cocina, ideal para disfrutar del verano al aire libre.",
+  "description": "Este modelo cuenta con 49,8 m² de espacio interior y una terraza de 16,5 m², construido con paredes de 68 mm, suelo de madera de 28 mm y tejado a dos aguas con una altura máxima de 3,26 m. Incluye 2 dormitorios, un baño y una amplia zona de estar/cocina, ideal para disfrutar del verano al aire libre.",
   "specs": {
     "Huella de la base (m)": "7,2 x 9,8",
     "Ancho x largo del edificio (m)": "7,4 x 10",
@@ -33,5 +33,10 @@
     "107-Maja_7_4x10_68mm_43883.jpg",
     "107-Maja_7_4x10_3d_1_06339.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Maja 7.4x10"
+  "whatsapp_text": "Hola, me interesa la casa Maja 7.4x10",
+  "options": {
+    "ins_roof": 3700,
+    "tegola": 1200,
+    "ins_wall": 5900
+  }
 }

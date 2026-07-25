@@ -3,7 +3,7 @@
   "thickness": "44mm",
   "size": "",
   "price": 0,
-  "description": "Alina privet.\nEsta cabaña de 32,2 m² combina simetría y sencillez, construida con paredes de 44 mm de grosor y suelo de tablones de 19 mm. Su tejado a dos aguas y su distribución diáfana la hacen ideal para vivir durante las temporadas de verano, como estudio o para alojar invitados.\nMaterial extra:\nkit aislamiento tejado 100mm ( CTE ) -2300\ntegola ( verde,marrón, rojo, gris, negro ) - 740\nkit aislamiento pared 100mm ( CTE ) - 3800",
+  "description": "Alina privet.\nEsta cabaña de 32,2 m² combina simetría y sencillez, construida con paredes de 44 mm de grosor y suelo de tablones de 19 mm. Su tejado a dos aguas y su distribución diáfana la hacen ideal para vivir durante las temporadas de verano, como estudio o para alojar invitados.\nMaterial extra:",
   "specs": {
     "Ancho x largo del edificio (m)": "6 x 6",
     "Superficie interior (m²)": "32.2",
@@ -22,5 +22,10 @@
     "107-Louise_6x6_68mm_9_mueble.jpg",
     "107-Louise_6x6_44mm_exter.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Louise "
+  "whatsapp_text": "Hola, me interesa la casa Louise ",
+  "options": {
+    "ins_roof": 2300,
+    "tegola": 740,
+    "ins_wall": 3800
+  }
 }

@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "6x11.5",
   "price": 22000,
-  "description": "kit aislamiento tejado 100mm. CTE  - 3400\ntegola ( verde, rojo, marron, gris,negro ) -1200\nkit aislamiento pared 100mm. CTE. - 4500\nEsta casa de campo de 62 m2 cuenta con 3 dormitorios, un baño y una amplia sala de estar. El diseño se centra en crear un ambiente luminoso y aireado con muchas ventanas altas.",
+  "description": "Esta casa de campo de 62 m2 cuenta con 3 dormitorios, un baño y una amplia sala de estar. El diseño se centra en crear un ambiente luminoso y aireado con muchas ventanas altas.",
   "specs": {
     "Espesor de las paredes (mm)": "68",
     "Ancho (m)": "6",
@@ -36,5 +36,10 @@
     "107-Orchidėja_6x11_5_3d_3_51559.jpg",
     "107-Orchidėja_6x11_5_48477.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Orchidea 6x11.5"
+  "whatsapp_text": "Hola, me interesa la casa Orchidea 6x11.5",
+  "options": {
+    "ins_roof": 3400,
+    "tegola": 1200,
+    "ins_wall": 4500
+  }
 }

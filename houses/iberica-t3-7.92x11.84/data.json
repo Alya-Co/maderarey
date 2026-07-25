@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "7.92x11.84",
   "price": 27300,
-  "description": "kit aislamiento tejado 100mm. CTE - 4550\ntegola - 1450\nkit aislamiento pared 100mm CTE - 6100\nConstruida para el confort, esta casa cuenta con paredes de 68 mm, suelo de 28 mm y un tejado a dos aguas con una altura máxima de 3,31 m. Incluye 73,8 m² de espacio interior más una terraza de 11 m², con 3 dormitorios, una cocina independiente y un amplio salón. Camión completo: 2 unidades. Dimensiones del paquete: (890x5600x1200), (890x5600x1200), (880x5500x1200), (880x5800x1200), (860x6100x1200), (600x4800x1200), (ST600x2200x1700)",
+  "description": "Construida para el confort, esta casa cuenta con paredes de 68 mm, suelo de 28 mm y un tejado a dos aguas con una altura máxima de 3,31 m. Incluye 73,8 m² de espacio interior más una terraza de 11 m², con 3 dormitorios, una cocina independiente y un amplio salón. Camión completo: 2 unidades. Dimensiones del paquete: (890x5600x1200), (890x5600x1200), (880x5500x1200), (880x5800x1200), (860x6100x1200), (600x4800x1200), (ST600x2200x1700)",
   "specs": {
     "Huella de la base (m)": "7,72 x 11,64",
     "Ancho x largo del edificio (m)": "7,92 x 11,84",
@@ -27,5 +27,10 @@
     "Garantía": "60 meses"
   },
   "photos": [],
-  "whatsapp_text": "Hola, me interesa la casa Iberica T3 7.92x11.84"
+  "whatsapp_text": "Hola, me interesa la casa Iberica T3 7.92x11.84",
+  "options": {
+    "ins_roof": 4550,
+    "tegola": 1450,
+    "ins_wall": 6100
+  }
 }

@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "9.7x9.8",
   "price": 36000,
-  "description": "kit aislamiento tejado 100mm. CTE - 5000\ntegola -1700\nkit aislamiento pared 100mm. CTE - 8000\nWendy tiene una superficie de 126 m² con tejado a dos aguas y paredes de 68 mm de espesor, incluyendo el ático. Cuenta con 5 habitaciones y suelo de madera de 28 mm, diseñado para ofrecer confort y abundante luz natural.",
+  "description": "Wendy tiene una superficie de 126 m² con tejado a dos aguas y paredes de 68 mm de espesor, incluyendo el ático. Cuenta con 5 habitaciones y suelo de madera de 28 mm, diseñado para ofrecer confort y abundante luz natural.",
   "specs": {
     "Huella de la base (m)": "9,5 x 9,6",
     "Ancho x largo del edificio (m)": "9,7 x 9,8",
@@ -32,5 +32,10 @@
     "107-Wendy_9_7x9_8_68mm_76388.jpg",
     "107-Wendy_9_7x9_8_3d_1_77373.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Wendy 9.7x9.8"
+  "whatsapp_text": "Hola, me interesa la casa Wendy 9.7x9.8",
+  "options": {
+    "ins_roof": 5000,
+    "tegola": 1700,
+    "ins_wall": 8000
+  }
 }

@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "5.2x10.2",
   "price": 0,
-  "description": "TYP2 pertenece a la categoría de casetas de jardín de alta gama, con techo a dos aguas que complementa su elegante diseño. Cuenta con paredes de 68 mm de grosor y suelo de 28 mm, lo que garantiza resistencia estructural y eficiencia térmica. Ideal para un refugio acogedor o un espacio funcional en el jardín.\nkit aislamiento tejado 100m. CTE.- 2600 eur.\ntegola  - 880\nkit aislamiento pared 100mm, revestimiento madera, CTE - 3950 eur",
+  "description": "TYP2 pertenece a la categoría de casetas de jardín de alta gama, con techo a dos aguas que complementa su elegante diseño. Cuenta con paredes de 68 mm de grosor y suelo de 28 mm, lo que garantiza resistencia estructural y eficiencia térmica. Ideal para un refugio acogedor o un espacio funcional en el jardín.\nkit aislamiento tejado 100m. CTE.- 2600 eur.\nkit aislamiento pared 100mm, revestimiento madera, CTE - 3950 eur",
   "specs": {
     "Ancho x largo del edificio (m)": "5,2 x 10,2",
     "Superficie interior (m²)": "37.6",
@@ -31,5 +31,8 @@
     "107-Typ_2_5_2x10_2_6_23503.jpg",
     "107-Typ_2_5_2x10_2_7_56905.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Typ 2 5.2x10.2"
+  "whatsapp_text": "Hola, me interesa la casa Typ 2 5.2x10.2",
+  "options": {
+    "tegola": 880
+  }
 }

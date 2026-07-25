@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "5.6x6.6",
   "price": 19000,
-  "description": "kit aislamiento tejado 100mm. CTE - 2700\ntegola - 880\nkit aislamiento pared 100mm. CTE  - 5100\nMax ofrece 32,4 m² de espacio interior con paredes de 68 mm y suelo de 28 mm. Su tejado a dos aguas y su diseño diáfano lo convierten en una opción versátil para estudios o casas de huéspedes",
+  "description": "Max ofrece 32,4 m² de espacio interior con paredes de 68 mm y suelo de 28 mm. Su tejado a dos aguas y su diseño diáfano lo convierten en una opción versátil para estudios o casas de huéspedes",
   "specs": {
     "Huella de la base (m)": "5,4 x 6,4",
     "Ancho x largo del edificio (m)": "5,6 x 6,6",
@@ -33,5 +33,10 @@
     "107-Max_5_6x6_6_3d_1_62578.jpg",
     "107-Max_5_6x6_6_68mm_98886.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Max 5.6x6.6"
+  "whatsapp_text": "Hola, me interesa la casa Max 5.6x6.6",
+  "options": {
+    "ins_roof": 2700,
+    "tegola": 880,
+    "ins_wall": 5100
+  }
 }

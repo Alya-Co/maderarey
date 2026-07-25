@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "8x9",
   "price": 0,
-  "description": "kit aislamiento tejado 100mm. CTE - 3630\ntegola - 1200\nkit aislamiento tejado 100mm. CTE - 5800\nEsta casa de verano de 57 m2 cuenta con 2 dormitorios, una amplia sala de estar y un baño, lo que la convierte en el refugio perfecto para una pequeña familia o grupo de amigos. Con su diseño acogedor y amplio espacio, ofrece un ambiente cómodo y acogedor para una escapada relajante.",
+  "description": "Esta casa de verano de 57 m2 cuenta con 2 dormitorios, una amplia sala de estar y un baño, lo que la convierte en el refugio perfecto para una pequeña familia o grupo de amigos. Con su diseño acogedor y amplio espacio, ofrece un ambiente cómodo y acogedor para una escapada relajante.",
   "specs": {
     "Espesor de las paredes (mm)": "68",
     "Ancho (m)": "8",
@@ -35,5 +35,9 @@
     "107-Olga_8x9_68mm_fp_58916.jpg",
     "107-Olga_8x9_68mm_fp_58916.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Orlando  olga 8x9"
+  "whatsapp_text": "Hola, me interesa la casa Orlando  olga 8x9",
+  "options": {
+    "ins_roof": 5800,
+    "tegola": 1200
+  }
 }

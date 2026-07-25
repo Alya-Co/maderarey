@@ -565,7 +565,12 @@ function renderHouse(d) {
 
   // Description — use from data.json, clean up
   const desc = d.description
-    ? d.description.split('\n').filter(l => l.trim().length > 20).slice(0,3).join(' ')
+    ? d.description.split('\n').filter(l => {
+        const t = l.trim();
+        if (t.length <= 20) return false;
+        if (/-\s*\d+\s*$/.test(t)) return false; // drop price-code lines like "... CTE - 4300"
+        return true;
+      }).slice(0,3).join(' ')
     : '';
   document.getElementById('product-desc').textContent = desc;
 
@@ -627,14 +632,13 @@ function formatPrice(n) {
 }
 
 function updateTotal() {
-  const opts = ['opt-paint','opt-roof','opt-gutter','opt-ins-roof','opt-ins-floor','opt-ins-wall'];
-  const tags = ['tag-paint','tag-roof','tag-gutter','tag-ins-roof','tag-ins-floor','tag-ins-wall'];
+  const opts = ['opt-ins-roof','opt-ins-wall','opt-roof'];
   let extras = 0;
 
-  opts.forEach((id, i) => {
-    const val = parseInt(document.getElementById(id).value) || 0;
-    extras += val;
-    document.getElementById(tags[i]).textContent = val > 0 ? `+${val.toLocaleString('es-ES')}€` : '+0€';
+  opts.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el || !el.checked) return;
+    extras += parseInt(el.value) || 0;
   });
 
   const total = basePrice + extras;
@@ -645,25 +649,24 @@ function updateTotal() {
 function updateWAText() {
   if (!houseData) return;
 
-  const paint = document.getElementById('opt-paint');
-  const roof = document.getElementById('opt-roof');
-  const gutter = document.getElementById('opt-gutter');
   const insRoof = document.getElementById('opt-ins-roof');
-  const insFloor = document.getElementById('opt-ins-floor');
   const insWall = document.getElementById('opt-ins-wall');
-  const assembly = document.getElementById('opt-assembly');
+  const roof = document.getElementById('opt-roof');
 
   const opts = [];
-  if (parseInt(paint.value)) opts.push(paint.options[paint.selectedIndex].text.split('(')[0].trim());
-  if (parseInt(roof.value)) opts.push(roof.options[roof.selectedIndex].text.split('(')[0].trim());
-  if (parseInt(gutter.value)) opts.push(gutter.options[gutter.selectedIndex].text.split('(')[0].trim());
-  if (parseInt(insRoof.value)) opts.push(insRoof.options[insRoof.selectedIndex].text.split('(')[0].trim());
-  if (parseInt(insFloor.value)) opts.push(insFloor.options[insFloor.selectedIndex].text.split('(')[0].trim());
-  if (parseInt(insWall.value)) opts.push(insWall.options[insWall.selectedIndex].text.split('(')[0].trim());
-  if (assembly.value === 'yes') opts.push('Montaje profesional');
+  if (insRoof && insRoof.checked) opts.push('Aislamiento de techo 100mm');
+  if (insWall && insWall.checked) opts.push('Aislamiento de paredes 100mm');
+  if (roof && roof.checked) {
+    const colorEl = document.querySelector('input[name="roof-color"]:checked');
+    const color = colorEl ? colorEl.value : '';
+    opts.push(`Teja de betún${color ? ' (' + color + ')' : ''}`);
+  }
 
-  const total = basePrice + ['opt-paint','opt-roof','opt-gutter','opt-ins-roof','opt-ins-floor','opt-ins-wall']
-    .reduce((sum, id) => sum + (parseInt(document.getElementById(id).value) || 0), 0);
+  const total = basePrice + ['opt-ins-roof','opt-ins-wall','opt-roof']
+    .reduce((sum, id) => {
+      const el = document.getElementById(id);
+      return sum + (el && el.checked ? (parseInt(el.value) || 0) : 0);
+    }, 0);
 
   let text = `Hola, me interesa la casa de madera ${houseData.name} (${houseData.size || ''}).`;
   text += `\n\nPrecio base: ${formatPrice(basePrice)}`;

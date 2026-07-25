@@ -631,6 +631,13 @@ function formatPrice(n) {
   return n.toLocaleString('es-ES') + '€';
 }
 
+function toggleRoofColor() {
+  const checkbox = document.getElementById('opt-roof');
+  const colorsBlock = document.getElementById('roof-colors');
+  if (!checkbox || !colorsBlock) return;
+  colorsBlock.style.display = checkbox.checked ? 'block' : 'none';
+}
+
 function updateTotal() {
   const opts = ['opt-ins-roof','opt-ins-wall','opt-roof'];
   let extras = 0;

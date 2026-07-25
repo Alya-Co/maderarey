@@ -1,0 +1,31 @@
+{
+  "name": "Nagano",
+  "thickness": "58mm",
+  "size": "10.14x8.04",
+  "price": 33700,
+  "description": "Nagano es una casa de dos plantas con 81,2 m² de espacio interior. Construida con paredes de 58 mm y suelo de tablones de 19 mm, es ideal para uso residencial o para alojar huéspedes.",
+  "specs": {
+    "Huella de la base (m)": "9,94 x 7,84",
+    "Ancho x largo del edificio (m)": "10,14 x 8,04",
+    "Superficie interior (m²)": "81.2",
+    "Altura del edificio (m, hasta la cima de la cresta)": "4,93",
+    "Voladizo del tejado": "0,4",
+    "Superficie del tejado (m²)": "103.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2,57",
+    "Superficie de la pared exterior (m²)": "129.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "8.1",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Nagano_10_14x8_04_98840.jpg",
+    "107-Nagano_10_14x8_04_68mm_3d__3__42047.jpg",
+    "107-Nagano_10_14x8_04_68mm_1fp_09599.jpg",
+    "107-Nagano_10_14x8_04_68mm_3d__2__23353.jpg",
+    "107-Nagano_10_14x8_04_68mm_2fp_95465.jpg",
+    "107-Nagano_10_14x8_04_68mm_06282.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Nagano 10.14x8.04"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Iberica T3",
+  "thickness": "68mm",
+  "size": "7.92x11.84",
+  "price": 27300,
+  "description": "kit aislamiento tejado 100mm. CTE - 4550\ntegola - 1450\nkit aislamiento pared 100mm CTE - 6100\nConstruida para el confort, esta casa cuenta con paredes de 68 mm, suelo de 28 mm y un tejado a dos aguas con una altura máxima de 3,31 m. Incluye 73,8 m² de espacio interior más una terraza de 11 m², con 3 dormitorios, una cocina independiente y un amplio salón. Camión completo: 2 unidades. Dimensiones del paquete: (890x5600x1200), (890x5600x1200), (880x5500x1200), (880x5800x1200), (860x6100x1200), (600x4800x1200), (ST600x2200x1700)",
+  "specs": {
+    "Huella de la base (m)": "7,72 x 11,64",
+    "Ancho x largo del edificio (m)": "7,92 x 11,84",
+    "Superficie interior (m²)": "73.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.24",
+    "Voladizo del tejado": "0.1",
+    "Superficie del tejado (m²)": "102.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "90.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "11.0",
+    "Número de puertas": "6",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "8",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 198 x 150, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "6",
+    "Garantía": "60 meses"
+  },
+  "photos": [],
+  "whatsapp_text": "Hola, me interesa la casa Iberica T3 7.92x11.84"
+}

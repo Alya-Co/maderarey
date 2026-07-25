@@ -1,0 +1,40 @@
+{
+  "name": "Sweden",
+  "thickness": "58mm",
+  "size": "7.5x13.5",
+  "price": 46000,
+  "description": "Esta encantadora casa de 110 m2 cuenta con ventanas altas en el primer piso y ventanas triangulares en el segundo, que añaden mucha luz natural. Con 3 amplios dormitorios, una espaciosa sala de estar, baño, cocina y acogedor comedor con acceso a la terraza, es la combinación perfecta de comodidad y estilo. Además, el tragaluz añade aún más luminosidad a esta increíble casa.",
+  "specs": {
+    "Espesor de las paredes (mm)": "58",
+    "Ancho (m)": "7.5",
+    "Largo (m)": "13.5",
+    "Superficie total construida (m²)": "101.25",
+    "Superficie interior (habitable) (m²)": "109.4",
+    "Área del techo (m2)": "128.3",
+    "Voladizo del techo (m)": "0.3",
+    "Base del techo": "Tablas de techo de 19mm con lengüeta y ranura",
+    "Tablas del suelo machihembradas": "19 mm",
+    "Tipo de techo": "Techo a dos aguas",
+    "Altura total (m)": "5.67",
+    "Altura de la pared lateral (m)": "4.12/2.30",
+    "Puertas": "6",
+    "Medidas de la puerta (m)": "1 single con vidrio al 100% de 1.98x0.85 m, 4 singles completos de madera de 1.98x0.85 m, 1 cuádruple con vidrio al 100% de 1.98x3 m",
+    "Ventanas": "19",
+    "Medidas de la ventana (m)": "1 single de 0.92x0.7 m, 6 singles de 1.98x0.85 m, 3 dobles de 0.92x1.3 m, 4 trapezoides de 1.6x1.5 m, 5 tragaluces",
+    "Acristalamiento": "doble acristalamiento 4-16-4",
+    "Contraventanas": "No",
+    "Cerraduras de puertas": "Cerradura de cilindro con 2 llaves",
+    "Número de estancias": "5",
+    "Garantía (años)": "5",
+    "Terraza": "Sí",
+    "Número de plantas": "2 plantas"
+  },
+  "photos": [
+    "107-Sweden_7_5x13_5_3d__3__84184.jpg",
+    "107-Sweden_7_5x13_5_3d__4__80429.jpg",
+    "107-Sweden_7_5x13_5_3d__1__29436.jpg",
+    "107-Sweden_7_5x13_5_68mm_fp-1_48861.jpg",
+    "107-Sweden_7_5x13_5_3d__2__50306.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Sweden 7.5x13.5"
+}

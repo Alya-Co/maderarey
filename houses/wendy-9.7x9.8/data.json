@@ -1,0 +1,36 @@
+{
+  "name": "Wendy",
+  "thickness": "68mm",
+  "size": "9.7x9.8",
+  "price": 36000,
+  "description": "kit aislamiento tejado 100mm. CTE - 5000\ntegola -1700\nkit aislamiento pared 100mm. CTE - 8000\nWendy tiene una superficie de 126 m² con tejado a dos aguas y paredes de 68 mm de espesor, incluyendo el ático. Cuenta con 5 habitaciones y suelo de madera de 28 mm, diseñado para ofrecer confort y abundante luz natural.",
+  "specs": {
+    "Huella de la base (m)": "9,5 x 9,6",
+    "Ancho x largo del edificio (m)": "9,7 x 9,8",
+    "Superficie interior (m²)": "72.9",
+    "Altura del edificio (m, hasta la cima de la cresta)": "4.59",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "112.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.7",
+    "Superficie de la pared exterior (m²)": "114.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "13.7",
+    "Número de puertas": "6",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 192 x 160",
+    "Número de ventanas": "8",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130",
+    "Número de habitaciones": "6",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Wendy_9_7x9_8_3d__2__88986.jpg",
+    "107-Wendy_9_7x9_8_3d__3__91845.jpg",
+    "107-Wendy_9_7x9_8_68mm_fp_11138.jpg",
+    "107-Wendy_9_7x9_8_68mm_76388.jpg",
+    "107-Wendy_9_7x9_8_3d__1__77373.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Wendy 9.7x9.8"
+}

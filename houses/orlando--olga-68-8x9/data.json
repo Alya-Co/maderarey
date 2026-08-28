@@ -1,0 +1,43 @@
+{
+  "name": "Orlando  olga",
+  "thickness": "68mm",
+  "size": "8x9",
+  "price": 21000,
+  "description": "Esta casa de verano de 57 m2 cuenta con 2 dormitorios, una amplia sala de estar y un baño, lo que la convierte en el refugio perfecto para una pequeña familia o grupo de amigos. Con su diseño acogedor y amplio espacio, ofrece un ambiente cómodo y acogedor para una escapada relajante.",
+  "specs": {
+    "Espesor de las paredes (mm)": "68",
+    "Ancho (m)": "8",
+    "Largo (m)": "9",
+    "Superficie total construida (m²)": "72",
+    "Superficie interior (habitable) (m²)": "57.6",
+    "Área del techo (m2)": "81",
+    "Voladizo del techo (m)": "0.3",
+    "Base del techo": "Tablas de techo de 19mm con lengüeta y ranura",
+    "Tablas del suelo machihembradas": "19 mm",
+    "Tipo de techo": "Techo a dos aguas",
+    "Altura total (m)": "3.31",
+    "Altura de la pared lateral (m)": "2.30",
+    "Puertas": "4",
+    "Medidas de la puerta (m)": "1 single con vidrio al 50% de 1.98x0.85 m, 3 singles completos de madera de 1.98x0.85 m",
+    "Ventanas": "6",
+    "Medidas de la ventana (m)": "1 single de 0.52x0.5 m, 1 single de 0.92x0.7 m, 4 dobles de 0.92x1.3 m",
+    "Acristalamiento": "doble acristalamiento 4-16-4",
+    "Contraventanas": "No",
+    "Cerraduras de puertas": "Cerradura de cilindro con 2 llaves",
+    "Número de estancias": "4",
+    "Garantía (años)": "5",
+    "Terraza": "Sí"
+  },
+  "photos": [
+    "107-Olga_8x9_3d_1_33572.jpg",
+    "107-Olga_8x9_3d_2_68730.jpg",
+    "107-Olga_8x9_68mm_63521.jpg",
+    "107-Olga_8x9_68mm_fp_58916.jpg",
+    "107-Olga_8x9_68mm_fp_58916.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Orlando  olga 8x9",
+  "options": {
+    "ins_roof": 5800,
+    "tegola": 1200
+  }
+}

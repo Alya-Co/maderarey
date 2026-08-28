@@ -1,0 +1,40 @@
+{
+  "name": "Scarlett",
+  "thickness": "68mm",
+  "size": "7x10.2",
+  "price": 21100,
+  "description": "Scarlett ofrece 59 m² de espacio interior con paredes de 68 mm, suelo de 28 mm y techo a dos aguas con una altura máxima de 3,24 m. La distribución incluye 3 dormitorios, una sala de estar y un baño, lo que la hace versátil e ideal para familias. Camión completo: 2 unidades. Dimensiones del paquete: (850x5960x1200), (820x5960x1200), (850x5900x1200), (880x5600x1200), (850x3900x1200)",
+  "specs": {
+    "Ancho x largo del edificio (m)": "7 x 10",
+    "Superficie interior (m²)": "59.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.24",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "78.9",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "92.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "5.3",
+    "Número de puertas": "5",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento"
+  },
+  "photos": [
+    "107-Scarlett_7x10_2_3d_1_19270.jpg",
+    "107-Scarlett_7x10_2_3d_2_13395.jpg",
+    "107-Scarlett_7x10_2_3d_3_70633.jpg",
+    "107-Scarlett_7x10_2_68mm_05333.jpg",
+    "107-Scarlett_7x10_2_68mm_81168.jpg",
+    "107-Scarlett_7x10_2_68mm_fp_78593.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Scarlett 7x10.2",
+  "options": {
+    "ins_roof": 3480,
+    "tegola": 1200,
+    "ins_wall": 6020
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Gustav A WC",
+  "thickness": "44mm",
+  "size": "6x6",
+  "price": 15000,
+  "description": "Consta de 46 m² de espacio interior y una terraza de 18,5 m², construida con paredes de 44 mm, suelo de madera de 19 mm y tejado a dos aguas de 4,12 m de altura. Dispone de 2 dormitorios, un altillo y un aseo: compacta pero completa.",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 5,8",
+    "Ancho x largo del edificio (m)": "6x6",
+    "Superficie interior (m²)": "46.0",
+    "Altura del edificio (m, hasta la cima de la cresta)": "4.12",
+    "Voladizo del tejado": "2.0",
+    "Superficie del tejado (m²)": "60.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.43",
+    "Superficie de la pared exterior (m²)": "62.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "18.5",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Persianas": "Sí",
+    "Número de habitaciones": "5",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Gustav_A_6x6_WC_3d_41979.jpg",
+    "107-Gustav_A_6x6_3d_2_78767.jpg",
+    "107-Gustav_A_6x6_WC_68mm_fp_52889.jpg",
+    "107-Gustav_A_6x6_series_1_07229.jpg",
+    "107-Gustav_A_6x6_3d_1_20529.jpg",
+    "107-Gustav_A_6x6_44mm_04255.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Gustav A WC 6x6",
+  "options": {
+    "ins_roof": 880,
+    "ins_wall": 4300
+  },
+  "category": "premium"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Athena",
+  "thickness": "68mm",
+  "size": "5.86x11.16",
+  "price": 38200,
+  "description": "Esta villa, con una superficie de 86,1 m², está construida con paredes de 68 mm y suelos de tablones de 28 mm. Su distribución en varias habitaciones permite un uso residencial permanente con proporciones elegantes.",
+  "specs": {
+    "Huella de la base (m)": "5,66 x 11,16",
+    "Ancho x largo del edificio (m)": "5,86 x 11,26",
+    "Superficie interior (m²)": "86.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "5.6",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "74.5",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "4.59",
+    "Superficie de la pared exterior (m²)": "124.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "19.3",
+    "Superficie de balcones (m²)": "10.7",
+    "Número de puertas": "11",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "11",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "92 x 70,92 x 130",
+    "Número de habitaciones": "9",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Athena_5_86x11_16_68mm_09451.jpg",
+    "107-Athena_5_858x11_16_3d_2_13924.jpg",
+    "107-Athena_5_86x11_16_68mm_fp-1_20100.jpg",
+    "107-Athena_5_86x11_16_68mm_fp-2_86004.jpg",
+    "107-Athena_5_86x11_16-optimized_05868.jpg",
+    "107-Athena_5_858x11_16_3d_1_44380.jpg",
+    "107-Athena_5_858x11_16_3d_2_13924.jpg",
+    "107-Athena_5_858x11_16_3d_3_63261.jpg",
+    "107-Athena_5_858x11_16_3d_4_41048.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Athena 5.86x11.16",
+  "options": {
+    "ins_roof": 3400,
+    "tegola": 1100,
+    "ins_wall": 8800
+  }
+}

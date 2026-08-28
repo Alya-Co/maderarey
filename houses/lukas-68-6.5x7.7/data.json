@@ -1,0 +1,33 @@
+{
+  "name": "Lukas",
+  "thickness": "68mm",
+  "size": "6.5x7.7",
+  "price": 15700,
+  "description": "Compacta pero funcional, Lukas ofrece 37,8 m² de espacio interior con paredes de 68 mm, suelo de 28 mm y un tejado a dos aguas de 3,11 m de altura. Incluye 2 dormitorios, una zona de estar/cocina integrada y un baño. Camión completo: 4 unidades. Dimensiones del paquete: (870x6000x1200), (870x6000x1200), (830x6000x1200",
+  "specs": {
+    "Ancho x largo del edificio (m)": "6,5 x 7,7",
+    "Superficie interior (m²)": "37.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.11",
+    "Voladizo del tejado": "0,6",
+    "Superficie del tejado (m²)": "52.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "64.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Simple.",
+    "Ancho x alto de las puertas (cm)": "198 x 85"
+  },
+  "photos": [
+    "107-Lukas_6_5x7_7_3d_3_mueble.jpg",
+    "107-Lukas_6_5x7_7_68mm_distr.jpg",
+    "107-Lukas_6_5x7_7_3d_exter.jpg",
+    "lukas.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Lukas ",
+  "options": {
+    "ins_roof": 2300,
+    "tegola": 840,
+    "ins_wall": 4400
+  }
+}

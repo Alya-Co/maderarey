@@ -1,0 +1,34 @@
+{
+  "name": "Ottawa",
+  "thickness": "44mm",
+  "size": "6x4.5",
+  "price": 7000,
+  "description": "cubierta EPDM - 1500\nEsta casita de jardín cuenta con paredes de 44 mm de grosor y suelo de madera de 19 mm, ofreciendo 23,8 m² de espacio interior. Con doble acristalamiento, cuatro ventanas y una distribución moderna y funcional, es ideal para una espaciosa oficina en casa, un estudio o una habitación de invitados.",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 4,3",
+    "Ancho x largo del edificio (m)": "6 x 4,5",
+    "Superficie interior (m²)": "23.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.36",
+    "Voladizo del tejado": "0,08",
+    "Superficie del tejado (m²)": "27.3",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "41.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Ottawa_6x4_5_44mm-P_3d_exter_2.jpg",
+    "107-Ottawa_6x4_5_44mm-P_3d_mueble.jpg",
+    "107-Ottawa_6x4_5_44mm_distr.jpg",
+    "107-Ottawa_6x4_5_44mm-E_20910.jpg",
+    "107-Ottawa_6x4_5_38015.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Ottawa 6x4.5",
+  "options": {
+    "ins_roof": 1260,
+    "ins_wall": 3300
+  },
+  "category": "premium"
+}

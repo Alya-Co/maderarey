@@ -1,0 +1,42 @@
+{
+  "name": "Nuuk",
+  "thickness": "44mm",
+  "size": "5x3.84",
+  "price": 5000,
+  "description": "cubierta EPDM - 1150\nNuuk es una oficina en casa compacta con techo plano, paredes de 44 mm y suelo de 19 mm, que ofrece 12,8 m² de espacio interior. Su diseño minimalista es perfecto para una pequeña oficina o un rincón de jardín. Camiòn completo: 10 unidades. Dimensiones del paquete: (820 x 5200 x 1200), (ST600 x 2200 x 1720)",
+  "specs": {
+    "Huella de la base (m)": "4,8 x 3,64",
+    "Ancho x largo del edificio (m)": "5 x 3,84",
+    "Superficie interior (m²)": "12.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.43",
+    "Voladizo del tejado": "0,94",
+    "Superficie del tejado (m²)": "20.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "35.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "3.8",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Cuadruplicar",
+    "Ancho x alto de las puertas (cm)": "198 x 300",
+    "Número de ventanas": "1",
+    "Tipo de ventanas": "Doble",
+    "Ancho x alto de la ventana (cm)": "198 x 150",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Nuuk_5x3_844_4_-_Photo_58022.jpg",
+    "107-Nuuk_5x3_844_5_-_Photo_29977.jpg",
+    "107-Nuuk_5x3_844_floor_plan_75363.jpg",
+    "107-Nuuk_5x3_844_44mm_41288.jpg",
+    "107-Nuuk_5x3_844_dazyta_2_-_Photo_98939.jpg",
+    "107-Nuuk_5x3_84_cdd5_75010.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Nuuk 5x3.84",
+  "options": {
+    "ins_roof": 950
+  },
+  "category": "premium"
+}

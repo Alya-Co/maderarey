@@ -1,0 +1,41 @@
+{
+  "name": "Talinn",
+  "thickness": "68mm",
+  "size": "5x10",
+  "price": 33000,
+  "description": "Talinn ofrece 93,4 m² de superficie interior con techo a dos aguas y paredes de 68 mm. Incluye 4 habitaciones y suelo de tablones de 28 mm, ofreciendo una distribución modular para una vida flexible. Camión completo: 2 unidades. Dimensiones del paquete: (870x6000x1200), (870x6000x1200), (870x6000x1200), (850x6000x1200), (870x4700x1200), (760x5700x1200), (500x3900x1200)",
+  "specs": {
+    "Huella de la base (m)": "4,8x9,8",
+    "Ancho x largo del edificio (m)": "5x10",
+    "Superficie interior (m²)": "93.4",
+    "Altura del edificio (m, hasta la cima de la cresta)": "5.5",
+    "Voladizo del tejado": "0.0",
+    "Superficie del tejado (m²)": "117.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2,77",
+    "Superficie de la pared exterior (m²)": "82.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "17.2",
+    "Superficie de balcones (m²)": "10.8",
+    "Número de puertas": "9",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "6",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Talinn_5x10_3d_1_83415.jpg",
+    "107-Talinn_5x10_3d_2_66119.jpg",
+    "107-Talinn_5x10_3d_3_58680.jpg",
+    "107-Talinn_5x10_3d_4_06779.jpg",
+    "107-Talinn_5x10_68mm_99120.jpg",
+    "107-Talinn_5x10_68mm_fp-1_86475.jpg",
+    "107-Talinn_5x10_68mm_fp-2_05818.jpg",
+    "107-Talinn_5x10_46955.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Talinn 5x10"
+}

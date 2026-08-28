@@ -1,0 +1,39 @@
+{
+  "name": "Bergen",
+  "thickness": "44mm",
+  "size": "4.2x8",
+  "price": 8000,
+  "description": "kit aislamiento tejado 1500\ntegola 730\nBergen ofrece una distribución elegante y alargada con 16,8 m² de espacio interior. Construido con paredes de 44 mm y suelo de 19 mm, es ideal para usar como estudio moderno o sala de estar en el jardín. Camión completo: 7 unidades. Dimensiones del paquete: (870 x 6000 x 1200), (550 x 4400 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "4 x 7,8",
+    "Ancho x largo del edificio (m)": "4,2 x 8",
+    "Superficie interior (m²)": "16.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.43",
+    "Voladizo del tejado": "0.1",
+    "Superficie del tejado (m²)": "34.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "36.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "12.9",
+    "Número de puertas": "2",
+    "Tipo de puertas": "Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 160",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Soltero",
+    "Ancho x alto de la ventana (cm)": "39 x 70, 198 x 85",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "23-bergen_6_00425.jpg",
+    "23-bergen_1_25286.jpg",
+    "23-Bergen_4_2x8_44mm_fp_09347.jpg",
+    "23-Bergen_4_2x8_44mm_43851.jpg",
+    "23-bergen_2_70094.jpg",
+    "23-Bergen_4_2x8_b842_68377.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Bergen 4.2x8",
+  "category": "premium"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Almeria",
+  "thickness": "68mm",
+  "size": "6x8.87",
+  "price": 16050,
+  "description": "Este elegante chalet abarca 41,8 m² y cuenta con paredes de 68 mm y suelos de 28 mm. Con techo a dos aguas y amplios ventanales, está diseñado para vivienda permanente o como estudio grande. Camión completo 3 casas. Tamaño del paquete (890x6000x1200), (890x6000x1200), (890x6000x1200), (300x3300x1200",
+  "specs": {
+    "Building width x length (m)": "6 x 8,87",
+    "Internal area (m²)": "41.8",
+    "Building height (m, to the top of the ridge)": "3.04",
+    "Roof overhang": "0.2",
+    "Roof area (m²)": "59.0",
+    "Roof boards thickness (mm)": "19",
+    "Side wall height (m)": "2.3",
+    "External wall area (m²)": "70.0",
+    "Floor boards thickness (mm)": "28.0",
+    "Terraces surface (m²)": "5.2",
+    "Number of doors": "4",
+    "Doors type": "Single",
+    "Doors width x height (cm)": "198 x 85",
+    "Number of windows": "5",
+    "Windows type": "Double, Single",
+    "Windows width x height (cm)": "92 x 130,92 x 70"
+  },
+  "photos": [
+    "68_Almeria_aspecto_ext.jpg",
+    "107-Almeria_6x8_mueble.jpg",
+    "68_Almeria_distrib.jpg",
+    "107-Almeria_6x8_87_4_39491.jpg",
+    "107-Almeria_6x8_87_3d_1_80795.jpg",
+    "107-Almeria_6x8_87_68mm_99351.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Almeria 6x8.87",
+  "options": {
+    "ins_roof": 2600,
+    "tegola": 850,
+    "ins_wall": 4800
+  }
+}

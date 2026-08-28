@@ -1,0 +1,41 @@
+{
+  "name": "Linus WC",
+  "thickness": "44mm",
+  "size": "5x5",
+  "price": 6100,
+  "description": "Esta caseta de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 21,9 m² de espacio interior. Con doble acristalamiento y un aseo integrado, es ideal como oficina de jardín totalmente funcional, habitación de invitados o estudio con todas las comodidades.",
+  "specs": {
+    "Huella de la base (m)": "4,8 x 4,8",
+    "Ancho x largo del edificio (m)": "5 x 5",
+    "Superficie interior (m²)": "22.0",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.7",
+    "Voladizo del tejado": "1.0",
+    "Superficie del tejado (m²)": "32.9",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.09",
+    "Superficie de la pared exterior (m²)": "40.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "2",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "3",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "23-Linus_5x5_WC_44mm_fp_03830.jpg",
+    "107-Linus_5_series_44mm-P_01399.jpg",
+    "107-Linus_5_series_44mm-P_3d_95354.jpg",
+    "107-Linus_5_series_44mm_2_22454.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Linus WC 5x5",
+  "options": {
+    "ins_roof": 1510,
+    "tegola": 520,
+    "ins_wall": 3000
+  },
+  "category": "premium"
+}

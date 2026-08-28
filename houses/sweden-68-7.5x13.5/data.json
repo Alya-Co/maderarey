@@ -1,0 +1,31 @@
+{
+  "name": "Sweden",
+  "thickness": "68mm",
+  "size": "7.5x13.5",
+  "price": 50700,
+  "description": "Esta espaciosa villa ofrece 109,4 m² de superficie interior con tejado a dos aguas y paredes de 68 mm de espesor. Incluye 6 habitaciones y cuenta con suelos de madera de 28 mm de grosor para mayor comodidad durante todo el año.",
+  "specs": {
+    "Huella de la base (m)": "7,3x13,3",
+    "Ancho x largo del edificio (m)": "7,5x13,5",
+    "Superficie interior (m²)": "109.4",
+    "Altura del edificio (m, hasta la cima de la cresta)": "5,67",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "128.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "139.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "15.2",
+    "Superficie de balcones (m²)": "0.0",
+    "Número de habitaciones": "5",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Sweden_7_5x13_5_3d_3_84184.jpg",
+    "107-Sweden_7_5x13_5_3d_4_80429.jpg",
+    "107-Sweden_7_5x13_5_3d_1_29436.jpg",
+    "107-Sweden_7_5x13_5_68mm_fp-1_48861.jpg",
+    "107-Sweden_7_5x13_5_3d_2_50306.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Sweden 7.5x13.5"
+}

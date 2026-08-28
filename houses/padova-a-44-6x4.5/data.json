@@ -1,0 +1,43 @@
+{
+  "name": "Padova A",
+  "thickness": "44mm",
+  "size": "6x4.5",
+  "price": 7700,
+  "description": "Caseta de jardín de alta calidad con techo a dos aguas, paredes de 44 mm y suelo de 19 mm, con una superficie de 23,8 m². Ideal para uso multifuncional en el jardín o como vivienda ligera. Camiòn completo de 8 unidades. Dimensiones del paquete: (870 x 6000 x 1200 mm), (500 x 4300 x 1200 mm).",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 4,3",
+    "Ancho x largo del edificio (m)": "6 x 4,5",
+    "Superficie interior (m²)": "23.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,84",
+    "Voladizo del tejado": "1,58",
+    "Superficie del tejado (m²)": "38.9",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.09",
+    "Superficie de la pared exterior (m²)": "41.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "8.3",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "5",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "198 x 150,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Padova_A_6x4_5_44mm-E_92230.jpg",
+    "107-Padova_A_6x4_5_44mm_fp_89699.jpg",
+    "107-Padova_A_6x4_5_4mm-P_3d_2_87704.jpg",
+    "107-Padova_A_6x4_5_4mm-P_3d_1_21138.jpg",
+    "107-Padova_A_6x4_5_74333.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Padova A 6x4.5",
+  "options": {
+    "ins_roof": 1800,
+    "tegola": 680,
+    "ins_wall": 3300
+  },
+  "category": "premium"
+}

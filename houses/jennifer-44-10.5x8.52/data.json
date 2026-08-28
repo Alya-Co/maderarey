@@ -1,0 +1,43 @@
+{
+  "name": "Jennifer",
+  "thickness": "44mm",
+  "size": "10.5x8.52",
+  "price": 18800,
+  "description": "Con paredes de 44 mm, suelo de madera de 18 mm y un tejado a dos aguas de 3,3 m de altura, Jennifer ofrece 65,4 m² de espacio interior y una terraza de 16,6 m². La distribución incluye dos dormitorios, una amplia zona de estar/cocina  y un baño, ideal para residencia permanente.",
+  "specs": {
+    "Huella de la base (m)": "10,3 x 8,32",
+    "Ancho x largo del edificio (m)": "10,5 x 8,52",
+    "Superficie interior (m²)": "81.0",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.3",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "98.2",
+    "Espesor de las tablas del techo (mm)": "28",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "96.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "16.6",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "5",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Jennifer_10_5x8_52_2_63044.jpg",
+    "107-Jennifer_10_5x8_52_3d_2_64172.jpg",
+    "107-Jennifer_10_5x8_52_68mm_fp_42864.jpg",
+    "107-Jennifer_10_5x8_52_68mm_08948.jpg",
+    "107-Jennifer_10_5x8_52_3d_1_30857.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Jennifer 10.5x8.52",
+  "options": {
+    "ins_roof": 4400,
+    "tegola": 1350,
+    "ins_wall": 6600
+  },
+  "category": "premium"
+}

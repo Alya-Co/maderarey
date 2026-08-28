@@ -1,0 +1,40 @@
+{
+  "name": "Louise",
+  "thickness": "44mm",
+  "size": "6x6",
+  "price": 11200,
+  "description": "Esta cabaña de 32,2 m² combina simetría y sencillez, construida con paredes de 44 mm de grosor y suelo de tablones de 19 mm. Su tejado a dos aguas y su distribución diáfana la hacen ideal para vivir durante las temporadas de verano, como estudio o para alojar invitados.",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 5,8",
+    "Ancho x largo del edificio (m)": "6 x 6",
+    "Superficie interior (m²)": "32.2",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.04",
+    "Voladizo del tejado": "1.7",
+    "Superficie del tejado (m²)": "50.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "54.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "8.3",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Persianas": "Sí",
+    "Número de habitaciones": "4",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Louise_6x6_44mm_distr,_dimens.jpg",
+    "107-Louise_6x6_68mm_exter_2.jpg",
+    "107-Louise_6x6_68mm_9_mueble.jpg",
+    "107-Louise_6x6_44mm_exter.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Louise 6x6",
+  "options": {
+    "ins_roof": 2300,
+    "tegola": 750,
+    "ins_wall": 3900
+  },
+  "category": "premium"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Vienna",
+  "thickness": "68mm",
+  "size": "8.3x11",
+  "price": 32600,
+  "description": "La caseta prefabricada Vienna ofrece 103,9 m² de espacio interior con techo a dos aguas y paredes de madera de 68 mm. Incluye 4 habitaciones y suelo de tablones de 28 mm, ofreciendo una distribución limpia y elegante. Camión completo: 2 unidades. Dimensiones del paquete: (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6100x1200), (880x5800x1200)",
+  "specs": {
+    "Huella de la base (m)": "8,1 x 10,8",
+    "Ancho x largo del edificio (m)": "8,3 x 11",
+    "Superficie interior (m²)": "83.2",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.71",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "103.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.56",
+    "Superficie de la pared exterior (m²)": "96.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "54.2",
+    "Número de puertas": "6",
+    "Tipo de puertas": "Doble, Individual",
+    "Ancho x alto de las puertas (cm)": "198 x 160, 198 x 85",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 52 x 50, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "4",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Vienna_8_3x11_3d_1_14120.jpg",
+    "107-Vienna_8_3x11_3d_2_92117.jpg",
+    "107-Vienna_8_3x11_3d_3_15700.jpg",
+    "107-Vienna_8_3x11_68mm_52494.jpg",
+    "107-Vienna_8_3x11_68mm_fp_81779.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Vienna 8.3x11",
+  "options": {
+    "ins_roof": 4560,
+    "tegola": 1600,
+    "ins_wall": 6600
+  }
+}

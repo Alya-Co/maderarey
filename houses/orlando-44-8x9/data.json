@@ -1,0 +1,44 @@
+{
+  "name": "Orlando",
+  "thickness": "44mm",
+  "size": "8x9",
+  "price": 15200,
+  "description": "Orlando es una espaciosa cabaña estilo villa con 57,6 m² de superficie interior. Construida con paredes de 44 mm y suelo de 19 mm, está diseñada para residencia permanente o para disfrutar de una vida de lujo en el jardín. Paquete completo: 7 unidades. Dimensiones del paquete: (880 x 6000 x 1200), (860 x 6050 x 1200).",
+  "specs": {
+    "Huella de la base (m)": "7,8 x 8,8",
+    "Ancho x largo del edificio (m)": "8 x 9",
+    "Superficie interior (m²)": "57.6",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.31",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "80.7",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "83.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "7.6",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Orlando_8x9_-_Picture1_82016.jpg",
+    "107-Orlando_8x9_10_86089.jpg",
+    "107-Orlando_8x9_68mm_fp_39560.jpg",
+    "107-Orlando_8x9_3_55831.jpg",
+    "107-Orlando_8x9_4_36056.jpg",
+    "107-Orlando_8x9_2_02814.jpg",
+    "107-Orlando_8x9_68mm_25164.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Orlando 8x9",
+  "options": {
+    "ins_roof": 3700,
+    "tegola": 1210,
+    "ins_wall": 5800
+  },
+  "category": "premium"
+}

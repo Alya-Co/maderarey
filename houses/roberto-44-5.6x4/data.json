@@ -1,0 +1,40 @@
+{
+  "name": "Roberto",
+  "thickness": "44mm",
+  "size": "5.6x4",
+  "price": 6500,
+  "description": "Cabaña premium con techo a dos aguas, paredes de 44 mm y suelo de 19 mm, que ofrece 19,5 m². Ventanas de doble acristalamiento y un diseño elegante, ideal para uso residencial.",
+  "specs": {
+    "Huella de la base (m)": "5,4 x 3,8",
+    "Ancho x largo del edificio (m)": "5,6 x 4",
+    "Superficie interior (m²)": "19.5",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,97",
+    "Voladizo del tejado": "1.0",
+    "Superficie del tejado (m²)": "30.7",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "42.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "2",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Roberto_5_6x4_44mm-E_08394.jpg",
+    "107-Roberto_5_6x4_44mm-2_48927.jpg",
+    "107-Roberto_5_6x4_44mm_fp_24315.jpg",
+    "107-Roberto_5_6x4_44mm-P_3d_52423.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Roberto 5.6x4",
+  "options": {
+    "ins_roof": 1450,
+    "tegola": 450
+  },
+  "category": "premium"
+}

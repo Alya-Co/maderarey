@@ -1,0 +1,41 @@
+{
+  "name": "Trento",
+  "thickness": "44mm",
+  "size": "6x5",
+  "price": 7000,
+  "description": "Con paredes de 44 mm y suelo de 19 mm, esta cabaña de 26,9 m² ofrece una distribución equilibrada bajo un tejado a dos aguas. Sus ventanas de doble acristalamiento y su sólida construcción la hacen ideal para uso residencial o como estudio.",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 4,8",
+    "Ancho x largo del edificio (m)": "6 x 5",
+    "Superficie interior (m²)": "26.9",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.11",
+    "Voladizo del tejado": "2.6",
+    "Superficie del tejado (m²)": "50.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "50.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "13.5",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 160",
+    "Número de ventanas": "2",
+    "Tipo de ventanas": "Doble",
+    "Ancho x alto de la ventana (cm)": "92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Trento_6x5_44mm-E_28497.jpg",
+    "107-Trento_6x5_44mm_fp_46018.jpg",
+    "107-Trento_6x5_44mm-P_3d_2_73138.jpg",
+    "107-Trento_6x5_44mm-P_3d_1_95852.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Trento 6x5",
+  "options": {
+    "ins_wall": 3600,
+    "tegola": 730
+  },
+  "category": "premium"
+}

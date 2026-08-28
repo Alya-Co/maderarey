@@ -217,6 +217,7 @@
   .card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.1); transform: translateY(-3px); }
   .card[data-cat] { display: none; }
   .card[data-cat].visible { display: block; }
+  .card-img-link { display: block; cursor: pointer; }
   .card-img { position: relative; height: 200px; overflow: hidden; background: var(--gray-light); }
   .card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.3s; image-rendering: -webkit-optimize-contrast; }
   .card:hover .card-img img { transform: scale(1.04); }
@@ -527,824 +528,1115 @@
 
   <div class="cards-grid" id="cardsGrid">
 
-    <!-- VIVIENDAS -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Veronica-1024x819.jpg" alt="Vivienda Veronica 5x6 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Veronica 5×6</div>
-        <div class="card-meta"><span>5×6 m</span><span>30 m²</span></div>
-        <div class="card-price">12.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Veronica+5x6.+%C2%BFPueden+darme+m%C3%A1s+info?" target="_blank">Consultar precio</a>
-      </div>
-    </div>
+    <!-- CATALOG:AUTO-GENERATED — no editar a mano, usar generate_catalog.py -->
+    <!-- CATALOG:START -->
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Luise-1024x820.jpg" alt="Vivienda Luise 6x6 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Luise 6×6</div>
-        <div class="card-meta"><span>6×6 m</span><span>36 m²</span></div>
-        <div class="card-price">14.050€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Luise+6x6.+%C2%BFPueden+informarme?" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Gustav-44-6x8-1024x768.jpg" alt="Vivienda Gustav 6x8 casa de madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Gustav 6×8</div>
-        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
-        <div class="card-price">14.100€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+6x8.+%C2%BFPueden+informarme?" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="almeria--1024x768.jpg" alt="Vivienda Almeria 6x8.8 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Almeria 6×8,8</div>
-        <div class="card-meta"><span>6×8,8 m</span><span>53 m²</span></div>
-        <div class="card-price">15.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Almeria+6x8.8" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Lukas-1024x820.jpg" alt="Vivienda Lukas 6.5x7.7 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Lukas 6,5×7,7</div>
-        <div class="card-meta"><span>6,5×7,7 m</span><span>50 m²</span></div>
-        <div class="card-price">15.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Lukas+6.5x7.7" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="107-Gustav_B_6x8_series_71592-1024x594.jpg" alt="Vivienda Gustav 6x8 con WC casa de madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Gustav 6×8 + WC</div>
-        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
-        <div class="card-price">16.040€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+6x8+con+WC" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Gustav-68-1024x819.jpg" alt="Vivienda Gustav 68 6x6+2 casa de madera maciza" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Gustav 68 · 6×6+2</div>
-        <div class="card-meta"><span>6×8 m</span><span>48 m²</span></div>
-        <div class="card-price">16.400€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Gustav+68+6x6%2B2" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="107-Typ_2_5_2x10_2__6__23503-1024x576.jpg" alt="Vivienda Typ 2 5.2x10.2 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Typ 2 · 5,2×10,2</div>
-        <div class="card-meta"><span>5,2×10,2 m</span><span>53 m²</span></div>
-        <div class="card-price">16.800€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Typ+2+5.2x10.2" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="107-Orchidea_6x11_5_68mm_exter.jpg" alt="Orchidea 6x11.5 casa de madera grande España" loading="lazy">
-        <span class="card-badge">Premium</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Orchidea 6×11,5</div>
-        <div class="card-meta"><span>6×11,5 m</span><span>69 m²</span></div>
-        <div class="card-price">20.420€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orchidea+6x11.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <!-- CABAÑAS -->
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250515-171022_Chrome-571x398.jpg" alt="Cabaña Nuuk 5x3.84 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Nuuk 5×3,84</div>
-        <div class="card-meta"><span>5×3,84 m</span><span>19 m²</span></div>
-        <div class="card-price">4.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Nuuk+5x3.84" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus-4x5-571x398.jpg" alt="Cabaña Linus 4x5 madera 44mm jardín" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Linus 4×5</div>
-        <div class="card-meta"><span>4×5 m</span><span>20 m²</span></div>
-        <div class="card-price">4.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Linus+4x5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus-5x5-571x398.jpg" alt="Cabaña Linus 5x5 madera prefabricada" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Linus 5×5</div>
-        <div class="card-meta"><span>5×5 m</span><span>25 m²</span></div>
-        <div class="card-price">5.300€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Linus+5x5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250515-171057_Chrome-571x398.jpg" alt="Cabaña Lille 6x3.5 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Lille 6×3,5</div>
-        <div class="card-meta"><span>6×3,5 m</span><span>21 m²</span></div>
-        <div class="card-price">6.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Lille+6x3.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/07/107-Ottawa_6x4_5_44mm-E_Exter-571x398.jpg" alt="Cabaña Ottawa 6x4.5 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Ottawa 6×4,5</div>
-        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span></div>
-        <div class="card-price">7.100€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Ottawa+6x4.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="cabanas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/107-Emilly_4_04x7_08_44mm_76330-571x398.jpg" alt="Cabaña Emily 7.8x4.04 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Cabaña Emily 7,8×4,04</div>
-        <div class="card-meta"><span>7,8×4 m</span><span>32 m²</span></div>
-        <div class="card-price">7.520€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caba%C3%B1a+Emily+7.8x4" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <!-- CASETAS -->
-    <div class="card visible" data-cat="casetas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Erna-25x45-571x398.jpg" alt="Caseta de jardín Erna 2.5x4.5 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Caseta Erna 2,5×4,5</div>
-        <div class="card-meta"><span>2,5×4,5 m</span><span>11 m²</span></div>
-        <div class="card-price">3.400€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Erna+2.5x4.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="casetas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2016/02/Victoria-44-4x3-139x117.jpg" alt="Caseta jardín Linus 4x3 madera prefabricada" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Caseta Linus 4×3</div>
-        <div class="card-meta"><span>4×3 m</span><span>12 m²</span></div>
-        <div class="card-price">3.600€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Linus+4x3" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="casetas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus_4x4-perspective-571x398.jpg" alt="Caseta jardín Linus 4x4 madera 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Caseta Linus 4×4</div>
-        <div class="card-meta"><span>4×4 m</span><span>16 m²</span></div>
-        <div class="card-price">4.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Linus+4x4" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="casetas">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/08/107-Stable_Nr.1_56957-571x398.jpg" alt="Caseta Stable 6x3 madera 44mm jardín cobertizo" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Caseta Stable 6×3</div>
-        <div class="card-meta"><span>6×3 m</span><span>18 m²</span></div>
-        <div class="card-price">4.650€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Caseta+Stable+6x3" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <!-- GARAJES -->
-    <div class="card visible" data-cat="garajes">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/107-Garage_3_2x5_2_44mm__2__37314-571x398.jpg" alt="Garaje de madera 3.2x5.2 44mm prefabricado" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Garaje 3,2×5,2</div>
-        <div class="card-meta"><span>3,2×5,2 m</span><span>17 m²</span></div>
-        <div class="card-price">3.630€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+3.2x5.2" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="garajes">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/garage-4x6-571x398.jpg" alt="Garaje de madera 6x4 44mm prefabricado España" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Garaje 6×4</div>
-        <div class="card-meta"><span>6×4 m</span><span>24 m²</span></div>
-        <div class="card-price">4.600€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+6x4" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="garajes">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250514-211835_Samsung-Notes-139x117.jpg" alt="Garaje con carport madera 6.8x5.6 44mm" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Garaje + Carport 6,8×5,6</div>
-        <div class="card-meta"><span>6,8×5,6 m</span><span>38 m²</span></div>
-        <div class="card-price">5.950€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+con+carport+6.8x5.6" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="garajes">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Garage-6x6-571x398.jpg" alt="Garaje de madera 6x6 44mm prefabricado" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Garaje 6×6</div>
-        <div class="card-meta"><span>6×6 m</span><span>36 m²</span></div>
-        <div class="card-price">6.200€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+6x6" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="garajes">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/05/Screenshot_20250514-204721_Samsung-Notes-139x117.jpg" alt="Garaje de madera 7x5.5 44mm grande España" loading="lazy">
-        <span class="card-badge">44mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Garaje 7×5,5</div>
-        <div class="card-meta"><span>7×5,5 m</span><span>38 m²</span></div>
-        <div class="card-price">7.550€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+el+Garaje+7x5.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-
-    <!-- VIVIENDAS стр.2 -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Scarlet-1024x820.jpg" alt="Vivienda Scarlet 7x10.2 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Scarlet 7×10,2</div>
-        <div class="card-meta"><span>7×10,2 m</span><span>71 m²</span></div>
-        <div class="card-price">19.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Scarlet+7x10.2" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Olga-1024x614.jpg" alt="Vivienda Orlando 8x9 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Orlando 8×9</div>
-        <div class="card-meta"><span>8×9 m</span><span>72 m²</span></div>
-        <div class="card-price">20.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orlando+8x9" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Maja-1024x614.jpg" alt="Vivienda Maja 7.4x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Maja 7,4×10</div>
-        <div class="card-meta"><span>7,4×10 m</span><span>74 m²</span></div>
-        <div class="card-price">20.200€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Maja+7.4x10" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Jenifer-1024x768.jpg" alt="Vivienda Jenifer 10.5x8.5 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Jenifer 10,5×8,5</div>
-        <div class="card-meta"><span>10,5×8,5 m</span><span>89 m²</span></div>
-        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Jenifer+10.5x8.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Marcos-1024x614.jpg" alt="Vivienda Marcos 7.1x11.1 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Marcos 7,1×11,1</div>
-        <div class="card-meta"><span>7,1×11,1 m</span><span>79 m²</span></div>
-        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Marcos+7.1x11.1" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Oscar-1024x768.jpg" alt="Vivienda Oscar 8.8x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Oscar 8,8×10</div>
-        <div class="card-meta"><span>8,8×10 m</span><span>88 m²</span></div>
-        <div class="card-price">21.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Oscar+8.8x10" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <!-- VIVIENDAS стр.3 -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Talinn 5x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Talinn 5×10</div>
-        <div class="card-meta"><span>5×10 m</span><span>50 m²</span></div>
-        <div class="card-price">30.250€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Talinn+5x10" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Sevilla-1024x614.jpg" alt="Vivienda Sevilla 7.8x13.7 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Sevilla 7,8×13,7</div>
-        <div class="card-meta"><span>7,8×13,7 m</span><span>107 m²</span></div>
-        <div class="card-price">30.300€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sevilla+7.8x13.7" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20241102-225129_Samsung-Notes.jpg" alt="Vivienda Takoma 12x8 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Takoma 12×8</div>
-        <div class="card-meta"><span>12×8 m</span><span>96 m²</span></div>
-        <div class="card-price">32.670€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Takoma+12x8" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Granada 8.8x14 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Granada 8,8×14</div>
-        <div class="card-meta"><span>8,8×14 m</span><span>123 m²</span></div>
-        <div class="card-price">35.550€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Granada+8.8x14" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Nagano 10x8 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Nagano 10×8</div>
-        <div class="card-meta"><span>10×8 m</span><span>80 m²</span></div>
-        <div class="card-price">37.820€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Nagano+10x8" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Sweden 7.5x13.5 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Sweden 7,5×13,5</div>
-        <div class="card-meta"><span>7,5×13,5 m</span><span>101 m²</span></div>
-        <div class="card-price">49.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sweden+7.5x13.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <!-- PREMIUM -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="107-Orchidea_6x11_5_68mm_exter.jpg" alt="Vivienda Premium Orchidea 6x11.5 casa de madera grande" loading="lazy">
+    <div class="card visible" data-cat="premium" data-casa="erna-44-2.5x4.5">
+      <a href="house.html?casa=erna-44-2.5x4.5" class="card-img-link"><div class="card-img">
+        <img src="houses/erna-44-2.5x4.5/107-Erna_2_5x4_5_44mm-P_3d_63078.jpg" alt="Erna 2.5x4.5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
-      </div>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Orchidea 6×11,5</div>
-        <div class="card-meta"><span>6×11,5 m</span><span>69 m²</span></div>
-        <div class="card-price">20.420€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orchidea+6x11.5" target="_blank">Consultar precio</a>
+        <div class="card-name">Erna 2.5x4.5</div>
+        <div class="card-meta"><span>2.5x4.5 m</span><span>9.3 m²</span></div>
+        <div class="card-price">3.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=erna-44-2.5x4.5">Ver ficha y precio</a>
       </div>
     </div>
 
-
-
-    <!-- VIVIENDAS стр.2 -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Scarlet-1024x820.jpg" alt="Vivienda Scarlet 7x10.2 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-3.2x5.2">
+      <a href="house.html?casa=garaje-44-3.2x5.2" class="card-img-link"><div class="card-img">
+        <img src="houses/garaje-44-3.2x5.2/107-medium-Garage_3_2x5_2_44mm-P_26600.jpg" alt="Garaje 3.2x5.2 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Scarlet 7×10,2</div>
-        <div class="card-meta"><span>7×10,2 m</span><span>71 m²</span></div>
-        <div class="card-price">19.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Scarlet+7x10.2" target="_blank">Consultar precio</a>
+        <div class="card-name">Garaje 3.2x5.2</div>
+        <div class="card-meta"><span>3.2x5.2 m</span><span>14.3 m²</span></div>
+        <div class="card-price">3.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=garaje-44-3.2x5.2">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Olga-1024x614.jpg" alt="Vivienda Orlando 8x9 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-4x4">
+      <a href="house.html?casa=linus-44-4x4" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-4x4/107-Linus_4x4_44mm_fp_15761.jpg" alt="Linus 4x4 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Orlando 8×9</div>
-        <div class="card-meta"><span>8×9 m</span><span>72 m²</span></div>
-        <div class="card-price">20.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Orlando+8x9" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 4x4</div>
+        <div class="card-meta"><span>4x4 m</span><span>13.8 m²</span></div>
+        <div class="card-price">3.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-4x4">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Maja-1024x614.jpg" alt="Vivienda Maja 7.4x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-4x6">
+      <a href="house.html?casa=garaje-44-4x6" class="card-img-link"><div class="card-img">
+        <img src="houses/garaje-44-4x6/107-medium-Garage_4x6_44mm-P_14225.jpg" alt="Garaje 4x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Maja 7,4×10</div>
-        <div class="card-meta"><span>7,4×10 m</span><span>74 m²</span></div>
-        <div class="card-price">20.200€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Maja+7.4x10" target="_blank">Consultar precio</a>
+        <div class="card-name">Garaje 4x6</div>
+        <div class="card-meta"><span>4x6 m</span><span>21.2 m²</span></div>
+        <div class="card-price">4.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=garaje-44-4x6">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Jenifer-1024x768.jpg" alt="Vivienda Jenifer 10.5x8.5 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="deko-44-5x3">
+      <a href="house.html?casa=deko-44-5x3" class="card-img-link"><div class="card-img">
+        <img src="houses/deko-44-5x3/23-Deko_5x3_44mm-2_01084.jpg" alt="Deko 5x3 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Jenifer 10,5×8,5</div>
-        <div class="card-meta"><span>10,5×8,5 m</span><span>89 m²</span></div>
-        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Jenifer+10.5x8.5" target="_blank">Consultar precio</a>
+        <div class="card-name">Deko 5x3</div>
+        <div class="card-meta"><span>5x3 m</span><span>12.7 m²</span></div>
+        <div class="card-price">4.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=deko-44-5x3">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Marcos-1024x614.jpg" alt="Vivienda Marcos 7.1x11.1 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-4x5">
+      <a href="house.html?casa=linus-44-4x5" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-4x5/107-Linus_4x5_44mm_fp_89271.jpg" alt="Linus 4x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Marcos 7,1×11,1</div>
-        <div class="card-meta"><span>7,1×11,1 m</span><span>79 m²</span></div>
-        <div class="card-price">21.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Marcos+7.1x11.1" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 4x5</div>
+        <div class="card-meta"><span>4x5 m</span><span>17.5 m²</span></div>
+        <div class="card-price">4.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-4x5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Oscar-1024x768.jpg" alt="Vivienda Oscar 8.8x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-5x4">
+      <a href="house.html?casa=linus-44-5x4" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-5x4/23-Linus_5x4_44mm_fp_26493.jpg" alt="Linus 5x4 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Oscar 8,8×10</div>
-        <div class="card-meta"><span>8,8×10 m</span><span>88 m²</span></div>
-        <div class="card-price">21.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Oscar+8.8x10" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 5x4</div>
+        <div class="card-meta"><span>5x4 m</span><span>17.5 m²</span></div>
+        <div class="card-price">4.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-5x4">Ver ficha y precio</a>
       </div>
     </div>
 
-    <!-- VIVIENDAS стр.3 -->
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Talinn 5x10 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="milano-44-3.8x5.3">
+      <a href="house.html?casa=milano-44-3.8x5.3" class="card-img-link"><div class="card-img">
+        <img src="houses/milano-44-3.8x5.3/107-Milano_3_8x3_8_44mm_fp_73507.jpg" alt="Milano 3.8x5.3 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Talinn 5×10</div>
-        <div class="card-meta"><span>5×10 m</span><span>50 m²</span></div>
-        <div class="card-price">30.250€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Talinn+5x10" target="_blank">Consultar precio</a>
+        <div class="card-name">Milano 3.8x5.3</div>
+        <div class="card-meta"><span>3.8x5.3 m</span><span>0.0 m²</span></div>
+        <div class="card-price">4.440€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=milano-44-3.8x5.3">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Sevilla-1024x614.jpg" alt="Vivienda Sevilla 7.8x13.7 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-5x5">
+      <a href="house.html?casa=garaje-44-5x5" class="card-img-link"><div class="card-img">
+        <img src="houses/garaje-44-5x5/107-Garage_5x5_3_83271.jpg" alt="Garaje 5x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Sevilla 7,8×13,7</div>
-        <div class="card-meta"><span>7,8×13,7 m</span><span>107 m²</span></div>
-        <div class="card-price">30.300€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sevilla+7.8x13.7" target="_blank">Consultar precio</a>
+        <div class="card-name">Garaje 5x5</div>
+        <div class="card-meta"><span>5x5 m</span><span>22.0 m²</span></div>
+        <div class="card-price">4.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=garaje-44-5x5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20241102-225129_Samsung-Notes.jpg" alt="Vivienda Takoma 12x8 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-5x5">
+      <a href="house.html?casa=linus-44-5x5" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-5x5/107-Linus_5x5_44mm_fp_39775.jpg" alt="Linus 5x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Takoma 12×8</div>
-        <div class="card-meta"><span>12×8 m</span><span>96 m²</span></div>
-        <div class="card-price">32.670€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Takoma+12x8" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 5x5</div>
+        <div class="card-meta"><span>5x5 m</span><span>22.2 m²</span></div>
+        <div class="card-price">4.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-5x5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Granada 8.8x14 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-6x4">
+      <a href="house.html?casa=linus-44-6x4" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-6x4/23-Linus_6x4_44mm_fp_66985.jpg" alt="Linus 6x4 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Granada 8,8×14</div>
-        <div class="card-meta"><span>8,8×14 m</span><span>123 m²</span></div>
-        <div class="card-price">35.550€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Granada+8.8x14" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 6x4</div>
+        <div class="card-meta"><span>6x4 m</span><span>21.2 m²</span></div>
+        <div class="card-price">4.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-6x4">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Nagano 10x8 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="oficina-nuuk-44-5x3.84">
+      <a href="house.html?casa=oficina-nuuk-44-5x3.84" class="card-img-link"><div class="card-img">
+        <img src="houses/oficina-nuuk-44-5x3.84/107-Nuuk_5x3_844_4_-_Photo_58022.jpg" alt="Nuuk 5x3.84 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Nagano 10×8</div>
-        <div class="card-meta"><span>10×8 m</span><span>80 m²</span></div>
-        <div class="card-price">37.820€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Nagano+10x8" target="_blank">Consultar precio</a>
+        <div class="card-name">Nuuk 5x3.84</div>
+        <div class="card-meta"><span>5x3.84 m</span><span>12.8 m²</span></div>
+        <div class="card-price">5.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=oficina-nuuk-44-5x3.84">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="viviendas">
-      <div class="card-img">
-        <img src="Screenshot_20230429-152117_Samsung-Internet.jpg" alt="Vivienda Sweden 7.5x13.5 casa de madera 68mm" loading="lazy">
-        <span class="card-badge">68mm</span>
-      </div>
+    <div class="card visible" data-cat="garajes" data-casa="cochera--trastero-44-5.7x5.3">
+      <a href="house.html?casa=cochera--trastero-44-5.7x5.3" class="card-img-link"><div class="card-img">
+        <img src="houses/cochera--trastero-44-5.7x5.3/23-Carport+storage_5_7x5_3-1_62948.jpg" alt="Cochera  trastero 5.7x5.3 casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Sweden 7,5×13,5</div>
-        <div class="card-meta"><span>7,5×13,5 m</span><span>101 m²</span></div>
-        <div class="card-price">49.000€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Vivienda+Sweden+7.5x13.5" target="_blank">Consultar precio</a>
+        <div class="card-name">Cochera  trastero 5.7x5.3</div>
+        <div class="card-meta"><span>5.7x5.3 m</span><span>0.0 m²</span></div>
+        <div class="card-price">5.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=cochera--trastero-44-5.7x5.3">Ver ficha y precio</a>
       </div>
     </div>
 
-    <!-- PREMIUM -->
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/roberto_5_6x4_2-571x398.jpg" alt="Casa Premium Roberto 5.6x4 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="oficina-wik-44-4.5x3.5">
+      <a href="house.html?casa=oficina-wik-44-4.5x3.5" class="card-img-link"><div class="card-img">
+        <img src="houses/oficina-wik-44-4.5x3.5/107-Wik_4_5x3_5_dazyta_1_-_Photo_44088.jpg" alt="Wik 4.5x3.5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Roberto 5,6×4</div>
-        <div class="card-meta"><span>5,6×4 m</span><span>22 m²</span><span>44mm</span></div>
-        <div class="card-price">6.600€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Roberto+5.6x4" target="_blank">Consultar precio</a>
+        <div class="card-name">Wik 4.5x3.5</div>
+        <div class="card-meta"><span>4.5x3.5 m</span><span>13.5 m²</span></div>
+        <div class="card-price">5.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=oficina-wik-44-4.5x3.5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/murray-6x4-571x398.jpg" alt="Casa Premium Muray 6x4 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-6x5">
+      <a href="house.html?casa=linus-44-6x5" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-6x5/23-Linus_6x5_44mm_fp_35863.jpg" alt="Linus 6x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Muray 6×4</div>
-        <div class="card-meta"><span>6×4 m</span><span>24 m²</span><span>44mm</span></div>
-        <div class="card-price">6.600€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Muray+6x4" target="_blank">Consultar precio</a>
+        <div class="card-name">Linus 6x5</div>
+        <div class="card-meta"><span>6x5 m</span><span>26.9 m²</span></div>
+        <div class="card-price">5.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-6x5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Trento-571x398.jpg" alt="Casa Premium Trento 6x5 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-6x6">
+      <a href="house.html?casa=garaje-44-6x6" class="card-img-link"><div class="card-img">
+        <img src="houses/garaje-44-6x6/107-Garage_6x6_5_01160.jpg" alt="Garaje 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Trento 6×5</div>
-        <div class="card-meta"><span>6×5 m</span><span>30 m²</span><span>44mm</span></div>
+        <div class="card-name">Garaje 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>32.6 m²</span></div>
+        <div class="card-price">5.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=garaje-44-6x6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="garajes" data-casa="garajecochera-44-6.8x5.6">
+      <a href="house.html?casa=garajecochera-44-6.8x5.6" class="card-img-link"><div class="card-img">
+        <img src="houses/garajecochera-44-6.8x5.6/107-Garage_+carport_6_8x5_6_2_99099.jpg" alt="Garajecochera 6.8x5.6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Garajecochera 6.8x5.6</div>
+        <div class="card-meta"><span>6.8x5.6 m</span><span>17.2 m²</span></div>
+        <div class="card-price">5.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=garajecochera-44-6.8x5.6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="linus-44-5x4-wc">
+      <a href="house.html?casa=linus-44-5x4-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-5x4-wc/23-Linus_5x4_WC_44mm_fp_60069.jpg" alt="Linus WC 5x4 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Linus WC 5x4</div>
+        <div class="card-meta"><span>5x4 m</span><span>17.3 m²</span></div>
+        <div class="card-price">5.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-5x4-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="linus-44-5x5-wc">
+      <a href="house.html?casa=linus-44-5x5-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-5x5-wc/23-Linus_5x5_WC_44mm_fp_03830.jpg" alt="Linus WC 5x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Linus WC 5x5</div>
+        <div class="card-meta"><span>5x5 m</span><span>22.0 m²</span></div>
+        <div class="card-price">6.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-5x5-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="linus-44-6x6">
+      <a href="house.html?casa=linus-44-6x6" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-6x6/107-Linus_6_series_44mm-P_12003.jpg" alt="Linus 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Linus 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>32.6 m²</span></div>
+        <div class="card-price">6.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-6x6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="murray-44-4x6">
+      <a href="house.html?casa=murray-44-4x6" class="card-img-link"><div class="card-img">
+        <img src="houses/murray-44-4x6/107-Murray_4x6_4mm-2_65867.jpg" alt="Murray 4x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Murray 4x6</div>
+        <div class="card-meta"><span>4x6 m</span><span>21.1 m²</span></div>
+        <div class="card-price">6.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=murray-44-4x6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="roberto-44-5.6x4">
+      <a href="house.html?casa=roberto-44-5.6x4" class="card-img-link"><div class="card-img">
+        <img src="houses/roberto-44-5.6x4/107-Roberto_5_6x4_44mm-E_08394.jpg" alt="Roberto 5.6x4 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Roberto 5.6x4</div>
+        <div class="card-meta"><span>5.6x4 m</span><span>19.5 m²</span></div>
+        <div class="card-price">6.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=roberto-44-5.6x4">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="linus-44-6x5-wc">
+      <a href="house.html?casa=linus-44-6x5-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-6x5-wc/23-Linus_6x5_WC_44mm_fp_78798.jpg" alt="Linus WC 6x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Linus WC 6x5</div>
+        <div class="card-meta"><span>6x5 m</span><span>26.7 m²</span></div>
+        <div class="card-price">6.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-6x5-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="ottawa-44-6x4.5">
+      <a href="house.html?casa=ottawa-44-6x4.5" class="card-img-link"><div class="card-img">
+        <img src="houses/ottawa-44-6x4.5/107-Ottawa_6x4_5_44mm-P_3d_exter_2.jpg" alt="Ottawa 6x4.5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Ottawa 6x4.5</div>
+        <div class="card-meta"><span>6x4.5 m</span><span>23.8 m²</span></div>
+        <div class="card-price">7.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=ottawa-44-6x4.5">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="trento-44-6x5">
+      <a href="house.html?casa=trento-44-6x5" class="card-img-link"><div class="card-img">
+        <img src="houses/trento-44-6x5/107-Trento_6x5_44mm-E_28497.jpg" alt="Trento 6x5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Trento 6x5</div>
+        <div class="card-meta"><span>6x5 m</span><span>26.9 m²</span></div>
+        <div class="card-price">7.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=trento-44-6x5">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="helmand-44-3x9">
+      <a href="house.html?casa=helmand-44-3x9" class="card-img-link"><div class="card-img">
+        <img src="houses/helmand-44-3x9/107-Helmand_3x9_44mm-P_2_06708.jpg" alt="Helmand 3x9 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Helmand 3x9</div>
+        <div class="card-meta"><span>3x9 m</span><span>21.8 m²</span></div>
         <div class="card-price">7.300€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Trento+6x5" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=helmand-44-3x9">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2022/04/Screenshot_20220428-090616_Chrome-571x398.jpg" alt="Casa Premium Eko 5x6 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="oficina-emily-44-4.04x7.8">
+      <a href="house.html?casa=oficina-emily-44-4.04x7.8" class="card-img-link"><div class="card-img">
+        <img src="houses/oficina-emily-44-4.04x7.8/107-Emily-3_09293.jpg" alt="Emily 4.04x7.8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Eko 5×6</div>
-        <div class="card-meta"><span>5×6 m</span><span>30 m²</span><span>44mm</span></div>
+        <div class="card-name">Emily 4.04x7.8</div>
+        <div class="card-meta"><span>4.04x7.8 m</span><span>21.3 m²</span></div>
+        <div class="card-price">7.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=oficina-emily-44-4.04x7.8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="hakan-b-44-7x7.19">
+      <a href="house.html?casa=hakan-b-44-7x7.19" class="card-img-link"><div class="card-img">
+        <img src="houses/hakan-b-44-7x7.19/107-Hakan_B_7x7_19_44mm-E_75273.jpg" alt="Hakan B 7x7.19 casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Hakan B 7x7.19</div>
+        <div class="card-meta"><span>7x7.19 m</span><span>45.9 m²</span></div>
         <div class="card-price">7.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Eko+5x6" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=hakan-b-44-7x7.19">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Linus_6x6_with_WC-571x398.jpg" alt="Casa Premium Linus 6x6 WC madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="padova-a-44-6x4.5">
+      <a href="house.html?casa=padova-a-44-6x4.5" class="card-img-link"><div class="card-img">
+        <img src="houses/padova-a-44-6x4.5/107-Padova_A_6x4_5_44mm-E_92230.jpg" alt="Padova A 6x4.5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Linus 6×6 + WC</div>
-        <div class="card-meta"><span>6×6 m</span><span>36 m²</span><span>44mm</span></div>
+        <div class="card-name">Padova A 6x4.5</div>
+        <div class="card-meta"><span>6x4.5 m</span><span>23.8 m²</span></div>
         <div class="card-price">7.700€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Linus+6x6+WC" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=padova-a-44-6x4.5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2025/03/107-medium-Ottawa_6x4_5_44mm-E_209101-1-571x398.jpg" alt="Casa Premium Ottava 6x4.5 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="linus-44-6x6-wc">
+      <a href="house.html?casa=linus-44-6x6-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/linus-44-6x6-wc/107-Linus_6x6_WC_44mm_fp_58240.jpg" alt="Linus WC 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Ottava 6×4,5</div>
-        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span><span>44mm</span></div>
+        <div class="card-name">Linus WC 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>32.4 m²</span></div>
+        <div class="card-price">7.710€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=linus-44-6x6-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="eko-44-5x5.7">
+      <a href="house.html?casa=eko-44-5x5.7" class="card-img-link"><div class="card-img">
+        <img src="houses/eko-44-5x5.7/eko.jpg" alt="Eko 5x5.7 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Eko 5x5.7</div>
+        <div class="card-meta"><span>5x5.7 m</span><span>25.1 m²</span></div>
+        <div class="card-price">7.810€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=eko-44-5x5.7">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="rico-44-4.04x7.8">
+      <a href="house.html?casa=rico-44-4.04x7.8" class="card-img-link"><div class="card-img">
+        <img src="houses/rico-44-4.04x7.8/107-Rico_4_04x7_8_44mm-E_95178.jpg" alt="Rico 4.04x7.8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Rico 4.04x7.8</div>
+        <div class="card-meta"><span>4.04x7.8 m</span><span>21.3 m²</span></div>
         <div class="card-price">7.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Ottava+6x4.5" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=rico-44-4.04x7.8">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/padova_a_6x4_5-571x398.jpg" alt="Casa Premium Padova 6x4.5 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="oficina-bergen-44-4.2x8">
+      <a href="house.html?casa=oficina-bergen-44-4.2x8" class="card-img-link"><div class="card-img">
+        <img src="houses/oficina-bergen-44-4.2x8/23-bergen_6_00425.jpg" alt="Bergen 4.2x8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Padova 6×4,5</div>
-        <div class="card-meta"><span>6×4,5 m</span><span>27 m²</span><span>44mm</span></div>
+        <div class="card-name">Bergen 4.2x8</div>
+        <div class="card-meta"><span>4.2x8 m</span><span>16.8 m²</span></div>
+        <div class="card-price">8.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=oficina-bergen-44-4.2x8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="hakan-a-44-6x5.2">
+      <a href="house.html?casa=hakan-a-44-6x5.2" class="card-img-link"><div class="card-img">
+        <img src="houses/hakan-a-44-6x5.2/107-Hakan_A_6x5_2_44mm-3_43773.jpg" alt="Hakan A 6x5.2 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Hakan A 6x5.2</div>
+        <div class="card-meta"><span>6x5.2 m</span><span>27.6 m²</span></div>
         <div class="card-price">8.600€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Padova+6x4.5" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=hakan-a-44-6x5.2">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Hakan-_44mm_1-571x398.jpg" alt="Casa Premium Hakan 6x5.2 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="viviendas" data-casa="padova-b-44-6x6.5">
+      <a href="house.html?casa=padova-b-44-6x6.5" class="card-img-link"><div class="card-img">
+        <img src="houses/padova-b-44-6x6.5/107-Padova_B_6x6_5_44mm-P_3d_2_16650.jpg" alt="Padova B 6x6.5 casa de madera 44mm" loading="lazy">
+        <span class="card-badge">44mm</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Hakan 6×5,2</div>
-        <div class="card-meta"><span>6×5,2 m</span><span>31 m²</span><span>44mm</span></div>
-        <div class="card-price">8.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Hakan+6x5.2" target="_blank">Consultar precio</a>
+        <div class="card-name">Padova B 6x6.5</div>
+        <div class="card-meta"><span>6x6.5 m</span><span>35.1 m²</span></div>
+        <div class="card-price">9.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=padova-b-44-6x6.5">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Londres_44-571x398.jpg" alt="Casa Premium Torino 4.5x6 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="torino-44-4.5x6">
+      <a href="house.html?casa=torino-44-4.5x6" class="card-img-link"><div class="card-img">
+        <img src="houses/torino-44-4.5x6/107-Torino_4_5x6_44mm_5_74099.jpg" alt="Torino 4.5x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Torino 4,5×6</div>
-        <div class="card-meta"><span>4,5×6 m</span><span>27 m²</span><span>44mm</span></div>
-        <div class="card-price">9.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Torino+4.5x6" target="_blank">Consultar precio</a>
+        <div class="card-name">Torino 4.5x6</div>
+        <div class="card-meta"><span>4.5x6 m</span><span>34.1 m²</span></div>
+        <div class="card-price">9.990€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=torino-44-4.5x6">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/padova_b_6x6_5-571x398.jpg" alt="Casa Premium Padova B 6x6.5 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="alma-44-7.05x8">
+      <a href="house.html?casa=alma-44-7.05x8" class="card-img-link"><div class="card-img">
+        <img src="houses/alma-44-7.05x8/107-Alma_7_05x8_3d_2_85467.jpg" alt="Alma 7.05x8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Padova B 6×6,5</div>
-        <div class="card-meta"><span>6×6,5 m</span><span>39 m²</span><span>44mm</span></div>
-        <div class="card-price">10.400€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Padova+B+6x6.5" target="_blank">Consultar precio</a>
-      </div>
-    </div>
-
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Alma_-571x398.jpg" alt="Casa Premium Alma 7x8 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
-      <div class="card-body">
-        <div class="card-name">Premium Alma 7×8</div>
-        <div class="card-meta"><span>7×8 m</span><span>56 m²</span><span>44mm</span></div>
+        <div class="card-name">Alma 7.05x8</div>
+        <div class="card-meta"><span>7.05x8 m</span><span>32.1 m²</span></div>
         <div class="card-price">10.900€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Alma+7x8" target="_blank">Consultar precio</a>
+        <a class="card-btn" href="house.html?casa=alma-44-7.05x8">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2022/04/hakan-1-571x398.jpg" alt="Casa Premium Hakan B 7x7.2 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="louise-44-6x6">
+      <a href="house.html?casa=louise-44-6x6" class="card-img-link"><div class="card-img">
+        <img src="houses/louise-44-6x6/107-Louise_6x6_44mm_distr,_dimens.jpg" alt="Louise 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Hakan B 7×7,2</div>
-        <div class="card-meta"><span>7×7,2 m</span><span>50 m²</span><span>44mm</span></div>
-        <div class="card-price">11.500€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Hakan+B+7x7.2" target="_blank">Consultar precio</a>
+        <div class="card-name">Louise 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>32.2 m²</span></div>
+        <div class="card-price">11.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=louise-44-6x6">Ver ficha y precio</a>
       </div>
     </div>
 
-    <div class="card visible" data-cat="premium">
-      <div class="card-img">
-        <img src="https://maderarey.es/wp-content/uploads/2017/11/Gustav-571x398.jpg" alt="Casa Premium Gustav 6x6+2 madera 44mm" loading="lazy">
-        <span class="card-badge" style="background:#8B6914">Premium</span>
-      </div>
+    <div class="card visible" data-cat="premium" data-casa="lukas-44-6.5x7.7">
+      <a href="house.html?casa=lukas-44-6.5x7.7" class="card-img-link"><div class="card-img">
+        <img src="houses/lukas-44-6.5x7.7/107-Lukas_6_5x7_7_3d_3_mueble.jpg" alt="Lukas 6.5x7.7 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
       <div class="card-body">
-        <div class="card-name">Premium Gustav 6×6+2</div>
-        <div class="card-meta"><span>6×8 m</span><span>48 m²</span><span>44mm</span></div>
-        <div class="card-price">12.200€ <span>sin tejas/pintura</span></div>
-        <a class="card-btn" href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+Casa+Premium+Gustav+6x6%2B2" target="_blank">Consultar precio</a>
+        <div class="card-name">Lukas 6.5x7.7</div>
+        <div class="card-meta"><span>6.5x7.7 m</span><span>37.8 m²</span></div>
+        <div class="card-price">11.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=lukas-44-6.5x7.7">Ver ficha y precio</a>
       </div>
     </div>
+
+    <div class="card visible" data-cat="premium" data-casa="almería-44-6x8.87">
+      <a href="house.html?casa=almería-44-6x8.87" class="card-img-link"><div class="card-img">
+        <img src="houses/almería-44-6x8.87/107-Almeria_6x8_87_68mm_99351_2.jpg" alt="Almería 6x8.87 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Almería 6x8.87</div>
+        <div class="card-meta"><span>6x8.87 m</span><span>41.8 m²</span></div>
+        <div class="card-price">12.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=almería-44-6x8.87">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="gustav-a-44-6x6">
+      <a href="house.html?casa=gustav-a-44-6x6" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-a-44-6x6/107-Gustav_A_6x6_3d_3_41449.jpg" alt="Gustav A 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav A 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>46.6 m²</span></div>
+        <div class="card-price">12.420€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-a-44-6x6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="gustav-a-44-6x6-wc">
+      <a href="house.html?casa=gustav-a-44-6x6-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-a-44-6x6-wc/107-Gustav_A_6x6_WC_3d_41979.jpg" alt="Gustav A WC 6x6 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav A WC 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>46.0 m²</span></div>
+        <div class="card-price">15.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-a-44-6x6-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="orlando-44-8x9">
+      <a href="house.html?casa=orlando-44-8x9" class="card-img-link"><div class="card-img">
+        <img src="houses/orlando-44-8x9/107-Orlando_8x9_-_Picture1_82016.jpg" alt="Orlando 8x9 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Orlando 8x9</div>
+        <div class="card-meta"><span>8x9 m</span><span>57.6 m²</span></div>
+        <div class="card-price">15.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=orlando-44-8x9">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="lukas-68-6.5x7.7">
+      <a href="house.html?casa=lukas-68-6.5x7.7" class="card-img-link"><div class="card-img">
+        <img src="houses/lukas-68-6.5x7.7/107-Lukas_6_5x7_7_3d_3_mueble.jpg" alt="Lukas 6.5x7.7 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Lukas 6.5x7.7</div>
+        <div class="card-meta"><span>6.5x7.7 m</span><span>37.8 m²</span></div>
+        <div class="card-price">15.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=lukas-68-6.5x7.7">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="gustav-b-44-6x8">
+      <a href="house.html?casa=gustav-b-44-6x8" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-b-44-6x8/107-Gustav_B_6x8_3d_2_11529.jpg" alt="Gustav B 6x8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav B 6x8</div>
+        <div class="card-meta"><span>6x8 m</span><span>62.4 m²</span></div>
+        <div class="card-price">15.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-b-44-6x8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="gustav-b-44-6x8-wc">
+      <a href="house.html?casa=gustav-b-44-6x8-wc" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-b-44-6x8-wc/107-Gustav_B_6x8_WC_3d_79681.jpg" alt="Gustav B WC 6x8 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav B WC 6x8</div>
+        <div class="card-meta"><span>6x8 m</span><span>62.2 m²</span></div>
+        <div class="card-price">15.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-b-44-6x8-wc">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="almeria-68-6x8.87">
+      <a href="house.html?casa=almeria-68-6x8.87" class="card-img-link"><div class="card-img">
+        <img src="houses/almeria-68-6x8.87/68_Almeria_aspecto_ext.jpg" alt="Almeria 6x8.87 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Almeria 6x8.87</div>
+        <div class="card-meta"><span>6x8.87 m</span></div>
+        <div class="card-price">16.050€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=almeria-68-6x8.87">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="typ-2-68-5.2x10.2">
+      <a href="house.html?casa=typ-2-68-5.2x10.2" class="card-img-link"><div class="card-img">
+        <img src="houses/typ-2-68-5.2x10.2/107-Typ_2_5_2x10_2_9_52276.jpg" alt="Typ 2 5.2x10.2 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Typ 2 5.2x10.2</div>
+        <div class="card-meta"><span>5.2x10.2 m</span><span>37.6 m²</span></div>
+        <div class="card-price">16.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=typ-2-68-5.2x10.2">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="gustav-a-68-6x6">
+      <a href="house.html?casa=gustav-a-68-6x6" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-a-68-6x6/107-Gustav_A_6x6_3d_1_77869.jpg" alt="Gustav A 6x6 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav A 6x6</div>
+        <div class="card-meta"><span>6x6 m</span><span>45.5 m²</span></div>
+        <div class="card-price">16.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-a-68-6x6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="scarlett-44-7x10.2">
+      <a href="house.html?casa=scarlett-44-7x10.2" class="card-img-link"><div class="card-img">
+        <img src="houses/scarlett-44-7x10.2/107-Scarlett_7x10_2_3d_3_70633.jpg" alt="Scarlett 7x10.2 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Scarlett 7x10.2</div>
+        <div class="card-meta"><span>7x10.2 m</span><span>59.1 m²</span></div>
+        <div class="card-price">17.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=scarlett-44-7x10.2">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="iberica-t2-68">
+      <a href="house.html?casa=iberica-t2-68" class="card-img-link"><div class="card-img">
+        <img src="houses/iberica-t2-68/107-Iberica_T2_6_36x8_86__3__38631.jpg" alt="Iberica T2 6.36x8.86 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Iberica T2 6.36x8.86</div>
+        <div class="card-meta"><span>6.36x8.86 m</span><span>44.0 m²</span></div>
+        <div class="card-price">17.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=iberica-t2-68">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="jennifer-44-10.5x8.52">
+      <a href="house.html?casa=jennifer-44-10.5x8.52" class="card-img-link"><div class="card-img">
+        <img src="houses/jennifer-44-10.5x8.52/107-Jennifer_10_5x8_52_2_63044.jpg" alt="Jennifer 10.5x8.52 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Jennifer 10.5x8.52</div>
+        <div class="card-meta"><span>10.5x8.52 m</span><span>81.0 m²</span></div>
+        <div class="card-price">18.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=jennifer-44-10.5x8.52">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="max-68-5.6x6.6">
+      <a href="house.html?casa=max-68-5.6x6.6" class="card-img-link"><div class="card-img">
+        <img src="houses/max-68-5.6x6.6/107-Max_5_6x6_6_68mm_77987.jpg" alt="Max 5.6x6.6 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Max 5.6x6.6</div>
+        <div class="card-meta"><span>5.6x6.6 m</span><span>47.4 m²</span></div>
+        <div class="card-price">19.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=max-68-5.6x6.6">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="ibérica-t3-44-7.92x11.84">
+      <a href="house.html?casa=ibérica-t3-44-7.92x11.84" class="card-img-link"><div class="card-img">
+        <img src="houses/ibérica-t3-44-7.92x11.84/107-Iberica_T3_3d_exter_3.jpg" alt="Ibérica T3 7.92x11.84 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Ibérica T3 7.92x11.84</div>
+        <div class="card-meta"><span>7.92x11.84 m</span><span>73.8 m²</span></div>
+        <div class="card-price">20.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=ibérica-t3-44-7.92x11.84">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="gustav-b-68-6x8">
+      <a href="house.html?casa=gustav-b-68-6x8" class="card-img-link"><div class="card-img">
+        <img src="houses/gustav-b-68-6x8/107-Gustav_B_6x8_68mm_fp_71254.jpg" alt="Gustav B 6x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Gustav B 6x8</div>
+        <div class="card-meta"><span>6x8 m</span><span>61.0 m²</span></div>
+        <div class="card-price">20.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=gustav-b-68-6x8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="orlando--olga-68-8x9">
+      <a href="house.html?casa=orlando--olga-68-8x9" class="card-img-link"><div class="card-img">
+        <img src="houses/orlando--olga-68-8x9/107-Olga_8x9_3d_1_33572.jpg" alt="Orlando  olga 8x9 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Orlando  olga 8x9</div>
+        <div class="card-meta"><span>8x9 m</span><span>57.6 m²</span></div>
+        <div class="card-price">21.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=orlando--olga-68-8x9">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="scarlett-68-7x10.2">
+      <a href="house.html?casa=scarlett-68-7x10.2" class="card-img-link"><div class="card-img">
+        <img src="houses/scarlett-68-7x10.2/107-Scarlett_7x10_2_3d_1_19270.jpg" alt="Scarlett 7x10.2 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Scarlett 7x10.2</div>
+        <div class="card-meta"><span>7x10.2 m</span><span>59.1 m²</span></div>
+        <div class="card-price">21.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=scarlett-68-7x10.2">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="orchidea-68-6x11.5">
+      <a href="house.html?casa=orchidea-68-6x11.5" class="card-img-link"><div class="card-img">
+        <img src="houses/orchidea-68-6x11.5/107-Orchidea_6x11_5_68mm_85582.jpg" alt="Orchidea 6x11.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Orchidea 6x11.5</div>
+        <div class="card-meta"><span>6x11.5 m</span><span>61.9 m²</span></div>
+        <div class="card-price">22.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=orchidea-68-6x11.5">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="maja-68-7.4x10">
+      <a href="house.html?casa=maja-68-7.4x10" class="card-img-link"><div class="card-img">
+        <img src="houses/maja-68-7.4x10/107-Maja_7_4x10_3d_2_25464.jpg" alt="Maja 7.4x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Maja 7.4x10</div>
+        <div class="card-meta"><span>7.4x10 m</span><span>49.8 m²</span></div>
+        <div class="card-price">23.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=maja-68-7.4x10">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="leon-58-9.4x10.7">
+      <a href="house.html?casa=leon-58-9.4x10.7" class="card-img-link"><div class="card-img">
+        <img src="houses/leon-58-9.4x10.7/107-Leon_S19497_3d_3_27572.jpg" alt="Leon 9.4x10.7 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Leon 9.4x10.7</div>
+        <div class="card-meta"><span>9.4x10.7 m</span><span>73.9 m²</span></div>
+        <div class="card-price">24.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=leon-58-9.4x10.7">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="markus-68-7.1x11.1">
+      <a href="house.html?casa=markus-68-7.1x11.1" class="card-img-link"><div class="card-img">
+        <img src="houses/markus-68-7.1x11.1/107-Markus_7_1x11_1_3d_1_71909.jpg" alt="Markus 7.1x11.1 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Markus 7.1x11.1</div>
+        <div class="card-meta"><span>7.1x11.1 m</span><span>61.9 m²</span></div>
+        <div class="card-price">25.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=markus-68-7.1x11.1">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="oskar-68-8.87x10.04">
+      <a href="house.html?casa=oskar-68-8.87x10.04" class="card-img-link"><div class="card-img">
+        <img src="houses/oskar-68-8.87x10.04/107-Oskar_8_87x10_04_3d_1_93461.jpg" alt="Oskar 8.87x10.04 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Oskar 8.87x10.04</div>
+        <div class="card-meta"><span>8.87x10.04 m</span><span>48.5 m²</span></div>
+        <div class="card-price">25.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=oskar-68-8.87x10.04">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="jennifer-68-10.5x8.52">
+      <a href="house.html?casa=jennifer-68-10.5x8.52" class="card-img-link"><div class="card-img">
+        <img src="houses/jennifer-68-10.5x8.52/107-Jennifer_10_5x8_52_2_63044.jpg" alt="Jennifer 10.5x8.52 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Jennifer 10.5x8.52</div>
+        <div class="card-meta"><span>10.5x8.52 m</span><span>65.1 m²</span></div>
+        <div class="card-price">25.720€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=jennifer-68-10.5x8.52">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="premium" data-casa="sevilla-44-7.8x13.74">
+      <a href="house.html?casa=sevilla-44-7.8x13.74" class="card-img-link"><div class="card-img">
+        <img src="houses/sevilla-44-7.8x13.74/107-Sevilla_7_8x13_74_3d_3_20490.jpg" alt="Sevilla 7.8x13.74 casa de madera 44mm" loading="lazy">
+        <span class="card-badge" style="background:#B8860B">Premium</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Sevilla 7.8x13.74</div>
+        <div class="card-meta"><span>7.8x13.74 m</span><span>97.8 m²</span></div>
+        <div class="card-price">25.750€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=sevilla-44-7.8x13.74">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="leon-68-9.4x10.7">
+      <a href="house.html?casa=leon-68-9.4x10.7" class="card-img-link"><div class="card-img">
+        <img src="houses/leon-68-9.4x10.7/107-Leon_9_4x10_7_68mm_46457.jpg" alt="Leon 9.4x10.7 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Leon 9.4x10.7</div>
+        <div class="card-meta"><span>9.4x10.7 m</span><span>73.9 m²</span></div>
+        <div class="card-price">26.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=leon-68-9.4x10.7">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="takoma-58-12x8">
+      <a href="house.html?casa=takoma-58-12x8" class="card-img-link"><div class="card-img">
+        <img src="houses/takoma-58-12x8/107-Takoma_12_02x8_02_without_insulation_5_-_Photo_02662.jpg" alt="Takoma 12x8 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Takoma 12x8</div>
+        <div class="card-meta"><span>12x8 m</span><span>75.1 m²</span></div>
+        <div class="card-price">26.400€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=takoma-58-12x8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="iberica-t3-68-7.92x11.84">
+      <a href="house.html?casa=iberica-t3-68-7.92x11.84" class="card-img-link"><div class="card-img">
+        <img src="houses/iberica-t3-68-7.92x11.84/107-Iberica_T3_3d__exter 3.jpg" alt="Iberica T3 7.92x11.84 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Iberica T3 7.92x11.84</div>
+        <div class="card-meta"><span>7.92x11.84 m</span><span>73.8 m²</span></div>
+        <div class="card-price">27.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=iberica-t3-68-7.92x11.84">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="felix-68-6x10">
+      <a href="house.html?casa=felix-68-6x10" class="card-img-link"><div class="card-img">
+        <img src="houses/felix-68-6x10/107-Felix_6x10_2_54151.jpg" alt="Felix 6x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Felix 6x10</div>
+        <div class="card-meta"><span>6x10 m</span><span>99.9 m²</span></div>
+        <div class="card-price">28.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=felix-68-6x10">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="verona-68-5.93x8.75">
+      <a href="house.html?casa=verona-68-5.93x8.75" class="card-img-link"><div class="card-img">
+        <img src="houses/verona-68-5.93x8.75/107-Verona_5_9x8_75_3d_3_21793.jpg" alt="Verona 5.93x8.75 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Verona 5.93x8.75</div>
+        <div class="card-meta"><span>5.93x8.75 m</span><span>90.0 m²</span></div>
+        <div class="card-price">29.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=verona-68-5.93x8.75">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="takoma-68-12x8">
+      <a href="house.html?casa=takoma-68-12x8" class="card-img-link"><div class="card-img">
+        <img src="houses/takoma-68-12x8/107-Takoma_12x8_3d_2_83487.jpg" alt="Takoma 12x8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Takoma 12x8</div>
+        <div class="card-meta"><span>12x8 m</span><span>75.1 m²</span></div>
+        <div class="card-price">29.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=takoma-68-12x8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="vienna-58-8.3x11">
+      <a href="house.html?casa=vienna-58-8.3x11" class="card-img-link"><div class="card-img">
+        <img src="houses/vienna-58-8.3x11/107-Vienna_8_3x11_3d_3_15700.jpg" alt="Vienna 8.3x11 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Vienna 8.3x11</div>
+        <div class="card-meta"><span>8.3x11 m</span><span>83.2 m²</span></div>
+        <div class="card-price">29.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=vienna-58-8.3x11">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="talinn-58-5x10">
+      <a href="house.html?casa=talinn-58-5x10" class="card-img-link"><div class="card-img">
+        <img src="houses/talinn-58-5x10/107-Talinn_5x10_3d_4_06779.jpg" alt="Talinn 5x10 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Talinn 5x10</div>
+        <div class="card-meta"><span>5x10 m</span><span>93.4 m²</span></div>
+        <div class="card-price">30.100€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=talinn-58-5x10">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="granada-58-8.8x14">
+      <a href="house.html?casa=granada-58-8.8x14" class="card-img-link"><div class="card-img">
+        <img src="houses/granada-58-8.8x14/107-Granada_8_8x14_12_-_Photo_43424.jpg" alt="Granada 8.8x14 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Granada 8.8x14</div>
+        <div class="card-meta"><span>8.8x14 m</span><span>99.6 m²</span></div>
+        <div class="card-price">31.800€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=granada-58-8.8x14">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="vienna-68-8.3x11">
+      <a href="house.html?casa=vienna-68-8.3x11" class="card-img-link"><div class="card-img">
+        <img src="houses/vienna-68-8.3x11/107-Vienna_8_3x11_3d_1_14120.jpg" alt="Vienna 8.3x11 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Vienna 8.3x11</div>
+        <div class="card-meta"><span>8.3x11 m</span><span>83.2 m²</span></div>
+        <div class="card-price">32.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=vienna-68-8.3x11">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="talinn-68-5x10">
+      <a href="house.html?casa=talinn-68-5x10" class="card-img-link"><div class="card-img">
+        <img src="houses/talinn-68-5x10/107-Talinn_5x10_3d_1_83415.jpg" alt="Talinn 5x10 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Talinn 5x10</div>
+        <div class="card-meta"><span>5x10 m</span><span>93.4 m²</span></div>
+        <div class="card-price">33.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=talinn-68-5x10">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="sevilla-68-7.8x13.74">
+      <a href="house.html?casa=sevilla-68-7.8x13.74" class="card-img-link"><div class="card-img">
+        <img src="houses/sevilla-68-7.8x13.74/107-Sevilla_7_8x13_74_3d_3_20490.jpg" alt="Sevilla 7.8x13.74 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Sevilla 7.8x13.74</div>
+        <div class="card-meta"><span>7.8x13.74 m</span><span>97.9 m²</span></div>
+        <div class="card-price">33.600€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=sevilla-68-7.8x13.74">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="nagano-58-10.14x8.04">
+      <a href="house.html?casa=nagano-58-10.14x8.04" class="card-img-link"><div class="card-img">
+        <img src="houses/nagano-58-10.14x8.04/107-Nagano_10_14x8_04_98840.jpg" alt="Nagano 10.14x8.04 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Nagano 10.14x8.04</div>
+        <div class="card-meta"><span>10.14x8.04 m</span><span>81.2 m²</span></div>
+        <div class="card-price">33.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=nagano-58-10.14x8.04">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="athena-58-5.86x11.16">
+      <a href="house.html?casa=athena-58-5.86x11.16" class="card-img-link"><div class="card-img">
+        <img src="houses/athena-58-5.86x11.16/107-Athena_5_86x11_16_68mm_75679.jpg" alt="Athena 5.86x11.16 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Athena 5.86x11.16</div>
+        <div class="card-meta"><span>5.86x11.16 m</span><span>86.1 m²</span></div>
+        <div class="card-price">33.900€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=athena-58-5.86x11.16">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="wendy-68-9.7x9.8">
+      <a href="house.html?casa=wendy-68-9.7x9.8" class="card-img-link"><div class="card-img">
+        <img src="houses/wendy-68-9.7x9.8/107-Wendy_9_7x9_8_3d_2_88986.jpg" alt="Wendy 9.7x9.8 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Wendy 9.7x9.8</div>
+        <div class="card-meta"><span>9.7x9.8 m</span><span>72.9 m²</span></div>
+        <div class="card-price">36.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=wendy-68-9.7x9.8">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="granada-68-8.8x14">
+      <a href="house.html?casa=granada-68-8.8x14" class="card-img-link"><div class="card-img">
+        <img src="houses/granada-68-8.8x14/107-Granada_8_8x14_12_-_Photo_43424.jpg" alt="Granada 8.8x14 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Granada 8.8x14</div>
+        <div class="card-meta"><span>8.8x14 m</span><span>99.6 m²</span></div>
+        <div class="card-price">36.300€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=granada-68-8.8x14">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="nagano-68-10.14x8.04">
+      <a href="house.html?casa=nagano-68-10.14x8.04" class="card-img-link"><div class="card-img">
+        <img src="houses/nagano-68-10.14x8.04/107-Nagano_10_14x8_04_68mm_3d_3_42047.jpg" alt="Nagano 10.14x8.04 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Nagano 10.14x8.04</div>
+        <div class="card-meta"><span>10.14x8.04 m</span><span>81.2 m²</span></div>
+        <div class="card-price">36.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=nagano-68-10.14x8.04">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="athena-68-5.86x11.16">
+      <a href="house.html?casa=athena-68-5.86x11.16" class="card-img-link"><div class="card-img">
+        <img src="houses/athena-68-5.86x11.16/107-Athena_5_86x11_16_68mm_09451.jpg" alt="Athena 5.86x11.16 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Athena 5.86x11.16</div>
+        <div class="card-meta"><span>5.86x11.16 m</span><span>86.1 m²</span></div>
+        <div class="card-price">38.200€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=athena-68-5.86x11.16">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="winnipeg-58-10.01x16.69">
+      <a href="house.html?casa=winnipeg-58-10.01x16.69" class="card-img-link"><div class="card-img">
+        <img src="houses/winnipeg-58-10.01x16.69/107-Winnipeg_10_01x16_688_3d_3_42292.jpg" alt="Winnipeg 10.01x16.69 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Winnipeg 10.01x16.69</div>
+        <div class="card-meta"><span>10.01x16.69 m</span><span>117.6 m²</span></div>
+        <div class="card-price">42.500€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=winnipeg-58-10.01x16.69">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="sweden-58-7.5x13.5">
+      <a href="house.html?casa=sweden-58-7.5x13.5" class="card-img-link"><div class="card-img">
+        <img src="houses/sweden-58-7.5x13.5/107-Sweden_7_5x13_5_3d_3_84184.jpg" alt="Sweden 7.5x13.5 casa de madera 58mm" loading="lazy">
+        <span class="card-badge">58mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Sweden 7.5x13.5</div>
+        <div class="card-meta"><span>7.5x13.5 m</span><span>109.4 m²</span></div>
+        <div class="card-price">46.000€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=sweden-58-7.5x13.5">Ver ficha y precio</a>
+      </div>
+    </div>
+
+    <div class="card visible" data-cat="viviendas" data-casa="sweden-68-7.5x13.5">
+      <a href="house.html?casa=sweden-68-7.5x13.5" class="card-img-link"><div class="card-img">
+        <img src="houses/sweden-68-7.5x13.5/107-Sweden_7_5x13_5_3d_3_84184.jpg" alt="Sweden 7.5x13.5 casa de madera 68mm" loading="lazy">
+        <span class="card-badge">68mm</span>
+      </div></a>
+      <div class="card-body">
+        <div class="card-name">Sweden 7.5x13.5</div>
+        <div class="card-meta"><span>7.5x13.5 m</span><span>109.4 m²</span></div>
+        <div class="card-price">50.700€ <span>sin tejas/pintura</span></div>
+        <a class="card-btn" href="house.html?casa=sweden-68-7.5x13.5">Ver ficha y precio</a>
+      </div>
+    </div>
+
+<!-- CATALOG:END -->
 
   </div><!-- /cards-grid -->
   <div class="load-more-wrap" id="loadMoreWrap">
@@ -1555,7 +1847,11 @@ var currentCat = 'todas';
 
 function getFilteredCards() {
   return Array.from(document.querySelectorAll('.card[data-cat]')).filter(function(c){
-    return currentCat === 'todas' || c.dataset.cat === currentCat;
+    // data-cat может содержать несколько категорий через пробел
+    // (например "garajes premium" — гараж с меткой Premium показывается
+    // сразу в обеих вкладках).
+    var cardCats = (c.dataset.cat || '').split(' ');
+    return currentCat === 'todas' || cardCats.indexOf(currentCat) !== -1;
   });
 }
 

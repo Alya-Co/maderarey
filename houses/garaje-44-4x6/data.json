@@ -1,0 +1,35 @@
+{
+  "name": "Garaje",
+  "thickness": "44mm",
+  "size": "4x6",
+  "price": 4000,
+  "description": "Este garaje cuenta con techo a dos aguas y paredes de 44 mm de espesor. Con una superficie de techo de 27,5 m², es una solución robusta para el almacenamiento de vehículos. . Dimensiones del paquete: (640 x 6000 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "3,8 x 5,8",
+    "Ancho x largo del edificio (m)": "4 x 6",
+    "Superficie interior (m²)": "21.2",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,57",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "27.5",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "39.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-medium-Garage_4x6_44mm-P_14225.jpg",
+    "107-medium-Garage_4x6_44mm_4_-_Photo_37080.jpg",
+    "107-medium-Garage_4x6_44mm_fp_42711.jpg",
+    "107-medium-Garage_4x6_3_13431.jpg",
+    "107-medium-Garage_4x6_44mm_65377.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Garaje 4x6",
+  "options": {
+    "tegola": 440
+  },
+  "category": "premium"
+}

@@ -21,8 +21,9 @@ from pathlib import Path
 HOUSES_DIR = Path("houses")
 DRY_RUN = False  # поставь True, чтобы сначала посмотреть, ничего не меняя
 
-# Строка похожа на "текст ... - 4300" (число в конце после тире)
-PRICE_LINE_RE = re.compile(r"^(?P<label>.+?)\s*-\s*(?P<price>\d+)\s*$")
+# Строка похожа на "текст ... - 4300" или "... - 4300 eur" (число в конце
+# после тире, необязательно с "eur"/"€")
+PRICE_LINE_RE = re.compile(r"^(?P<label>.+?)\s*-\s*(?P<price>\d+)\s*(?:eur|€)?\.?\s*$", re.IGNORECASE)
 
 # По каким словам в строке определяем, какая это опция
 KEYWORD_MAP = {

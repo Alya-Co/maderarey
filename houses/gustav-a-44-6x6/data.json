@@ -1,0 +1,44 @@
+{
+  "name": "Gustav A",
+  "thickness": "44mm",
+  "size": "6x6",
+  "price": 12420,
+  "description": "Esta cabaña de 31,5 m² cuenta con paredes de 44 mm y suelo de 19 mm, techo a dos aguas y varias habitaciones. Ideal para vivir en ella durante la temporada o todo el año. Camión completo: 4 unidades. Dimensiones del paquete: (870 x 6000 x 1200), (870 x 6000 x 1200), (520 x 3700 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 5,8",
+    "Ancho x largo del edificio (m)": "6 x 6",
+    "Superficie interior (m²)": "46.5999999999999994",
+    "Altura del edificio (m, hasta la cima de la cresta)": "4.12",
+    "Voladizo del tejado": "2.2",
+    "Superficie del tejado (m²)": "60.1",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.43",
+    "Superficie de la pared exterior (m²)": "62.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "18.9",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Persianas": "Sí",
+    "Número de habitaciones": "4",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Gustav_A_6x6_3d_3_41449.jpg",
+    "107-Gustav_A_6x6_68mm_fp_88027.jpg",
+    "107-Gustav_A_6x6_series_1_78915.jpg",
+    "107-Gustav_A_6x6_3d_1_77869.jpg",
+    "107-Gustav_A_6x6_44mm_50904.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Gustav A 6x6",
+  "options": {
+    "ins_roof": 2800,
+    "tegola": 920,
+    "ins_wall": 4600
+  },
+  "category": "premium"
+}

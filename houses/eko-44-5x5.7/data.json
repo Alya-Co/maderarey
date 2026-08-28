@@ -1,0 +1,42 @@
+{
+  "name": "Eko",
+  "thickness": "44mm",
+  "size": "5x5.7",
+  "price": 7810,
+  "description": "Esta casita de jardín con tejado a dos aguas ofrece 25,1 m² de espacio interior, construida con paredes de 44 mm y suelo de tablones de 19 mm. Con varias habitaciones y doble acristalamiento, es perfecta para un despacho espacioso o una casa de invitados.",
+  "specs": {
+    "Huella de la base (m)": "4,8 x 5,5",
+    "Ancho x largo del edificio (m)": "5 x 5,7",
+    "Superficie interior (m²)": "25.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.7",
+    "Voladizo del tejado": "0,72",
+    "Superficie del tejado (m²)": "35.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.09",
+    "Superficie de la pared exterior (m²)": "43.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "4",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "eko.jpg",
+    "107-Eko_5x5_7_44mm-P_3d_1_94011.jpg",
+    "107-Eko_5x5_7_44mm-P_3d_2_14536.jpg",
+    "107-Eko_5x5_7_44mm_fp_40506.jpg",
+    "107-Eko_5x5_7_44mm-E_05307.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Eko 5x5.7",
+  "options": {
+    "ins_roof": 1650,
+    "tegola": 580,
+    "ins_wall": 3100
+  },
+  "category": "premium"
+}

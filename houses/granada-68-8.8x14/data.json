@@ -1,0 +1,40 @@
+{
+  "name": "Granada",
+  "thickness": "68mm",
+  "size": "8.8x14",
+  "price": 36300,
+  "description": "EPDM - 5810\nGranada ofrece 99,5 m² de superficie habitable distribuidos en dos niveles, con paredes de 68 mm y suelos de madera de 28 mm. Su distribución se adapta a un estilo de vida de lujo, con múltiples estancias y amplios ventanales.",
+  "specs": {
+    "Huella de la base (m)": "8,6 x 13,8",
+    "Ancho x largo del edificio (m)": "8,8 x 14",
+    "Superficie interior (m²)": "99.6",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.7",
+    "Voladizo del tejado": "0.1",
+    "Superficie del tejado (m²)": "123.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2,57",
+    "Superficie de la pared exterior (m²)": "101.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "35.9",
+    "Número de puertas": "8",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,198 x 150,39 x 150,198 x 85",
+    "Número de habitaciones": "9",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Granada_8_8x14_12_-_Photo_43424.jpg",
+    "107-Granada_8_8x14_11_-_Photo_50134.jpg",
+    "107-Granada_8_8x14_10_-_Photo_45236.jpg",
+    "107-Granada_8_8x14_8_-_Photo_10984.jpg",
+    "107-Granada_8_8x14_7_-_Photo_02683.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Granada 8.8x14",
+  "options": {
+    "ins_roof": 5500,
+    "ins_wall": 6900
+  }
+}

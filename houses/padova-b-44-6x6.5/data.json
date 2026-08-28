@@ -1,0 +1,42 @@
+{
+  "name": "Padova B",
+  "thickness": "44mm",
+  "size": "6x6.5",
+  "price": 9500,
+  "description": "Casa premium con techo a dos aguas, paredes de 44 mm y suelo de 19 mm, con una superficie de 35,1 m². Ventanas de doble acristalamiento y distribución espaciosa, ideal para uso profesional. Camión completo: 6 unidades. Dimensiones del paquete: (890 x 6000 x 1200 mm), (700 x 6000 x 1200 mm).",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 6,3",
+    "Ancho x largo del edificio (m)": "6 x 6,5",
+    "Superficie interior (m²)": "35.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,84",
+    "Voladizo del tejado": "1.6",
+    "Superficie del tejado (m²)": "52.7",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.09",
+    "Superficie de la pared exterior (m²)": "51.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "8.5",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "5",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "198 x 50,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Padova_B_6x6_5_44mm-P_3d_2_16650.jpg",
+    "107-Padova_B_6x6_5_44mm_fp_85956.jpg",
+    "107-Padova_B_6x6_5_44mm-P_3d_1_05325.jpg",
+    "107-Padova_B_6x6_5_44mm-P_81024.jpg",
+    "107-Padova_B_6x6_5_75119.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Padova B 6x6.5",
+  "options": {
+    "ins_roof": 2440,
+    "tegola": 750,
+    "ins_wall": 3800
+  }
+}

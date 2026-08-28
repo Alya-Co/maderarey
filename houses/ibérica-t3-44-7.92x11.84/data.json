@@ -1,0 +1,33 @@
+{
+  "name": "Ibérica T3",
+  "thickness": "44mm",
+  "size": "7.92x11.84",
+  "price": 20200,
+  "description": "Esta villa de grandes dimensiones, con una superficie de 73,8 m², está construida con paredes de 44 mm y suelos de tablones de 19 mm. Su tejado a dos aguas y su distribución en varias habitaciones la hacen ideal tanto para residencia permanente como para uso comercial.",
+  "specs": {
+    "Superficie interior (m²)": "73.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.24",
+    "Voladizo del tejado": "0.1",
+    "Superficie del tejado (m²)": "102.0",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "90.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "11.0",
+    "Número de habitaciones": "7",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Iberica_T3_3d_exter_3.jpg",
+    "107-Iberica_T3_3d_mueble.jpg",
+    "107-Iberica_T3_7_92x11_84_68mm_dimenciones.jpg",
+    "107-Iberica_T3_7_92x11_84_68mm_exter_2.jpg",
+    "107-Iberica_T3_3d_exter.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Ibérica T3 7.92x11.84",
+  "options": {
+    "ins_roof": 4600,
+    "tegola": 1500,
+    "ins_wall": 6100
+  },
+  "category": "premium"
+}

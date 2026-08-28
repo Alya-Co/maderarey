@@ -1,0 +1,44 @@
+{
+  "name": "Gustav B",
+  "thickness": "44mm",
+  "size": "6x8",
+  "price": 15800,
+  "description": "Esta cabaña con techo a dos aguas, de 43,6 m², cuenta con paredes de 44 mm y suelo de tablones de 19 mm. Su distribución permite su uso en varias habitaciones, ya sea como vivienda o como estudio.",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 7,8",
+    "Ancho x largo del edificio (m)": "6 x 8",
+    "Superficie interior (m²)": "62.400000000000006",
+    "Altura del edificio (m, hasta la cima de la cresta)": "4.12",
+    "Voladizo del tejado": "2.2",
+    "Superficie del tejado (m²)": "74.7",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.43",
+    "Superficie de la pared exterior (m²)": "72.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "20.7",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "52 x 50,92 x 130,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Persianas": "Sí",
+    "Número de habitaciones": "4",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Gustav_B_6x8_3d_2_11529.jpg",
+    "107-Gustav_B_6x6_44mm_fp_59975.jpg",
+    "107-Gustav_B_6x8_3d_3_59359.jpg",
+    "107-Gustav_B_6x8_series_65591.jpg",
+    "107-Gustav_B_6x8_3d_1_92603.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Gustav B 6x8",
+  "options": {
+    "ins_roof": 3400,
+    "tegola": 1100,
+    "ins_wall": 5100
+  },
+  "category": "premium"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Typ 2",
+  "thickness": "68mm",
+  "size": "5.2x10.2",
+  "price": 16200,
+  "description": "TYP2 pertenece a la categoría de casetas de jardín de alta gama, con techo a dos aguas que complementa su elegante diseño. Cuenta con paredes de 68 mm de grosor y suelo de 28 mm, lo que garantiza resistencia estructural y eficiencia térmica. Ideal para un refugio acogedor o un espacio funcional en el jardín.",
+  "specs": {
+    "Ancho x largo del edificio (m)": "5,2 x 10,2",
+    "Superficie interior (m²)": "37.6",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.7",
+    "Voladizo del tejado": "2.0",
+    "Superficie del tejado (m²)": "57.3",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral(m)": "2.3",
+    "Superficie de la pared exterior (m²)": "58.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "9.0",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Doble, Individual",
+    "Ancho x alto de las puertas (cm)": "198 x 160, 198 x 85",
+    "Número de ventanas": "4",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70"
+  },
+  "photos": [
+    "107-Typ_2_5_2x10_2_9_52276.jpg",
+    "107-Typ_2_5_2x10_2_8_51798.jpg",
+    "107-Typ_2_5_2x10_2_4_68883.jpg",
+    "107-Typ_2_5_2x10_2_1_61615.jpg",
+    "107-Typ_2_5_2x10_2_5_14428.jpg",
+    "107-Typ_2_5_2x10_2_6_23503.jpg",
+    "107-Typ_2_5_2x10_2_7_56905.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Typ 2 5.2x10.2",
+  "options": {
+    "ins_roof": 2600,
+    "tegola": 880,
+    "ins_wall": 3950
+  }
+}

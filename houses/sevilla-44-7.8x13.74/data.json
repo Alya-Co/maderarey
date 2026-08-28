@@ -1,0 +1,44 @@
+{
+  "name": "Sevilla",
+  "thickness": "44mm",
+  "size": "7.8x13.74",
+  "price": 25750,
+  "description": "Sevilla, con una superficie interior de 97,8 m², está construida con paredes de abeto de 44 mm y un tejado a dos aguas que alcanza los 3,31 m de altura. Cuenta con 7 habitaciones, suelos de madera de 19 mm y ventanas de doble acristalamiento, lo que la convierte en una sólida residencia para todo el año o una espaciosa casa de vacaciones.",
+  "specs": {
+    "Espesor de las paredes (mm)": "44",
+    "Ancho (m)": "7.8",
+    "Largo (m)": "13.74",
+    "Superficie total construida (m²)": "107.17",
+    "Superficie interior (habitable) (m²)": "97.8",
+    "Área del techo (m2)": "120.4",
+    "Voladizo del techo (m)": "0.3",
+    "Base del techo": "Tablas de techo de 19mm con lengüeta y ranura",
+    "Tipo de techo": "Techo a dos aguas",
+    "Altura total (m)": "3.31",
+    "Altura de la pared lateral (m)": "2.30",
+    "Puertas": "7",
+    "Medidas de la puerta (m)": "7 singles completos de madera de 1.98x0.85 m",
+    "Ventanas": "10",
+    "Medidas de la ventana (m)": "2 singles de 0.92x0.7 m, 8 dobles de 0.92x1.3 m",
+    "Acristalamiento": "doble acristalamiento 4-16-4",
+    "Contraventanas": "no",
+    "Cerraduras de puertas": "Cerradura de cilindro con 2 llaves",
+    "Número de estancias": "7",
+    "Garantía (años)": "5",
+    "Terraza": "No",
+    "Número de plantas": "1 planta"
+  },
+  "photos": [
+    "107-Sevilla_7_8x13_74_3d_3_20490.jpg",
+    "107-Sevilla_7_8x13_74_3d_2_59584.jpg",
+    "107-Sevilla_7_8x13_74_68mm_fp_70294.jpg",
+    "107-Sevilla_7_8x13_74_3d_1_52721.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Sevilla 7.8x13.74",
+  "options": {
+    "ins_roof": 5330,
+    "tegola": 1940,
+    "ins_wall": 6600
+  },
+  "category": "premium"
+}

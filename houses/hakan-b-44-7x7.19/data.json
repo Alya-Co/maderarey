@@ -1,0 +1,45 @@
+{
+  "name": "Hakan B",
+  "thickness": "44mm",
+  "size": "7x7.19",
+  "price": 7700,
+  "description": "Esta casa de verano de 46 m2 cuenta con una distribución bien planificada con una sala de estar, dormitorio y baño. La terraza de 6 m2 incluida la convierte en una opción popular para aquellos que buscan un refugio de verano cómodo y funcional.",
+  "specs": {
+    "Espesor de las paredes (mm)": "44",
+    "Ancho (m)": "7",
+    "Largo (m)": "7.19",
+    "Superficie total construida (m²)": "50.33",
+    "Superficie interior (habitable) (m²)": "45.9",
+    "Área del techo (m2)": "55.2",
+    "Voladizo del techo (m)": "0.3",
+    "Base del techo": "Tablas de techo de 19mm con lengüeta y ranura",
+    "Tablas del suelo machihembradas": "19 mm",
+    "Tipo de techo": "Techo a dos aguas",
+    "Altura total (m)": "2.77",
+    "Altura de la pared lateral (m)": "2.09",
+    "Puertas": "4",
+    "Medidas de la puerta (m)": "2 sencillos con 50% de vidrio 1.85x0.85 m, 2 sencillos de madera maciza 1.85x0.85 m",
+    "Ventanas": "4",
+    "Medidas de la ventana (m)": "3 dobles 0.92x1.3 m, 1 sencillo 0.39x0.7 m",
+    "Acristalamiento": "doble acristalamiento 4-16-4",
+    "Contraventanas": "No",
+    "Cerraduras de puertas": "Cerradura de cilindro con 2 llaves",
+    "Número de estancias": "3",
+    "Garantía (años)": "5",
+    "Montaje inverso": "No",
+    "Terraza": "Sí"
+  },
+  "photos": [
+    "107-Hakan_B_7x7_19_44mm-E_75273.jpg",
+    "107-Hakan_B_7x7_19_44mm-2_40805.jpg",
+    "107-Hakan_B_7x7_19_44mm-4_60581.jpg",
+    "107-Hakan_B_7x7_19_44mm-1_72673.jpg",
+    "107-Hakan_B_7x7_19_44mm_fp_33600.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Hakan B 7x7.19",
+  "options": {
+    "ins_roof": 1700,
+    "tegola": 650,
+    "ins_wall": 3200
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Cochera  trastero",
+  "thickness": "44mm",
+  "size": "5.7x5.3",
+  "price": 5200,
+  "description": "Una práctica unidad combinada con techo a dos aguas y paredes de 44 mm, que ofrece estacionamiento cubierto y un trastero. Cuenta con una superficie total de 34,5 m², ideal para un uso compacto.",
+  "specs": {
+    "Superficie interior (m²)": "0.0",
+    "Superficie del tejado (m²)": "35.0",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Superficie de la pared exterior (m²)": "39.0",
+    "Superficie de las terrazas (m²)": "15.5",
+    "Superficie de balcones (m²)": "0.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 160",
+    "Número de ventanas": "2",
+    "Tipo de ventanas": "Simple",
+    "Ancho x alto de la ventana (cm)": "39 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento"
+  },
+  "photos": [
+    "23-Carport+storage_5_7x5_3-1_62948.jpg",
+    "23-Carport+storage_5_7x5_3_44mm_fp_33892.jpg",
+    "23-Carport+storage_5_7x5_3_44mm_19953.jpg",
+    "23-Carport+storage_5_7x5_3-2_33966.jpg",
+    "23-Carport+storage_5_7x5_3_40154.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Cochera  trastero 5.7x5.3",
+  "options": {
+    "tegola": 750
+  }
+}

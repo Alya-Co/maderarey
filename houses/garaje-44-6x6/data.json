@@ -1,0 +1,35 @@
+{
+  "name": "Garaje",
+  "thickness": "44mm",
+  "size": "6x6",
+  "price": 5600,
+  "description": "Un garaje espacioso con paredes de 44 mm y techo a dos aguas. Incluye 1 habitación y tiene una superficie de 40,6 m², ideal para vehículos grandes o almacenamiento adicional. Camiòn completo de 8 unidades. Dimensiones del paquete: (980 x 6000 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 5,8",
+    "Ancho x largo del edificio (m)": "6 x 6",
+    "Superficie interior (m²)": "32.6",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,84",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "40.6",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "46.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Garage_6x6_5_01160.jpg",
+    "107-Garage_6x6_44mm_1_-_Photo_50549.jpg",
+    "107-Garage_6x6_44mm_fp_01993.jpg",
+    "107-Garage_6x6_44mm_2_-_Photo_41343.jpg",
+    "107-Garage_6x6_44mm-P_76604.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Garaje 6x6",
+  "options": {
+    "tegola": 700
+  },
+  "category": "premium"
+}

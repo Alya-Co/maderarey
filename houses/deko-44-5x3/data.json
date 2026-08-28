@@ -1,0 +1,41 @@
+{
+  "name": "Deko",
+  "thickness": "44mm",
+  "size": "5x3",
+  "price": 4100,
+  "description": "Esta caseta de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 12,7 m² de espacio interior. Con doble acristalamiento y distribución de una sola habitación, es ideal para un refugio acogedor o un espacio de trabajo con estilo. Camiòn completo: 12 unidades. Dimensiones del paquete: (850 x 5000 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "4,8 x 2,8",
+    "Ancho x largo del edificio (m)": "5 x 3",
+    "Superficie interior (m²)": "12.7",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,63",
+    "Voladizo del tejado": "0,5",
+    "Superficie del tejado (m²)": "19.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "1,76",
+    "Superficie de la pared exterior (m²)": "31.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "2",
+    "Tipo de puertas": "Doble, Individual",
+    "Ancho x alto de las puertas (cm)": "198 x 160, 170 x 85",
+    "Número de ventanas": "1",
+    "Tipo de ventanas": "Simple",
+    "Ancho x alto de la ventana (cm)": "92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "23-Deko_5x3_44mm-2_01084.jpg",
+    "23-Deko_5x3_44mm_fp_99766.jpg",
+    "23-Deko_5x3_44mm-P_3d_68459.jpg",
+    "23-Deko_5x3_1_60898.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Deko 5x3",
+  "options": {
+    "ins_roof": 900,
+    "tegola": 340,
+    "ins_wall": 2220
+  },
+  "category": "premium"
+}

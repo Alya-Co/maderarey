@@ -1,0 +1,40 @@
+{
+  "name": "Rico",
+  "thickness": "44mm",
+  "size": "4.04x7.8",
+  "price": 7900,
+  "description": "cubierta EPDM - 1750\nCaseta premium de techo plano con paredes de 44 mm y suelo de 19 mm, que ofrece 21,3 m². Ideal para estudio, oficina o habitación de invitados.",
+  "specs": {
+    "Huella de la base (m)": "3,84 x 7,6",
+    "Ancho x largo del edificio (m)": "4,04 x 7,8",
+    "Superficie interior (m²)": "21.3",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.43",
+    "Voladizo del tejado": "1.9",
+    "Superficie del tejado (m²)": "31.6",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "39.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "6.8",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "4",
+    "Tipo de ventanas": "Soltero",
+    "Ancho x alto de la ventana (cm)": "198 x 85,52 x 50,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Rico_4_04x7_8_44mm-E_95178.jpg",
+    "107-Rico_4_04x7_8_44mm-P_3d_2_36960.jpg",
+    "107-Rico_4_04x7_8_44mm_fp_13265.jpg",
+    "107-Rico_4_04x7_8_44mm-P_3d_1_55252.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Rico 4.04x7.8",
+  "options": {
+    "ins_roof": 1450
+  },
+  "category": "premium"
+}

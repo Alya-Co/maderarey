@@ -1,0 +1,42 @@
+{
+  "name": "Wik",
+  "thickness": "44mm",
+  "size": "4.5x3.5",
+  "price": 5300,
+  "description": "cubierta EPDM -1110\nEsta cabina tiene una superficie de 13,5 m² y está construida con paredes de 44 mm y suelo de 19 mm. Su diseño permite un doble uso como espacio de trabajo y sala de estar, con abundante luz natural. Camión completo: 12 unidades. Dimensiones del paquete: (840 x 4900 x 1200), (ST560 x 2200 x 1800)",
+  "specs": {
+    "Huella de la base (m)": "4,3 x 3,3",
+    "Ancho x largo del edificio (m)": "4,5 x 3,5",
+    "Superficie interior (m²)": "13.5",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.43",
+    "Voladizo del tejado": "0,5",
+    "Superficie del tejado (m²)": "19.6",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "25.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "4.1",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Cuadruplicar",
+    "Ancho x alto de las puertas (cm)": "198 x 300",
+    "Número de ventanas": "3",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "198 x 150, 198 x 85",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Wik_4_5x3_5_dazyta_1_-_Photo_44088.jpg",
+    "107-Wik_4_5x3_5_3_-_Photo_10533.jpg",
+    "107-Wik_4_5x3_5_floor_plan_97659.jpg",
+    "107-Wik_4_5x3_5_44mm_50857.jpg",
+    "107-Wik_4_5x3_5_dazyta_vakaras_82621.jpg",
+    "107-Wik_4_5x3_5_08437.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Wik 4.5x3.5",
+  "options": {
+    "ins_roof": 950
+  },
+  "category": "premium"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Felix",
+  "thickness": "68mm",
+  "size": "6x10",
+  "price": 28500,
+  "description": "Esta casa de campo de 2 pisos de estilo atemporal ofrece 100m2 de espacio habitable con 4 dormitorios y 2 baños. Es la combinación perfecta de encanto clásico y comodidad moderna.",
+  "specs": {
+    "Espesor de las paredes (mm)": "68",
+    "Ancho (m)": "6",
+    "Largo (m)": "10",
+    "Superficie total construida (m²)": "60",
+    "Superficie interior (habitable) (m²)": "99.9",
+    "Área del techo (m2)": "92.9",
+    "Voladizo del techo (m)": "0.7",
+    "Base del techo": "Tablas de techo de 19mm con lengüeta y ranura",
+    "Tablas del suelo machihembradas": "28 mm",
+    "Tipo de techo": "Techo a dos aguas",
+    "Altura total (m)": "5.33",
+    "Altura de la pared lateral (m)": "2.7",
+    "Puertas": "8",
+    "Medidas de la puerta (m)": "1 doble con vidrio al 50% de 1.98x1.6 m, 1 single con vidrio al 50% de 1.98x0.85 m, 6 singles completos de madera de 1.98x0.85 m",
+    "Ventanas": "10",
+    "Medidas de la ventana (m)": "4 singles de 0.92x0.7 m, 6 dobles de 0.92x1.3 m",
+    "Acristalamiento": "doble acristalamiento 4-16-4",
+    "Contraventanas": "No",
+    "Cerraduras de puertas": "Cerradura de cilindro con 2 llaves",
+    "Número de estancias": "8",
+    "Garantía (años)": "5",
+    "Terraza": "No",
+    "Número de plantas": "2 plantas"
+  },
+  "photos": [
+    "107-Felix_6x10_2_54151.jpg",
+    "107-Felix_6x10_3d_1_98037.jpg",
+    "107-Felix_6x10_3d_2_79194.jpg",
+    "107-Felix_6x10_3d_3_98172.jpg",
+    "107-Felix_6x10_68MM_22680.jpg",
+    "107-Felix_6x10_68mm_fp-1_09080.jpg",
+    "107-Felix_6x10_68mm_fp-2_69050.jpg",
+    "107-Felix_6x10_85774.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Felix 6x10",
+  "options": {
+    "ins_roof": 4100,
+    "tegola": 1350,
+    "ins_wall": 6300
+  }
+}

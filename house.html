@@ -370,7 +370,7 @@
           <input type="checkbox" id="opt-ins-roof" value="3540" onchange="updateTotal()">
           <div class="checkbox-text">
             <span class="checkbox-title">Aislamiento de techo 100mm</span>
-            <span class="checkbox-price">+3.540€</span>
+            <span class="checkbox-price" id="price-ins-roof">+3.540€</span>
           </div>
         </label>
       </div>
@@ -380,7 +380,7 @@
           <input type="checkbox" id="opt-ins-wall" value="4590" onchange="updateTotal()">
           <div class="checkbox-text">
             <span class="checkbox-title">Aislamiento de paredes 100mm</span>
-            <span class="checkbox-price">+4.590€</span>
+            <span class="checkbox-price" id="price-ins-wall">+4.590€</span>
           </div>
         </label>
       </div>
@@ -390,7 +390,7 @@
           <input type="checkbox" id="opt-roof" value="1280" onchange="toggleRoofColor(); updateTotal()">
           <div class="checkbox-text">
             <span class="checkbox-title">Teja de betún (cubierta)</span>
-            <span class="checkbox-price">+1.280€</span>
+            <span class="checkbox-price" id="price-roof">+1.280€</span>
           </div>
         </label>
         <div class="roof-colors" id="roof-colors" style="display:none">
@@ -472,14 +472,6 @@
   </div>
 </section>
 
-<!-- RELATED -->
-<section class="related-section">
-  <div class="related-inner">
-    <h2 class="section-title">También te puede interesar</h2>
-    <div class="related-grid" id="related-grid"></div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <p>© 2012–2026 MaderaRey · Casas de madera prefabricadas en España</p>
@@ -517,7 +509,7 @@ async function loadHouse() {
   let dataPath = `houses/${casaId}/data.json`;
 
   try {
-    const res = await fetch(dataPath);
+    const res = await fetch(dataPath, { cache: 'no-store' });
     if (!res.ok) throw new Error('not found');
     houseData = await res.json();
     renderHouse(houseData);
@@ -577,6 +569,24 @@ function renderHouse(d) {
   // Price
   basePrice = d.price || 0;
   document.getElementById('price-base').textContent = formatPrice(basePrice);
+
+  // Option prices — read from data.json if present, otherwise keep the hardcoded default
+  const opt = d.options || {};
+  const optMap = {
+    'opt-ins-roof': { key: 'ins_roof', priceEl: 'price-ins-roof' },
+    'opt-ins-wall': { key: 'ins_wall', priceEl: 'price-ins-wall' },
+    'opt-roof':     { key: 'tegola',   priceEl: 'price-roof' }
+  };
+  Object.keys(optMap).forEach(id => {
+    const { key, priceEl } = optMap[id];
+    const checkbox = document.getElementById(id);
+    const priceSpan = document.getElementById(priceEl);
+    if (opt[key] !== undefined && checkbox && priceSpan) {
+      checkbox.value = opt[key];
+      priceSpan.textContent = '+' + formatPrice(opt[key]);
+    }
+  });
+
   updateTotal();
 
   // Gallery
@@ -607,11 +617,19 @@ function renderHouse(d) {
 
   // Specs table
   const specsBody = document.getElementById('specs-body');
-  const specMap = {
-    'Espesor de paredes': d.thickness,
-    'Dimensiones': d.size,
-    ...d.specs
-  };
+  const specs = d.specs || {};
+  const hasEquivalent = (patterns) =>
+    Object.keys(specs).some(k => patterns.some(p => p.test(k)));
+
+  const specMap = {};
+  if (!hasEquivalent([/espesor.*pared/i, /grosor.*pared/i, /wall.*thick/i])) {
+    specMap['Espesor de paredes'] = d.thickness;
+  }
+  if (!hasEquivalent([/ancho.*largo/i, /dimensi[oó]n/i, /width.*length/i])) {
+    specMap['Dimensiones'] = d.size;
+  }
+  Object.assign(specMap, specs);
+
   Object.entries(specMap).forEach(([key, val]) => {
     if (!val) return;
     const row = document.createElement('tr');
@@ -621,9 +639,6 @@ function renderHouse(d) {
 
   // WhatsApp text
   updateWAText();
-
-  // Related (load 3 random from catalogue)
-  loadRelated(d.name);
 }
 
 // ── PRICE CALCULATOR ──────────────────────────────
@@ -690,35 +705,6 @@ function updateWAText() {
 function openWA() {
   const btn = document.getElementById('wa-float-btn');
   window.open(btn.href, '_blank');
-}
-
-// ── RELATED HOUSES ────────────────────────────────
-const relatedData = [
-  { name: 'Veronica 5×6', size: '30 m²', price: 12000, img: 'Veronica-1024x819.jpg', id: 'veronica-5x6' },
-  { name: 'Gustav 6×8', size: '48 m²', price: 14100, img: 'Gustav-44-6x8-1024x768.jpg', id: 'gustav-6x8' },
-  { name: 'Luise 6×6', size: '36 m²', price: 14050, img: 'Luise-1024x820.jpg', id: 'luise-6x6' },
-  { name: 'Almeria 6×8,8', size: '53 m²', price: 15500, img: 'almeria--1024x768.jpg', id: 'almeria-6x8.87' },
-  { name: 'Lukas 6,5×7,7', size: '50 m²', price: 15700, img: 'Lukas-1024x820.jpg', id: 'lukas-6.5x7.7' },
-  { name: 'Scarlett 7×10,2', size: '71 m²', price: 19700, img: 'Scarlett-1024x820.jpg', id: 'scarlett-7x10.2' },
-];
-
-function loadRelated(currentName) {
-  const grid = document.getElementById('related-grid');
-  const others = relatedData.filter(r => r.name !== currentName).slice(0, 3);
-
-  others.forEach(r => {
-    const card = document.createElement('div');
-    card.className = 'related-card';
-    card.innerHTML = `
-      <img src="${r.img}" alt="Casa de madera ${r.name}" loading="lazy">
-      <div class="related-card-body">
-        <div class="related-card-name">${r.name}</div>
-        <div class="related-card-meta">${r.size} · Madera maciza</div>
-        <div class="related-card-price">${r.price.toLocaleString('es-ES')}€</div>
-        <a href="house.html?casa=${r.id}" class="related-card-btn">Ver modelo</a>
-      </div>`;
-    grid.appendChild(card);
-  });
 }
 
 // ── INIT ──────────────────────────────────────────

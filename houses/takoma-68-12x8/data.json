@@ -1,0 +1,42 @@
+{
+  "name": "Takoma",
+  "thickness": "68mm",
+  "size": "12x8",
+  "price": 29100,
+  "description": "Una casa espaciosa con 114,9 m² de superficie interior, construida con madera de 68 mm y con techo a dos aguas. Incluye 4 habitaciones y suelo de tablones de 28 mm, ideal para espacios abiertos. Camión completo: 1 unidad. Dimensiones del paquete: (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x3000x1200), (ST900x2500x2200)",
+  "specs": {
+    "Huella de la base (m)": "11,8 x 7,8",
+    "Ancho x largo del edificio (m)": "12 x 8",
+    "Superficie interior (m²)": "75.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.91",
+    "Voladizo del tejado": "1.0",
+    "Superficie del tejado (m²)": "115.3",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "114.0",
+    "Grosor de las tablas del suelo (mm)": "28.0",
+    "Superficie de las terrazas (m²)": "22.3",
+    "Número de puertas": "7",
+    "Tipo de puertas": "Simple, cuádruple",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 300",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "198 x 50, 198 x 150, 198 x 85",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "6",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Takoma_12x8_3d_2_83487.jpg",
+    "107-Takoma_12_02x8_02_without_insulation_5_-_Photo_02662.jpg",
+    "107-Takoma_12x8_68mm_fp_23185.jpg",
+    "107-Takoma_12x8_68mm_88044.jpg",
+    "107-Takoma_12x8_3d_1_33165.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Takoma 12x8",
+  "options": {
+    "ins_roof": 5100,
+    "tegola": 1700,
+    "ins_wall": 8000
+  }
+}

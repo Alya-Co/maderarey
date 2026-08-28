@@ -1,0 +1,38 @@
+{
+  "name": "Garaje",
+  "thickness": "44mm",
+  "size": "3.2x5.2",
+  "price": 3500,
+  "description": "Garaje compacto con tejado a dos aguas y paredes de 44 mm de espesor, que ofrece 14,3 m² de espacio interior. Ideal para guardar un solo vehículo, con un acabado limpio y duradero.",
+  "specs": {
+    "Huella de la base (m)": "3 x 5",
+    "Ancho x largo del edificio (m)": "3,2 x 5,2",
+    "Superficie interior (m²)": "14.3",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.7",
+    "Voladizo del tejado": "0,3",
+    "Superficie del tejado (m²)": "20.3",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "33.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "1",
+    "Tipo de ventanas": "Doble",
+    "Ancho x alto de la ventana (cm)": "92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 mese"
+  },
+  "photos": [
+    "107-medium-Garage_3_2x5_2_44mm-P_26600.jpg",
+    "107-medium-Garage_3_2x5_2_44mm_fp_92092.jpg",
+    "107-medium-Garage_3_2x5_2_44mm_2_37314.jpg",
+    "107-medium-Garage_3_2x5_2_44mm_34905.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Garaje 3.2x5.2",
+  "options": {
+    "tegola": 350
+  },
+  "category": "premium"
+}

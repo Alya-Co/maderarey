@@ -1,0 +1,44 @@
+{
+  "name": "Torino",
+  "thickness": "44mm",
+  "size": "4.5x6",
+  "price": 9990,
+  "description": "Casa premium con techo a dos aguas, paredes de 44 mm y suelo de 19 mm, con una superficie de 23,7 m². Ideal para estudio, oficina o uso residencial ligero. Paquete completo de 6 unidades. Dimensiones del paquete: (880 x 6000 x 1200) / (600 x 6000 x 1200).",
+  "specs": {
+    "Huella de la base (m)": "4,3 x 5,8",
+    "Ancho x largo del edificio (m)": "4,5 x 6",
+    "Superficie interior (m²)": "34.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3,92",
+    "Voladizo del tejado": "1.3",
+    "Superficie del tejado (m²)": "42.9",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.43",
+    "Superficie de la pared exterior (m²)": "49.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 192 x 160",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Soltero",
+    "Ancho x alto de la ventana (cm)": "92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Persianas": "Sí",
+    "Número de habitaciones": "4",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Torino_4_5x6_44mm_5_74099.jpg",
+    "107-Torino_4_5x6_44mm_2_17454.jpg",
+    "107-Torino_4_5x6_44mm_fp_77781.jpg",
+    "107-Torino_4_5x6_44mm_1_61062.jpg",
+    "107-Torino_4_5x6_44mm-E_51550.jpg",
+    "107-Torino_4_5x6_64605.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Torino 4.5x6",
+  "options": {
+    "ins_roof": 1850,
+    "tegola": 800,
+    "ins_wall": 3500
+  },
+  "category": "premium"
+}

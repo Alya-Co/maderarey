@@ -1,0 +1,42 @@
+{
+  "name": "Scarlett",
+  "thickness": "44mm",
+  "size": "7x10.2",
+  "price": 17000,
+  "description": "Esta casa de 59,0 m² cuenta con techo a dos aguas, paredes de 44 mm y suelo de 19 mm. Su diseño permite un uso residencial con amplio espacio para personalización. Incluye 3 camiones completos. Dimensiones del paquete: (880x6000x1200), (870x6000x1200), (600x6000x1200), (500x3800x1200).",
+  "specs": {
+    "Huella de la base (m)": "6,8 x 9,8",
+    "Ancho x largo del edificio (m)": "7 x 10",
+    "Superficie interior (m²)": "59.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.24",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "78.9",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "92.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "5.3",
+    "Número de puertas": "5",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "7",
+    "Tipo de ventanas": "Doble, Individual",
+    "Ancho x alto de la ventana (cm)": "92 x 130, 92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Scarlett_7x10_2_3d_3_70633.jpg",
+    "107-Scarlett_7x10_2_3d_2_13395.jpg",
+    "107-Scarlett_7x10_2_68mm_fp_78593.jpg",
+    "107-Scarlett_7x10_2_68mm_81168.jpg",
+    "107-Scarlett_7x10_2_3d_1_19270.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Scarlett 7x10.2",
+  "options": {
+    "ins_roof": 3650,
+    "tegola": 1210,
+    "ins_wall": 6100
+  },
+  "category": "premium"
+}

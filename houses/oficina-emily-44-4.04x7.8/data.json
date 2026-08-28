@@ -1,0 +1,42 @@
+{
+  "name": "Emily",
+  "thickness": "44mm",
+  "size": "4.04x7.8",
+  "price": 7600,
+  "description": "Esta cabaña con techo a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, abarcando 21,6 m². Su diseño espacioso y sus ventanas de doble acristalamiento la convierten en una opción versátil para habitación de invitados, oficina o espacio creativo. Camión completo: 6 unidades. Dimensiones del paquete: (880 x 6000 x 1200), (500 x 4600 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "3,84 x 7,6",
+    "Ancho x largo del edificio (m)": "4,04 x 7,8",
+    "Superficie interior (m²)": "21.3",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2.9",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "36.6",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "40.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "6.8",
+    "Número de puertas": "3",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "4",
+    "Tipo de ventanas": "Simple",
+    "Ancho x alto de la ventana (cm)": "198 x 85,52 x 50,92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Emily-3_09293.jpg",
+    "107-Emily-1_83165.jpg",
+    "107-Emily-5_73469.jpg",
+    "107-Emily-2_27536.jpg",
+    "107-Emily_v.1_44mm_73485.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Emily 4.04x7.8",
+  "options": {
+    "ins_roof": 1750,
+    "tegola": 620
+  },
+  "category": "premium"
+}

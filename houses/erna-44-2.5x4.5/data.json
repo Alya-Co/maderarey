@@ -1,0 +1,40 @@
+{
+  "name": "Erna",
+  "thickness": "44mm",
+  "size": "2.5x4.5",
+  "price": 3100,
+  "description": "Con techo a dos aguas, paredes de 44 mm y suelo de 19 mm, ofrece 9,3 m² de espacio interior. El doble acristalamiento y su distribución de una sola habitación lo hacen ideal para un pequeño estudio o habitación de invitados. Camión completo: 12 unidades. Dimensiones del paquete: (700 x 4700 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "2,3 x 433",
+    "Ancho x largo del edificio (m)": "2,5 x 4,5",
+    "Superficie interior (m²)": "9.3",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,57",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "13.8",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "29.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 160",
+    "Número de ventanas": "1",
+    "Tipo de ventanas": "Simple",
+    "Ancho x alto de la ventana (cm)": "92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Erna_2_5x4_5_44mm-P_3d_63078.jpg",
+    "107-Erna_2_5x4_5_44mm-P_83865.jpg",
+    "107-Erna_2_5x4_5_44mm_fp_85294.jpg",
+    "107-Eko_5x5_7_44mm-E_05307.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Erna 2.5x4.5",
+  "options": {
+    "ins_roof": 650,
+    "tegola": 270
+  },
+  "category": "premium"
+}

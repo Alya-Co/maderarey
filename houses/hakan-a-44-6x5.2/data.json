@@ -1,0 +1,45 @@
+{
+  "name": "Hakan A",
+  "thickness": "44mm",
+  "size": "6x5.2",
+  "price": 8600,
+  "description": "Esta caseta de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 27,6 m² de espacio interior. Con doble acristalamiento y una distribución en varias habitaciones, es ideal para una oficina en casa espaciosa, alojamiento para invitados o estudio creativo. Camión completo: 12 unidades. Dimensiones del paquete: (880 x 5960 x 1200), (650 x 4900 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 5",
+    "Ancho x largo del edificio (m)": "6 x 5,2",
+    "Superficie interior (m²)": "27.6",
+    "Altura del edificio (m, hasta la cima de la cresta)": "3.04",
+    "Voladizo del tejado": "0,4",
+    "Superficie del tejado (m²)": "35.7",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.3",
+    "Superficie de la pared exterior (m²)": "50.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "5.5",
+    "Número de puertas": "4",
+    "Tipo de puertas": "Soltero",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "5",
+    "Tipo de ventanas": "Individual, Doble",
+    "Ancho x alto de la ventana (cm)": "39 x 70,92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "3",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Hakan_A_6x5_2_44mm-3_43773.jpg",
+    "107-Hakan_A_6x5_2_44mm-4_54361.jpg",
+    "107-Hakan_A_6x5_2_44mm-2_08877.jpg",
+    "107-Hakan_A_6x5_2_44mm_fp_95431.jpg",
+    "107-Hakan_A_6x5_2_44mm-1_86488.jpg",
+    "107-Hakan_A_6x5_2_44mm-E_71639.jpg",
+    "107-Hakan_A_42210.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Hakan A 6x5.2",
+  "options": {
+    "ins_roof": 1700,
+    "tegola": 370,
+    "ins_wall": 3500
+  },
+  "category": "premium"
+}

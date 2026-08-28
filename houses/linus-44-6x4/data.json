@@ -1,0 +1,41 @@
+{
+  "name": "Linus",
+  "thickness": "44mm",
+  "size": "6x4",
+  "price": 4800,
+  "description": "Esta caseta de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 21,2 m² de espacio interior. Con doble acristalamiento y distribución de una sola habitación, es ideal como espacio de trabajo luminoso, sala de ocio o alojamiento para invitados. Paquete completo: 8 unidades. Dimensiones del paquete: (920 x 6000 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "5,8 x 3,8",
+    "Ancho x largo del edificio (m)": "6 x 4",
+    "Superficie interior (m²)": "21.2",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,84",
+    "Voladizo del tejado": "1.0",
+    "Superficie del tejado (m²)": "32.5",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.09",
+    "Superficie de la pared exterior (m²)": "41.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "1",
+    "Tipo de puertas": "Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 160",
+    "Número de ventanas": "2",
+    "Tipo de ventanas": "Doble",
+    "Ancho x alto de la ventana (cm)": "92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "1",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "23-Linus_6x4_44mm_fp_66985.jpg",
+    "107-Linus_6_series_44mm-P_12003.jpg",
+    "107-Linus_6_series_44mm-P_3d_74997.jpg",
+    "107-Linus_6_series_44mm_3_06583.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Linus 6x4",
+  "options": {
+    "ins_roof": 1500,
+    "tegola": 520,
+    "ins_wall": 3200
+  },
+  "category": "premium"
+}

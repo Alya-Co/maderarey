@@ -1,0 +1,42 @@
+{
+  "name": "Helmand",
+  "thickness": "44mm",
+  "size": "3x9",
+  "price": 7300,
+  "description": "Esta casita de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 21,8 m² de espacio interior. Con doble acristalamiento y una distribución en varias habitaciones, es ideal como despacho espacioso, alojamiento para invitados o refugio creativo.",
+  "specs": {
+    "Huella de la base (m)": "2,8 x 8,8",
+    "Ancho x largo del edificio (m)": "3 x 9",
+    "Superficie interior (m²)": "21.8",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,63",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "32.2",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.16",
+    "Superficie de la pared exterior (m²)": "47.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Superficie de las terrazas (m²)": "1.5",
+    "Número de puertas": "2",
+    "Tipo de puertas": "Individual, Doble",
+    "Ancho x alto de las puertas (cm)": "198 x 85, 198 x 160",
+    "Número de ventanas": "6",
+    "Tipo de ventanas": "Simple",
+    "Ancho x alto de la ventana (cm)": "92 x 70",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Helmand_3x9_44mm-P_2_06708.jpg",
+    "107-Helmand_3x9_44mm-E_30134.jpg",
+    "107-Helmand_3_9_44mm_fp_37867.jpg",
+    "107-Helmand_3x9_44mm-P_1_95847.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Helmand 3x9",
+  "options": {
+    "ins_roof": 1510,
+    "tegola": 560,
+    "ins_wall": 3950
+  },
+  "category": "premium"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Murray",
+  "thickness": "44mm",
+  "size": "4x6",
+  "price": 6100,
+  "description": "Esta caseta de jardín con tejado a dos aguas cuenta con paredes de 44 mm de grosor y suelo de 19 mm, ofreciendo 21,1 m² de espacio interior. Con doble acristalamiento y cuatro grandes ventanas, es ideal para un estudio luminoso, una habitación de invitados o un despacho espacioso. Camiòn completo: 8 unidades. Dimensiones del paquete: (900 x 6000 x 1200). (350 x 2400 x 1200)",
+  "specs": {
+    "Huella de la base (m)": "3,8 x 5,8",
+    "Ancho x largo del edificio (m)": "4 x 6",
+    "Superficie interior (m²)": "21.1",
+    "Altura del edificio (m, hasta la cima de la cresta)": "2,84",
+    "Voladizo del tejado": "0,2",
+    "Superficie del tejado (m²)": "28.1",
+    "Espesor de las tablas del techo (mm)": "19",
+    "Altura de la pared lateral (m)": "2.23",
+    "Superficie de la pared exterior (m²)": "41.0",
+    "Grosor de las tablas del suelo (mm)": "19.0",
+    "Número de puertas": "2",
+    "Tipo de puertas": "Simple",
+    "Ancho x alto de las puertas (cm)": "198 x 85",
+    "Número de ventanas": "4",
+    "Tipo de ventanas": "Doble",
+    "Ancho x alto de la ventana (cm)": "92 x 130",
+    "Tipo de acristalamiento de ventanas y puertas": "Doble acristalamiento",
+    "Número de habitaciones": "2",
+    "Garantía": "60 meses"
+  },
+  "photos": [
+    "107-Murray_4x6_4mm-2_65867.jpg",
+    "107-Murray_4x6_4mm-3_35058.jpg",
+    "107-Murray_4x6_44mm-P_3d_2_28353.jpg",
+    "107-Murray_4x6_44mm_fp_46500.jpg",
+    "107-Murray_4x6_44mm-E_98983.jpg"
+  ],
+  "whatsapp_text": "Hola, me interesa la casa Murray 4x6",
+  "options": {
+    "ins_roof": 1300,
+    "tegola": 500,
+    "ins_wall": 3000
+  },
+  "category": "premium"
+}

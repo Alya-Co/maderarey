@@ -178,9 +178,6 @@ def build_featured_slide(slug, data):
     else:
         img_html = ""
 
-    wa_text = quote(f"Hola, me interesa la oferta {name} {size} a {price}€")
-    wa_url = f"https://wa.me/34664033098?text={wa_text}"
-
     desc_parts = []
     if thickness:
         desc_parts.append(thickness)
@@ -188,7 +185,11 @@ def build_featured_slide(slug, data):
         desc_parts.append(f"{size} m")
     desc = " · ".join(desc_parts)
 
-    return f'''  <div class="oferta-banner">
+    # Todo el banner es un enlace a la ficha de la casa (antes solo el
+    # botón llevaba a WhatsApp y el resto del banner no llevaba a
+    # ninguna parte) — al hacer click en cualquier punto del banner se
+    # va a house.html, no a WhatsApp.
+    return f'''  <a class="oferta-banner" href="house.html?casa={esc(slug)}">
     <div class="oferta-img">{img_html}</div>
     <div class="oferta-overlay">
       <span class="oferta-tag">{FEATURED_DISCOUNT_LABEL} OFERTA</span>
@@ -199,9 +200,9 @@ def build_featured_slide(slug, data):
         <span class="oferta-new">{format_price(price)}</span>
         <span class="oferta-save">Ahorras {format_price(savings)}</span>
       </div>
-      <a href="{wa_url}" class="oferta-btn" target="_blank">Consultar ahora</a>
+      <span class="oferta-btn">Ver ficha y precio</span>
     </div>
-  </div>'''
+  </a>'''
 
 
 def main():

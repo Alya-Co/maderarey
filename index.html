@@ -360,9 +360,34 @@
 
 
   /* ── OFERTA BANNER ── */
+  .oferta-carousel { position: relative; margin-top: 60px; }
   .oferta-banner {
-    position: relative; margin-top: 60px;
+    position: relative; display: none;
     height: clamp(280px, 45vw, 480px); overflow: hidden;
+  }
+  .oferta-banner.active { display: block; }
+  .oferta-arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    z-index: 6; width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,255,255,0.85); border: none; cursor: pointer;
+    font-size: 22px; line-height: 1; color: var(--green-dark);
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .oferta-arrow:hover { background: #fff; }
+  .oferta-arrow-prev { left: 16px; }
+  .oferta-arrow-next { right: 16px; }
+  .oferta-dots {
+    position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    z-index: 6; display: flex; gap: 8px;
+  }
+  .oferta-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.2s;
+  }
+  .oferta-dot.active { background: #fff; }
+  @media (max-width: 768px) {
+    .oferta-arrow { width: 32px; height: 32px; font-size: 18px; }
   }
   .oferta-img {
     width: 100%; height: 100%;
@@ -491,21 +516,47 @@
 </nav>
 
 <!-- OFERTA BANNER -->
-<div class="oferta-banner">
-  <div class="oferta-img">
-    <img src="hero1.jpg" alt="Caseta de madera Erna 2.5x4.5 oferta especial">
-  </div>
-  <div class="oferta-overlay">
-    <span class="oferta-tag">OFERTA LIMITADA</span>
-    <h2 class="oferta-title">Caseta Erna 2,5×4,5 m</h2>
-    <p class="oferta-desc">Abeto nórdico 44mm · Puerta doble + ventana · Lista para jardín</p>
-    <div class="oferta-prices">
-      <span class="oferta-old">4.500€</span>
-      <span class="oferta-new">3.500€</span>
-      <span class="oferta-save">Ahorras 1.000€</span>
+<div class="oferta-carousel" id="ofertaCarousel">
+  <button class="oferta-arrow oferta-arrow-prev" id="ofertaPrev" aria-label="Anterior" type="button">‹</button>
+  <div class="oferta-track" id="ofertaTrack">
+
+<!-- FEATURED:START -->
+
+  <a class="oferta-banner" href="house.html?casa=leon-58-9.4x10.7">
+    <div class="oferta-img"><img src="houses/leon-58-9.4x10.7/107-Leon_S19497_3d_3_27572.jpg" alt="Casa de madera Leon oferta"></div>
+    <div class="oferta-overlay">
+      <span class="oferta-tag">-17% OFERTA</span>
+      <h2 class="oferta-title">Leon 9.4x10.7</h2>
+      <p class="oferta-desc">58mm · 9.4x10.7 m</p>
+      <div class="oferta-prices">
+        <span class="oferta-old">29.640€</span>
+        <span class="oferta-new">24.700€</span>
+        <span class="oferta-save">Ahorras 4.940€</span>
+      </div>
+      <span class="oferta-btn">Ver ficha y precio</span>
     </div>
-    <a href="https://wa.me/34664033098?text=Hola%2C+me+interesa+la+oferta+Caseta+Erna+2.5x4.5+a+3500%E2%82%AC" class="oferta-btn" target="_blank">Consultar ahora</a>
+  </a>
+
+  <a class="oferta-banner" href="house.html?casa=oskar-68-8.87x10.04">
+    <div class="oferta-img"><img src="houses/oskar-68-8.87x10.04/107-Oskar_8_87x10_04_3d_1_93461.jpg" alt="Casa de madera Oskar oferta"></div>
+    <div class="oferta-overlay">
+      <span class="oferta-tag">-17% OFERTA</span>
+      <h2 class="oferta-title">Oskar 8.87x10.04</h2>
+      <p class="oferta-desc">68mm · 8.87x10.04 m</p>
+      <div class="oferta-prices">
+        <span class="oferta-old">30.360€</span>
+        <span class="oferta-new">25.300€</span>
+        <span class="oferta-save">Ahorras 5.060€</span>
+      </div>
+      <span class="oferta-btn">Ver ficha y precio</span>
+    </div>
+  </a>
+
+<!-- FEATURED:END -->
+
   </div>
+  <button class="oferta-arrow oferta-arrow-next" id="ofertaNext" aria-label="Siguiente" type="button">›</button>
+  <div class="oferta-dots" id="ofertaDots"></div>
 </div>
 
 
@@ -559,7 +610,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-4x4">
       <a href="house.html?casa=linus-44-4x4" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-4x4/107-Linus_4x4_44mm_fp_15761.jpg" alt="Linus 4x4 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-4x4/107-Linus_4_series_44mm-P_3d_44655.jpg" alt="Linus 4x4 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -585,7 +636,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="deko-44-5x3">
       <a href="house.html?casa=deko-44-5x3" class="card-img-link"><div class="card-img">
-        <img src="houses/deko-44-5x3/23-Deko_5x3_44mm-2_01084.jpg" alt="Deko 5x3 casa de madera 44mm" loading="lazy">
+        <img src="houses/deko-44-5x3/23-Deko_5x3_44mm-P_3d_68459.jpg" alt="Deko 5x3 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -598,7 +649,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-4x5">
       <a href="house.html?casa=linus-44-4x5" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-4x5/107-Linus_4x5_44mm_fp_89271.jpg" alt="Linus 4x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-4x5/107-Linus_4_series_44mm-P_3d_44655.jpg" alt="Linus 4x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -611,7 +662,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-5x4">
       <a href="house.html?casa=linus-44-5x4" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-5x4/23-Linus_5x4_44mm_fp_26493.jpg" alt="Linus 5x4 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-5x4/107-Linus_5_series_44mm-P_3d_95354.jpg" alt="Linus 5x4 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -624,7 +675,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="milano-44-3.8x5.3">
       <a href="house.html?casa=milano-44-3.8x5.3" class="card-img-link"><div class="card-img">
-        <img src="houses/milano-44-3.8x5.3/107-Milano_3_8x3_8_44mm_fp_73507.jpg" alt="Milano 3.8x5.3 casa de madera 44mm" loading="lazy">
+        <img src="houses/milano-44-3.8x5.3/107-Milano_3_8x3_8_44mm-E_03673.jpg" alt="Milano 3.8x5.3 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -650,7 +701,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-5x5">
       <a href="house.html?casa=linus-44-5x5" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-5x5/107-Linus_5x5_44mm_fp_39775.jpg" alt="Linus 5x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-5x5/107-Linus_5_series_44mm-P_3d_95354.jpg" alt="Linus 5x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -663,7 +714,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-6x4">
       <a href="house.html?casa=linus-44-6x4" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-6x4/23-Linus_6x4_44mm_fp_66985.jpg" alt="Linus 6x4 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-6x4/107-Linus_6_series_44mm-P_3d_74997.jpg" alt="Linus 6x4 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -715,7 +766,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-6x5">
       <a href="house.html?casa=linus-44-6x5" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-6x5/23-Linus_6x5_44mm_fp_35863.jpg" alt="Linus 6x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-6x5/107-Linus_6_series_44mm-P_3d_74997.jpg" alt="Linus 6x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -754,7 +805,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-5x4-wc">
       <a href="house.html?casa=linus-44-5x4-wc" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-5x4-wc/23-Linus_5x4_WC_44mm_fp_60069.jpg" alt="Linus WC 5x4 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-5x4-wc/107-Linus_5_series_44mm-P_3d_95354.jpg" alt="Linus WC 5x4 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -767,7 +818,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-5x5-wc">
       <a href="house.html?casa=linus-44-5x5-wc" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-5x5-wc/23-Linus_5x5_WC_44mm_fp_03830.jpg" alt="Linus WC 5x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-5x5-wc/107-Linus_5_series_44mm-P_3d_95354.jpg" alt="Linus WC 5x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -780,7 +831,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-6x6">
       <a href="house.html?casa=linus-44-6x6" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-6x6/107-Linus_6_series_44mm-P_12003.jpg" alt="Linus 6x6 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-6x6/107-Linus_6_series_44mm-P_3d_74997.jpg" alt="Linus 6x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -793,7 +844,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="murray-44-4x6">
       <a href="house.html?casa=murray-44-4x6" class="card-img-link"><div class="card-img">
-        <img src="houses/murray-44-4x6/107-Murray_4x6_4mm-2_65867.jpg" alt="Murray 4x6 casa de madera 44mm" loading="lazy">
+        <img src="houses/murray-44-4x6/107-Murray_4x6_44mm-P_3d_2_28353.jpg" alt="Murray 4x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -806,7 +857,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="roberto-44-5.6x4">
       <a href="house.html?casa=roberto-44-5.6x4" class="card-img-link"><div class="card-img">
-        <img src="houses/roberto-44-5.6x4/107-Roberto_5_6x4_44mm-E_08394.jpg" alt="Roberto 5.6x4 casa de madera 44mm" loading="lazy">
+        <img src="houses/roberto-44-5.6x4/107-Roberto_5_6x4_44mm-P_3d_52423.jpg" alt="Roberto 5.6x4 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -819,7 +870,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-6x5-wc">
       <a href="house.html?casa=linus-44-6x5-wc" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-6x5-wc/23-Linus_6x5_WC_44mm_fp_78798.jpg" alt="Linus WC 6x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-6x5-wc/107-Linus_6_series_44mm-P_3d_74997.jpg" alt="Linus WC 6x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -845,7 +896,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="trento-44-6x5">
       <a href="house.html?casa=trento-44-6x5" class="card-img-link"><div class="card-img">
-        <img src="houses/trento-44-6x5/107-Trento_6x5_44mm-E_28497.jpg" alt="Trento 6x5 casa de madera 44mm" loading="lazy">
+        <img src="houses/trento-44-6x5/107-Trento_6x5_44mm-P_3d_2_73138.jpg" alt="Trento 6x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -897,7 +948,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="padova-a-44-6x4.5">
       <a href="house.html?casa=padova-a-44-6x4.5" class="card-img-link"><div class="card-img">
-        <img src="houses/padova-a-44-6x4.5/107-Padova_A_6x4_5_44mm-E_92230.jpg" alt="Padova A 6x4.5 casa de madera 44mm" loading="lazy">
+        <img src="houses/padova-a-44-6x4.5/107-Padova_A_6x4_5_4mm-P_3d_2_87704.jpg" alt="Padova A 6x4.5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -910,7 +961,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="linus-44-6x6-wc">
       <a href="house.html?casa=linus-44-6x6-wc" class="card-img-link"><div class="card-img">
-        <img src="houses/linus-44-6x6-wc/107-Linus_6x6_WC_44mm_fp_58240.jpg" alt="Linus WC 6x6 casa de madera 44mm" loading="lazy">
+        <img src="houses/linus-44-6x6-wc/107-Linus_6_series_44mm-P_3d_74997.jpg" alt="Linus WC 6x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -923,7 +974,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="eko-44-5x5.7">
       <a href="house.html?casa=eko-44-5x5.7" class="card-img-link"><div class="card-img">
-        <img src="houses/eko-44-5x5.7/eko.jpg" alt="Eko 5x5.7 casa de madera 44mm" loading="lazy">
+        <img src="houses/eko-44-5x5.7/107-Eko_5x5_7_44mm-P_3d_1_94011.jpg" alt="Eko 5x5.7 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -936,7 +987,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="rico-44-4.04x7.8">
       <a href="house.html?casa=rico-44-4.04x7.8" class="card-img-link"><div class="card-img">
-        <img src="houses/rico-44-4.04x7.8/107-Rico_4_04x7_8_44mm-E_95178.jpg" alt="Rico 4.04x7.8 casa de madera 44mm" loading="lazy">
+        <img src="houses/rico-44-4.04x7.8/107-Rico_4_04x7_8_44mm-P_3d_2_36960.jpg" alt="Rico 4.04x7.8 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -1014,7 +1065,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="louise-44-6x6">
       <a href="house.html?casa=louise-44-6x6" class="card-img-link"><div class="card-img">
-        <img src="houses/louise-44-6x6/107-Louise_6x6_44mm_distr,_dimens.jpg" alt="Louise 6x6 casa de madera 44mm" loading="lazy">
+        <img src="houses/louise-44-6x6/107-Louise_6x6_68mm_exter_2.jpg" alt="Louise 6x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -1040,7 +1091,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="almería-44-6x8.87">
       <a href="house.html?casa=almería-44-6x8.87" class="card-img-link"><div class="card-img">
-        <img src="houses/almería-44-6x8.87/107-Almeria_6x8_87_68mm_99351_2.jpg" alt="Almería 6x8.87 casa de madera 44mm" loading="lazy">
+        <img src="houses/almería-44-6x8.87/107-Almeria_6x8_87_3d_1_80795.jpg" alt="Almería 6x8.87 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -1183,7 +1234,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="iberica-t2-68">
       <a href="house.html?casa=iberica-t2-68" class="card-img-link"><div class="card-img">
-        <img src="houses/iberica-t2-68/107-Iberica_T2_6_36x8_86__3__38631.jpg" alt="Iberica T2 6.36x8.86 casa de madera 68mm" loading="lazy">
+        <img src="houses/iberica-t2-68/107-Iberica_T2_6_36x8_86_3d_1_01907.jpg" alt="Iberica T2 6.36x8.86 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1196,7 +1247,7 @@
 
     <div class="card visible" data-cat="premium" data-casa="jennifer-44-10.5x8.52">
       <a href="house.html?casa=jennifer-44-10.5x8.52" class="card-img-link"><div class="card-img">
-        <img src="houses/jennifer-44-10.5x8.52/107-Jennifer_10_5x8_52_2_63044.jpg" alt="Jennifer 10.5x8.52 casa de madera 44mm" loading="lazy">
+        <img src="houses/jennifer-44-10.5x8.52/107-Jennifer_10_5x8_52_3d_2_64172.jpg" alt="Jennifer 10.5x8.52 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
       </div></a>
       <div class="card-body">
@@ -1209,7 +1260,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="max-68-5.6x6.6">
       <a href="house.html?casa=max-68-5.6x6.6" class="card-img-link"><div class="card-img">
-        <img src="houses/max-68-5.6x6.6/107-Max_5_6x6_6_68mm_77987.jpg" alt="Max 5.6x6.6 casa de madera 68mm" loading="lazy">
+        <img src="houses/max-68-5.6x6.6/107-Max_5_6x6_6_3d_2_29137.jpg" alt="Max 5.6x6.6 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1274,7 +1325,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="orchidea-68-6x11.5">
       <a href="house.html?casa=orchidea-68-6x11.5" class="card-img-link"><div class="card-img">
-        <img src="houses/orchidea-68-6x11.5/107-Orchidea_6x11_5_68mm_85582.jpg" alt="Orchidea 6x11.5 casa de madera 68mm" loading="lazy">
+        <img src="houses/orchidea-68-6x11.5/107-Orchidėja_6x11_5_3d_1_00851.jpg" alt="Orchidea 6x11.5 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1339,7 +1390,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="jennifer-68-10.5x8.52">
       <a href="house.html?casa=jennifer-68-10.5x8.52" class="card-img-link"><div class="card-img">
-        <img src="houses/jennifer-68-10.5x8.52/107-Jennifer_10_5x8_52_2_63044.jpg" alt="Jennifer 10.5x8.52 casa de madera 68mm" loading="lazy">
+        <img src="houses/jennifer-68-10.5x8.52/107-Jennifer_10_5x8_52_3d_1_30857.jpg" alt="Jennifer 10.5x8.52 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1365,7 +1416,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="leon-68-9.4x10.7">
       <a href="house.html?casa=leon-68-9.4x10.7" class="card-img-link"><div class="card-img">
-        <img src="houses/leon-68-9.4x10.7/107-Leon_9_4x10_7_68mm_46457.jpg" alt="Leon 9.4x10.7 casa de madera 68mm" loading="lazy">
+        <img src="houses/leon-68-9.4x10.7/107-Leon_S19497_3d_1_95079.jpg" alt="Leon 9.4x10.7 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1378,7 +1429,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="takoma-58-12x8">
       <a href="house.html?casa=takoma-58-12x8" class="card-img-link"><div class="card-img">
-        <img src="houses/takoma-58-12x8/107-Takoma_12_02x8_02_without_insulation_5_-_Photo_02662.jpg" alt="Takoma 12x8 casa de madera 58mm" loading="lazy">
+        <img src="houses/takoma-58-12x8/107-Takoma_12x8_3d_2_83487.jpg" alt="Takoma 12x8 casa de madera 58mm" loading="lazy">
         <span class="card-badge">58mm</span>
       </div></a>
       <div class="card-body">
@@ -1404,7 +1455,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="felix-68-6x10">
       <a href="house.html?casa=felix-68-6x10" class="card-img-link"><div class="card-img">
-        <img src="houses/felix-68-6x10/107-Felix_6x10_2_54151.jpg" alt="Felix 6x10 casa de madera 68mm" loading="lazy">
+        <img src="houses/felix-68-6x10/107-Felix_6x10_3d_1_98037.jpg" alt="Felix 6x10 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1521,7 +1572,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="nagano-58-10.14x8.04">
       <a href="house.html?casa=nagano-58-10.14x8.04" class="card-img-link"><div class="card-img">
-        <img src="houses/nagano-58-10.14x8.04/107-Nagano_10_14x8_04_98840.jpg" alt="Nagano 10.14x8.04 casa de madera 58mm" loading="lazy">
+        <img src="houses/nagano-58-10.14x8.04/107-Nagano_10_14x8_04_68mm_3d_3_42047.jpg" alt="Nagano 10.14x8.04 casa de madera 58mm" loading="lazy">
         <span class="card-badge">58mm</span>
       </div></a>
       <div class="card-body">
@@ -1534,7 +1585,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="athena-58-5.86x11.16">
       <a href="house.html?casa=athena-58-5.86x11.16" class="card-img-link"><div class="card-img">
-        <img src="houses/athena-58-5.86x11.16/107-Athena_5_86x11_16_68mm_75679.jpg" alt="Athena 5.86x11.16 casa de madera 58mm" loading="lazy">
+        <img src="houses/athena-58-5.86x11.16/107-Athena_5_858x11_16_3d_2_85855.jpg" alt="Athena 5.86x11.16 casa de madera 58mm" loading="lazy">
         <span class="card-badge">58mm</span>
       </div></a>
       <div class="card-body">
@@ -1586,7 +1637,7 @@
 
     <div class="card visible" data-cat="viviendas" data-casa="athena-68-5.86x11.16">
       <a href="house.html?casa=athena-68-5.86x11.16" class="card-img-link"><div class="card-img">
-        <img src="houses/athena-68-5.86x11.16/107-Athena_5_86x11_16_68mm_09451.jpg" alt="Athena 5.86x11.16 casa de madera 68mm" loading="lazy">
+        <img src="houses/athena-68-5.86x11.16/107-Athena_5_858x11_16_3d_2_13924.jpg" alt="Athena 5.86x11.16 casa de madera 68mm" loading="lazy">
         <span class="card-badge">68mm</span>
       </div></a>
       <div class="card-body">
@@ -1912,9 +1963,60 @@ function toggleMenu(){
   document.getElementById('navLinks').classList.toggle('open');
 }
 
+// ── OFERTA CAROUSEL ──
+function initOfertaCarousel(){
+  var track = document.getElementById('ofertaTrack');
+  var dotsWrap = document.getElementById('ofertaDots');
+  if (!track) return;
+  var slides = Array.prototype.slice.call(track.querySelectorAll('.oferta-banner'));
+  if (slides.length === 0) return;
+
+  var idx = 0;
+
+  slides.forEach(function(slide, i){
+    if (dotsWrap) {
+      var dot = document.createElement('span');
+      dot.className = 'oferta-dot';
+      dot.addEventListener('click', function(){ goTo(i); });
+      dotsWrap.appendChild(dot);
+    }
+  });
+  var dots = dotsWrap ? Array.prototype.slice.call(dotsWrap.children) : [];
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === idx); });
+    dots.forEach(function(d, i){ d.classList.toggle('active', i === idx); });
+  }
+
+  function goTo(i){
+    idx = (i + slides.length) % slides.length;
+    render();
+  }
+
+  var prevBtn = document.getElementById('ofertaPrev');
+  var nextBtn = document.getElementById('ofertaNext');
+  if (prevBtn) prevBtn.addEventListener('click', function(){ goTo(idx - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function(){ goTo(idx + 1); });
+
+  if (slides.length < 2) {
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+  } else {
+    setInterval(function(){ goTo(idx + 1); }, 6000);
+  }
+
+  render();
+}
+
+// ── MOBILE MENU ──
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
 // ── INIT ──
 window.addEventListener('DOMContentLoaded', function(){
   updateCards();
+  initOfertaCarousel();
 });
 </script>
 

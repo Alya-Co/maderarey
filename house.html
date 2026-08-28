@@ -379,9 +379,9 @@
 
     <!-- OPTIONS -->
     <div class="options-section" id="options-section">
-      <p style="font-size:13px;font-weight:600;color:var(--black);margin-bottom:14px">Opciones adicionales</p>
+      <p id="options-title" style="font-size:13px;font-weight:600;color:var(--black);margin-bottom:14px">Opciones adicionales</p>
 
-      <div class="option-group checkbox-group">
+      <div class="option-group checkbox-group" id="optgrp-ins-roof">
         <label class="checkbox-label">
           <input type="checkbox" id="opt-ins-roof" value="3540" onchange="updateTotal()">
           <div class="checkbox-text">
@@ -391,7 +391,7 @@
         </label>
       </div>
 
-      <div class="option-group checkbox-group">
+      <div class="option-group checkbox-group" id="optgrp-ins-wall">
         <label class="checkbox-label">
           <input type="checkbox" id="opt-ins-wall" value="4590" onchange="updateTotal()">
           <div class="checkbox-text">
@@ -401,7 +401,7 @@
         </label>
       </div>
 
-      <div class="option-group checkbox-group">
+      <div class="option-group checkbox-group" id="optgrp-roof">
         <label class="checkbox-label">
           <input type="checkbox" id="opt-roof" value="1280" onchange="toggleRoofColor(); updateTotal()">
           <div class="checkbox-text">
@@ -586,22 +586,42 @@ function renderHouse(d) {
   basePrice = d.price || 0;
   document.getElementById('price-base').textContent = formatPrice(basePrice);
 
-  // Option prices — read from data.json if present, otherwise keep the hardcoded default
+  // Options — only show the checkboxes this house actually offers.
+  // A house's data.json "options" object is the source of truth: a key that's
+  // absent (e.g. no "ins_wall" for a small house like Erna) means that option
+  // doesn't exist for this house, so its whole checkbox row is hidden and
+  // excluded from the price/WhatsApp text — not just left at a default price.
   const opt = d.options || {};
   const optMap = {
-    'opt-ins-roof': { key: 'ins_roof', priceEl: 'price-ins-roof' },
-    'opt-ins-wall': { key: 'ins_wall', priceEl: 'price-ins-wall' },
-    'opt-roof':     { key: 'tegola',   priceEl: 'price-roof' }
+    'opt-ins-roof': { key: 'ins_roof', priceEl: 'price-ins-roof', groupId: 'optgrp-ins-roof' },
+    'opt-ins-wall': { key: 'ins_wall', priceEl: 'price-ins-wall', groupId: 'optgrp-ins-wall' },
+    'opt-roof':     { key: 'tegola',   priceEl: 'price-roof',     groupId: 'optgrp-roof' }
   };
+  let anyOptionAvailable = false;
   Object.keys(optMap).forEach(id => {
-    const { key, priceEl } = optMap[id];
+    const { key, priceEl, groupId } = optMap[id];
     const checkbox = document.getElementById(id);
     const priceSpan = document.getElementById(priceEl);
-    if (opt[key] !== undefined && checkbox && priceSpan) {
-      checkbox.value = opt[key];
-      priceSpan.textContent = '+' + formatPrice(opt[key]);
+    const group = document.getElementById(groupId);
+    const available = opt[key] !== undefined;
+    if (available) {
+      anyOptionAvailable = true;
+      if (checkbox && priceSpan) {
+        checkbox.value = opt[key];
+        priceSpan.textContent = '+' + formatPrice(opt[key]);
+      }
+      if (group) group.style.display = '';
+    } else {
+      if (checkbox) checkbox.checked = false;
+      if (group) group.style.display = 'none';
+      if (id === 'opt-roof') {
+        const colorsBlock = document.getElementById('roof-colors');
+        if (colorsBlock) colorsBlock.style.display = 'none';
+      }
     }
   });
+  const optionsTitle = document.getElementById('options-title');
+  if (optionsTitle) optionsTitle.style.display = anyOptionAvailable ? '' : 'none';
 
   updateTotal();
 

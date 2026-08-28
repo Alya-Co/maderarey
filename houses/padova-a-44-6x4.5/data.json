@@ -39,5 +39,8 @@
     "tegola": 680,
     "ins_wall": 3300
   },
-  "category": "premium"
+  "category": [
+    "cabanas",
+    "premium"
+  ]
 }

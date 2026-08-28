@@ -36,5 +36,8 @@
     "ins_roof": 650,
     "tegola": 270
   },
-  "category": "premium"
+  "category": [
+    "casetas",
+    "premium"
+  ]
 }

@@ -32,13 +32,34 @@ HOUSES_DIR = Path("houses")
 
 # ── Впиши сюда слаги домов по категориям ────────────────────────────────
 CABANAS = [
-    # "ottawa-44-6x4.5",
-    # "oficina-emily-44-4.04x7.8",
+    # Отмечено клиентом в MaderaRey_categorias (28.08.2026)
+    "eko-44-5x5.7",
+    "hakan-a-44-6x5.2",
+    "helmand-44-3x9",
+    "linus-44-4x4",
+    "linus-44-4x5",
+    "linus-44-5x4",
+    "linus-44-5x4-wc",
+    "linus-44-5x5",
+    "linus-44-5x5-wc",
+    "linus-44-6x4",
+    "linus-44-6x5",
+    "linus-44-6x5-wc",
+    "linus-44-6x6",
+    "linus-44-6x6-wc",
+    "louise-44-6x6",
+    "murray-44-4x6",
+    "padova-a-44-6x4.5",
+    "rico-44-4.04x7.8",
+    "roberto-44-5.6x4",
+    "trento-44-6x5",
 ]
 
 CASETAS = [
-    # "erna-44-2.5x4.5",
-    # "deko-44-5x3",
+    # Отмечено клиентом в MaderaRey_categorias (28.08.2026)
+    "deko-44-5x3",
+    "erna-44-2.5x4.5",
+    "milano-44-3.8x5.3",
 ]
 
 PREMIUM = [

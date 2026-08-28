@@ -36,5 +36,8 @@
     "ins_roof": 2520,
     "tegola": 480
   },
-  "category": "premium"
+  "category": [
+    "cabanas",
+    "premium"
+  ]
 }

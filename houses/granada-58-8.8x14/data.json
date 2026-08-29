@@ -23,5 +23,10 @@
     "107-Granada_8_8x14_8_-_Photo_10984.jpg",
     "107-Granada_8_8x14_7_-_Photo_02683.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Granada 8.8x14"
+  "whatsapp_text": "Hola, me interesa la casa Granada 8.8x14",
+  "options": {
+    "ins_roof": 5450,
+    "epdm": 5900,
+    "ins_wall": 6900
+  }
 }

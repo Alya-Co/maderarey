@@ -3,7 +3,7 @@
   "thickness": "44mm",
   "size": "6.8x5.6",
   "price": 5700,
-  "description": "tegola  750\nEsta unidad, que combina garaje y cochera bajo un mismo techo a dos aguas, tiene paredes de 44 mm de espesor.  Dimensiones del paquete: (900 x 6000 x 1200)",
+  "description": "Esta unidad, que combina garaje y cochera bajo un mismo techo a dos aguas, tiene paredes de 44 mm de espesor.  Dimensiones del paquete: (900 x 6000 x 1200)",
   "specs": {
     "Huella de la base (m)": "6,6 x 5,4",
     "Ancho x largo del edificio (m)": "6,8 x 5,6",
@@ -28,5 +28,8 @@
     "107-Garage+carport_6_8x5_6_44mm-P_78054.jpg",
     "107-Garage+carport_6_8x5_6_40494.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Garajecochera 6.8x5.6"
+  "whatsapp_text": "Hola, me interesa la casa Garajecochera 6.8x5.6",
+  "options": {
+    "tegola": 750
+  }
 }

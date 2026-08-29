@@ -3,7 +3,7 @@
   "thickness": "44mm",
   "size": "4.2x8",
   "price": 8000,
-  "description": "kit aislamiento tejado 1500\ntegola 730\nBergen ofrece una distribución elegante y alargada con 16,8 m² de espacio interior. Construido con paredes de 44 mm y suelo de 19 mm, es ideal para usar como estudio moderno o sala de estar en el jardín. Camión completo: 7 unidades. Dimensiones del paquete: (870 x 6000 x 1200), (550 x 4400 x 1200)",
+  "description": "Bergen ofrece una distribución elegante y alargada con 16,8 m² de espacio interior. Construido con paredes de 44 mm y suelo de 19 mm, es ideal para usar como estudio moderno o sala de estar en el jardín. Camión completo: 7 unidades. Dimensiones del paquete: (870 x 6000 x 1200), (550 x 4400 x 1200)",
   "specs": {
     "Huella de la base (m)": "4 x 7,8",
     "Ancho x largo del edificio (m)": "4,2 x 8",
@@ -35,5 +35,9 @@
     "23-Bergen_4_2x8_b842_68377.jpg"
   ],
   "whatsapp_text": "Hola, me interesa la casa Bergen 4.2x8",
+  "options": {
+    "ins_roof": 1500,
+    "tegola": 730
+  },
   "category": "premium"
 }

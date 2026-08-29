@@ -34,6 +34,7 @@
   ],
   "whatsapp_text": "Hola, me interesa la casa Trento 6x5",
   "options": {
+    "ins_roof": 2220,
     "ins_wall": 3600,
     "tegola": 730
   },

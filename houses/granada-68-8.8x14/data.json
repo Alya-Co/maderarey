@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "8.8x14",
   "price": 36300,
-  "description": "EPDM - 5810\nGranada ofrece 99,5 m² de superficie habitable distribuidos en dos niveles, con paredes de 68 mm y suelos de madera de 28 mm. Su distribución se adapta a un estilo de vida de lujo, con múltiples estancias y amplios ventanales.",
+  "description": "Granada ofrece 99,5 m² de superficie habitable distribuidos en dos niveles, con paredes de 68 mm y suelos de madera de 28 mm. Su distribución se adapta a un estilo de vida de lujo, con múltiples estancias y amplios ventanales.",
   "specs": {
     "Huella de la base (m)": "8,6 x 13,8",
     "Ancho x largo del edificio (m)": "8,8 x 14",
@@ -35,6 +35,7 @@
   "whatsapp_text": "Hola, me interesa la casa Granada 8.8x14",
   "options": {
     "ins_roof": 5500,
+    "epdm": 5900,
     "ins_wall": 6900
   }
 }

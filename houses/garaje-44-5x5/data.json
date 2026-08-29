@@ -3,7 +3,7 @@
   "thickness": "44mm",
   "size": "5x5",
   "price": 4800,
-  "description": "tegola 400\nGaraje de planta cuadrada con 22 m² de espacio interior y paredes de 44 mm de espesor. Su techo a dos aguas y diseño de una sola habitación lo convierten en una solución robusta y elegante para el almacenamiento de vehículos compactos.  Dimensiones del paquete: (880 x 5200 x 1200 mm).",
+  "description": "Garaje de planta cuadrada con 22 m² de espacio interior y paredes de 44 mm de espesor. Su techo a dos aguas y diseño de una sola habitación lo convierten en una solución robusta y elegante para el almacenamiento de vehículos compactos.  Dimensiones del paquete: (880 x 5200 x 1200 mm).",
   "specs": {
     "Huella de la base (m)": "4,8 x 4,8",
     "Ancho x largo del edificio (m)": "5 x 5",
@@ -28,5 +28,9 @@
     "107-Garage_5x5_44mm_96913.jpg"
   ],
   "whatsapp_text": "Hola, me interesa la casa Garaje 5x5",
+  "options": {
+    "ins_roof": 1360,
+    "tegola": 400
+  },
   "category": "premium"
 }

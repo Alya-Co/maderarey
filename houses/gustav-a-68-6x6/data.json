@@ -34,5 +34,10 @@
     "107-Gustav_A_6x6_68mm_fp_88027.jpg",
     "107-Gustav_A_6x6_series_1_78915.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Gustav A 6x6"
+  "whatsapp_text": "Hola, me interesa la casa Gustav A 6x6",
+  "options": {
+    "ins_roof": 2670,
+    "tegola": 900,
+    "ins_wall": 4250
+  }
 }

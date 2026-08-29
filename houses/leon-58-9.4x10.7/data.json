@@ -24,5 +24,10 @@
     "107-Leon_S19497_3d_1_95079.jpg"
   ],
   "whatsapp_text": "Hola, me interesa la casa Leon 9.4x10.7",
+  "options": {
+    "ins_roof": 4850,
+    "epdm": 5200,
+    "ins_wall": 5550
+  },
   "featured": true
 }

@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "9.4x10.7",
   "price": 26000,
-  "description": "EPDM - 5200\nEsta cabaña estilo villa tiene una superficie de 74,0 m² y cuenta con paredes de 68 mm y suelo de tablones de 28 mm. Su tejado a dos aguas y su elegante diseño la hacen ideal para vivir en ella de forma permanente.",
+  "description": "Esta cabaña estilo villa tiene una superficie de 74,0 m² y cuenta con paredes de 68 mm y suelo de tablones de 28 mm. Su tejado a dos aguas y su elegante diseño la hacen ideal para vivir en ella de forma permanente.",
   "specs": {
     "Huella de la base (m)": "9,2 x 10,7",
     "Ancho x largo del edificio (m)": "9,4 x 10,7",
@@ -37,6 +37,7 @@
   "whatsapp_text": "Hola, me interesa la casa Leon 9.4x10.7",
   "options": {
     "ins_roof": 5000,
+    "epdm": 5200,
     "ins_wall": 5600
   }
 }

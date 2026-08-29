@@ -27,5 +27,10 @@
     "107-Nagano_10_14x8_04_68mm_1fp_09599.jpg",
     "107-Nagano_10_14x8_04_68mm_2fp_95465.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Nagano 10.14x8.04"
+  "whatsapp_text": "Hola, me interesa la casa Nagano 10.14x8.04",
+  "options": {
+    "ins_roof": 4560,
+    "tegola": 1500,
+    "ins_wall": 8850
+  }
 }

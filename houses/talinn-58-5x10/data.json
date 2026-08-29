@@ -25,5 +25,10 @@
     "107-Talinn_5x10_3d_2_66119.jpg",
     "107-Talinn_5x10_68mm_fp-2_05818.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Talinn 5x10"
+  "whatsapp_text": "Hola, me interesa la casa Talinn 5x10",
+  "options": {
+    "ins_roof": 4700,
+    "tegola": 1650,
+    "ins_wall": 5600
+  }
 }

@@ -27,5 +27,10 @@
     "107-Sweden_7_5x13_5_68mm_fp-1_48861.jpg",
     "107-Sweden_7_5x13_5_3d_2_50306.jpg"
   ],
-  "whatsapp_text": "Hola, me interesa la casa Sweden 7.5x13.5"
+  "whatsapp_text": "Hola, me interesa la casa Sweden 7.5x13.5",
+  "options": {
+    "ins_roof": 5800,
+    "tegola": 1950,
+    "ins_wall": 9600
+  }
 }

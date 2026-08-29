@@ -405,7 +405,7 @@
         <label class="checkbox-label">
           <input type="checkbox" id="opt-roof" value="1280" onchange="toggleRoofColor(); updateTotal()">
           <div class="checkbox-text">
-            <span class="checkbox-title">Teja de betún (cubierta)</span>
+            <span class="checkbox-title" id="roof-title">Teja de betún (cubierta)</span>
             <span class="checkbox-price" id="price-roof">+1.280€</span>
           </div>
         </label>
@@ -515,6 +515,7 @@ function detectFolderName() {
 // ── LOAD DATA ──────────────────────────────────────
 let houseData = null;
 let basePrice = 0;
+let currentRoofType = null; // 'tegola' | 'epdm' | null — EPDM and tegola are mutually exclusive per house
 
 async function loadHouse() {
   if (!casaId) {
@@ -594,8 +595,7 @@ function renderHouse(d) {
   const opt = d.options || {};
   const optMap = {
     'opt-ins-roof': { key: 'ins_roof', priceEl: 'price-ins-roof', groupId: 'optgrp-ins-roof' },
-    'opt-ins-wall': { key: 'ins_wall', priceEl: 'price-ins-wall', groupId: 'optgrp-ins-wall' },
-    'opt-roof':     { key: 'tegola',   priceEl: 'price-roof',     groupId: 'optgrp-roof' }
+    'opt-ins-wall': { key: 'ins_wall', priceEl: 'price-ins-wall', groupId: 'optgrp-ins-wall' }
   };
   let anyOptionAvailable = false;
   Object.keys(optMap).forEach(id => {
@@ -614,12 +614,37 @@ function renderHouse(d) {
     } else {
       if (checkbox) checkbox.checked = false;
       if (group) group.style.display = 'none';
-      if (id === 'opt-roof') {
-        const colorsBlock = document.getElementById('roof-colors');
-        if (colorsBlock) colorsBlock.style.display = 'none';
-      }
     }
   });
+
+  // Roof covering — single checkbox slot, dynamic between "Teja de betún" (tegola)
+  // and "Cubierta EPDM": a house never has both, so this never shows two rows.
+  currentRoofType = opt.tegola !== undefined ? 'tegola' : (opt.epdm !== undefined ? 'epdm' : null);
+  const roofCheckbox = document.getElementById('opt-roof');
+  const roofPriceSpan = document.getElementById('price-roof');
+  const roofGroup = document.getElementById('optgrp-roof');
+  const roofTitleEl = document.getElementById('roof-title');
+  const roofColorsBlock = document.getElementById('roof-colors');
+  if (currentRoofType) {
+    anyOptionAvailable = true;
+    const roofPrice = opt[currentRoofType];
+    if (roofCheckbox && roofPriceSpan) {
+      roofCheckbox.value = roofPrice;
+      roofPriceSpan.textContent = '+' + formatPrice(roofPrice);
+    }
+    if (roofTitleEl) {
+      roofTitleEl.textContent = currentRoofType === 'epdm' ? 'Cubierta EPDM' : 'Teja de betún (cubierta)';
+    }
+    if (roofGroup) roofGroup.style.display = '';
+  } else {
+    if (roofCheckbox) roofCheckbox.checked = false;
+    if (roofGroup) roofGroup.style.display = 'none';
+  }
+  // EPDM has no color choice — that's a tegola/bitumen-shingle-specific feature.
+  if (roofColorsBlock && (currentRoofType !== 'tegola' || !roofCheckbox || !roofCheckbox.checked)) {
+    roofColorsBlock.style.display = 'none';
+  }
+
   const optionsTitle = document.getElementById('options-title');
   if (optionsTitle) optionsTitle.style.display = anyOptionAvailable ? '' : 'none';
 
@@ -686,7 +711,8 @@ function toggleRoofColor() {
   const checkbox = document.getElementById('opt-roof');
   const colorsBlock = document.getElementById('roof-colors');
   if (!checkbox || !colorsBlock) return;
-  colorsBlock.style.display = checkbox.checked ? 'block' : 'none';
+  // Color choice only applies to tegola (bitumen shingle); EPDM is a plain membrane.
+  colorsBlock.style.display = (checkbox.checked && currentRoofType === 'tegola') ? 'block' : 'none';
 }
 
 function updateTotal() {
@@ -715,9 +741,13 @@ function updateWAText() {
   if (insRoof && insRoof.checked) opts.push('Aislamiento de techo 100mm');
   if (insWall && insWall.checked) opts.push('Aislamiento de paredes 100mm');
   if (roof && roof.checked) {
-    const colorEl = document.querySelector('input[name="roof-color"]:checked');
-    const color = colorEl ? colorEl.value : '';
-    opts.push(`Teja de betún${color ? ' (' + color + ')' : ''}`);
+    if (currentRoofType === 'epdm') {
+      opts.push('Cubierta EPDM');
+    } else {
+      const colorEl = document.querySelector('input[name="roof-color"]:checked');
+      const color = colorEl ? colorEl.value : '';
+      opts.push(`Teja de betún${color ? ' (' + color + ')' : ''}`);
+    }
   }
 
   const total = basePrice + ['opt-ins-roof','opt-ins-wall','opt-roof']

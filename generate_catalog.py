@@ -157,7 +157,7 @@ def build_card(slug, data):
       <div class="card-body">
         <div class="card-name">{card_name_display}</div>
         <div class="card-meta">{meta_html}</div>
-        <div class="card-price">{price_html} <span>sin tejas/pintura</span></div>
+        <div class="card-price">{price_html} <span>IVA incluido · sin tejas/pintura</span></div>
         <a class="card-btn" href="house.html?casa={esc(slug)}">Ver ficha y precio</a>
       </div>
     </div>'''
@@ -199,6 +199,7 @@ def build_featured_slide(slug, data):
         <span class="oferta-old">{format_price(old_price)}</span>
         <span class="oferta-new">{format_price(price)}</span>
         <span class="oferta-save">Ahorras {format_price(savings)}</span>
+        <span class="oferta-iva">IVA incluido</span>
       </div>
       <span class="oferta-btn">Ver ficha y precio</span>
     </div>

@@ -322,10 +322,12 @@
     .price-base { font-size: 26px; }
   }
 </style>
+<!-- Consentimiento de cookies + Google Consent Mode v2 (las etiquetas de Google no se cargan hasta dar consentimiento) -->
+<script src="consent.js"></script>
 </head>
 <body>
 
-<a class="wa-float" id="wa-float-btn" href="#" target="_blank" aria-label="WhatsApp">💬</a>
+<a class="wa-float" id="wa-float-btn" href="#" target="_blank" aria-label="WhatsApp" onclick="ccTrackWhatsApp()">💬</a>
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -336,7 +338,7 @@
       <span class="logo-tagline">Casas de madera<br>en toda España</span>
     </a>
     <a href="index.html#catalogo" class="nav-back">← Volver<span class="nav-back-full"> al catálogo</span></a>
-    <a href="#" class="nav-wa" id="nav-wa-btn" target="_blank">💬 WhatsApp</a>
+    <a href="#" class="nav-wa" id="nav-wa-btn" target="_blank" onclick="ccTrackWhatsApp()">💬 WhatsApp</a>
   </div>
 </nav>
 
@@ -430,13 +432,14 @@
 
     <!-- CTA -->
     <div class="cta-section">
-      <button class="btn-wa" id="btn-wa-main" onclick="openWA()">
+      <button class="btn-wa" id="btn-wa-main" onclick="ccTrackWhatsApp();openWA()">
         💬 Consultar precio por WhatsApp
       </button>
-      <button class="btn-secondary" onclick="openWA()">
+      <button class="btn-secondary" onclick="ccTrackWhatsApp();openWA()">
         ✉️ Solicitar presupuesto
       </button>
       <p class="cta-note">Respuesta en menos de 24h · Sin compromiso</p>
+      <p class="cta-note" style="margin-top:2px">Al escribir por WhatsApp, tratamos tus datos según nuestra <a href="privacidad.html" style="color:var(--gray);text-decoration:underline">Política de Privacidad</a>.</p>
     </div>
 
     <!-- DELIVERY PILLS -->
@@ -491,7 +494,7 @@
 <!-- FOOTER -->
 <footer>
   <p>© 2012–2026 MaderaRey · Casas de madera prefabricadas en España</p>
-  <p style="margin-top:8px"><a href="index.html">Volver al catálogo</a> · <a href="https://maderarey.es/aviso-legal-y-politica-de-privacidad/">Aviso legal</a></p>
+  <p style="margin-top:8px"><a href="index.html">Volver al catálogo</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="#" onclick="window.openCookieSettings();return false;">Configurar cookies</a></p>
 </footer>
 
 <script>
@@ -765,7 +768,7 @@ function updateWAText() {
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
   document.getElementById('wa-float-btn').href = url;
   document.getElementById('nav-wa-btn').href = url;
-  document.getElementById('btn-wa-main').onclick = () => window.open(url, '_blank');
+  document.getElementById('btn-wa-main').onclick = () => { ccTrackWhatsApp(); window.open(url, '_blank'); };
 }
 
 function openWA() {

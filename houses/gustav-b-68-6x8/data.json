@@ -3,7 +3,7 @@
   "thickness": "68mm",
   "size": "6x8",
   "price": 20500,
-  "description": "baldosa - 1100 horas\nEspacio interior de 43,6 m² con una amplia terraza de 21,3 m², 68 mm de ancho y 28 mm de diámetro. El tejado a dos aguas alcanza una altura de 4,12 m y cubre 3 dormitorios, incluyendo un altillo, ideal para estancias de temporada.",
+  "description": "Espacio interior de 43,6 m² con una amplia terraza de 21,3 m², 68 mm de grosor de pared. 28 mm de grosor del suelo. El tejado a dos aguas alcanza una altura de 4,12 m y cubre 3 dormitorios, incluyendo un altillo, ideal para estancias de temporada.",
   "specs": {
     "Huella de la base (m)": "5,8 x 7,8",
     "Ancho x largo del edificio (m)": "6 x 8",
@@ -35,6 +35,7 @@
   "whatsapp_text": "Hola, me interesa la casa Gustav B 6x8",
   "options": {
     "ins_roof": 3300,
-    "ins_wall": 5200
+    "ins_wall": 5200,
+    "tegola": 1100
   }
 }

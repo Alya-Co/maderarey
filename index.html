@@ -125,37 +125,45 @@
 
   /* ── HERO ── */
   .hero {
-    position: relative; min-height: 520px;
-    display: flex; align-items: center;
-    background: linear-gradient(135deg, #1B2A1C 0%, #2E3B2E 50%, transparent 100%),
-                url('https://maderarey.es/wp-content/uploads/2025/03/107-Gustav_B_6x8_series_71592-571x398.jpg') center/cover no-repeat;
+    position: relative; min-height: 580px;
+    display: flex; align-items: flex-end;
+    background-image: url('hero-casas-a-medida.webp');
+    background-size: cover;
+    background-position: center 12%;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
   .hero::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to right, rgba(27,42,28,0.85) 0%, rgba(27,42,28,0.5) 60%, rgba(27,42,28,0.1) 100%);
+    background: linear-gradient(180deg, rgba(15,20,10,0) 45%, rgba(15,20,10,0.75) 100%);
   }
   .hero-content {
     position: relative; z-index: 1;
-    max-width: 1200px; margin: 0 auto; padding: 60px 20px;
-    max-width: 620px; margin-left: clamp(20px, 8vw, 120px);
+    width: 100%; max-width: 1200px; margin: 0 auto;
+    padding: 0 40px 40px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
   }
+  .hero-text { max-width: 560px; }
   .hero-badge {
-    display: inline-block; background: var(--green-light);
-    color: var(--white); font-size: 11px; font-weight: 700;
-    letter-spacing: 1px; text-transform: uppercase;
-    padding: 4px 12px; border-radius: 20px; margin-bottom: 16px;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.45);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.03em; padding: 6px 14px; border-radius: 20px;
+    margin-top: 14px;
   }
   .hero h1 {
-    font-size: clamp(28px, 5vw, 48px); font-weight: 800;
-    color: var(--white); line-height: 1.15; margin-bottom: 14px;
+    font-size: clamp(28px, 5vw, 42px); font-weight: 800;
+    color: var(--white); line-height: 1.15; margin-bottom: 10px;
     letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
   }
   .hero h1 span { color: #A5D6A7; }
   .hero p {
-    font-size: 16px; color: rgba(255,255,255,0.85);
-    line-height: 1.6; margin-bottom: 28px; max-width: 480px;
+    font-size: 16px; color: rgba(255,255,255,0.88);
+    line-height: 1.5; max-width: 480px;
   }
+  .hero-cta { flex-shrink: 0; white-space: nowrap; }
   .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
   .btn-primary {
     background: var(--green); color: var(--white);
@@ -466,7 +474,8 @@
     .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 0; gap: 0; }
     .nav-links.open a { padding: 10px 20px; border-radius: 0; }
     .hamburger { display: flex; }
-    .hero-content { margin-left: 20px; }
+    .hero { min-height: 460px; background-position: center 6%; }
+    .hero-content { flex-direction: column; align-items: flex-start; padding: 0 24px 28px; }
     .hero-stats { gap: 16px; }
     .exposicion { flex-direction: column; }
   }
@@ -520,51 +529,17 @@
   </div>
 </nav>
 
-<!-- OFERTA BANNER -->
-<div class="oferta-carousel" id="ofertaCarousel">
-  <button class="oferta-arrow oferta-arrow-prev" id="ofertaPrev" aria-label="Anterior" type="button">‹</button>
-  <div class="oferta-track" id="ofertaTrack">
-
-<!-- FEATURED:START -->
-
-  <a class="oferta-banner" href="house.html?casa=leon-58-9.4x10.7">
-    <div class="oferta-img"><img src="houses/leon-58-9.4x10.7/107-Leon_S19497_3d_3_27572.jpg" alt="Casa de madera Leon oferta"></div>
-    <div class="oferta-overlay">
-      <span class="oferta-tag">-17% OFERTA</span>
-      <h2 class="oferta-title">Leon 9.4x10.7</h2>
-      <p class="oferta-desc">58mm · 9.4x10.7 m</p>
-      <div class="oferta-prices">
-        <span class="oferta-old">29.640€</span>
-        <span class="oferta-new">24.700€</span>
-        <span class="oferta-save">Ahorras 4.940€</span>
-        <span class="oferta-iva">IVA incluido</span>
-      </div>
-      <span class="oferta-btn">Ver ficha y precio</span>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Casas prefabricadas a medida</h1>
+      <p>Diseño, fabricación y montaje adaptados a tu terreno.</p>
+      <span class="hero-badge">CERTIFICADO CTE</span>
     </div>
-  </a>
-
-  <a class="oferta-banner" href="house.html?casa=oskar-68-8.87x10.04">
-    <div class="oferta-img"><img src="houses/oskar-68-8.87x10.04/107-Oskar_8_87x10_04_3d_1_93461.jpg" alt="Casa de madera Oskar oferta"></div>
-    <div class="oferta-overlay">
-      <span class="oferta-tag">-17% OFERTA</span>
-      <h2 class="oferta-title">Oskar 8.87x10.04</h2>
-      <p class="oferta-desc">68mm · 8.87x10.04 m</p>
-      <div class="oferta-prices">
-        <span class="oferta-old">30.360€</span>
-        <span class="oferta-new">25.300€</span>
-        <span class="oferta-save">Ahorras 5.060€</span>
-        <span class="oferta-iva">IVA incluido</span>
-      </div>
-      <span class="oferta-btn">Ver ficha y precio</span>
-    </div>
-  </a>
-
-<!-- FEATURED:END -->
-
+    <a href="#catalogo" class="btn-primary hero-cta">Ver modelos</a>
   </div>
-  <button class="oferta-arrow oferta-arrow-next" id="ofertaNext" aria-label="Siguiente" type="button">›</button>
-  <div class="oferta-dots" id="ofertaDots"></div>
-</div>
+</section>
 
 
 

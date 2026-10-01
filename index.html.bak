@@ -581,7 +581,7 @@
       </div>
     </div>
 
-    <div class="card visible" data-cat="garajes" data-casa="garaje-44-3.2x5.2">
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-3.2x5.2">
       <a href="house.html?casa=garaje-44-3.2x5.2" class="card-img-link"><div class="card-img">
         <img src="houses/garaje-44-3.2x5.2/107-medium-Garage_3_2x5_2_44mm-P_26600.jpg" alt="Garaje 3.2x5.2 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
@@ -607,7 +607,7 @@
       </div>
     </div>
 
-    <div class="card visible" data-cat="garajes" data-casa="garaje-44-4x6">
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-4x6">
       <a href="house.html?casa=garaje-44-4x6" class="card-img-link"><div class="card-img">
         <img src="houses/garaje-44-4x6/107-medium-Garage_4x6_44mm-P_14225.jpg" alt="Garaje 4x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
@@ -672,7 +672,7 @@
       </div>
     </div>
 
-    <div class="card visible" data-cat="garajes" data-casa="garaje-44-5x5">
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-5x5">
       <a href="house.html?casa=garaje-44-5x5" class="card-img-link"><div class="card-img">
         <img src="houses/garaje-44-5x5/107-Garage_5x5_3_83271.jpg" alt="Garaje 5x5 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>
@@ -763,7 +763,7 @@
       </div>
     </div>
 
-    <div class="card visible" data-cat="garajes" data-casa="garaje-44-6x6">
+    <div class="card visible" data-cat="garajes premium" data-casa="garaje-44-6x6">
       <a href="house.html?casa=garaje-44-6x6" class="card-img-link"><div class="card-img">
         <img src="houses/garaje-44-6x6/107-Garage_6x6_5_01160.jpg" alt="Garaje 6x6 casa de madera 44mm" loading="lazy">
         <span class="card-badge" style="background:#B8860B">Premium</span>

@@ -496,6 +496,7 @@
   .wa-float:hover { transform: scale(1.1); }
 </style>
 <!-- Consentimiento de cookies + Google Consent Mode v2 (las etiquetas de Google no se cargan hasta dar consentimiento) -->
+<script src="lead-source.js"></script>
 <script src="consent.js"></script>
 </head>
 <body>
@@ -1867,15 +1868,12 @@
 </footer>
 
 <script>
-// ── UTM TRACKING ──
+// ── UTM TRACKING (deteccion en lead-source.js, persiste entre paginas) ──
 (function(){
-  const params = new URLSearchParams(window.location.search);
-  const src = params.get('utm_source') || 'direct';
-  if(src !== 'direct') sessionStorage.setItem('lead_source', src);
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(el){
     const url = new URL(el.href);
     const txt = url.searchParams.get('text') || '';
-    url.searchParams.set('text', txt + '%0A%0AFuente%3A+' + encodeURIComponent(src));
+    url.searchParams.set('text', window.MR_tagWAText(txt));
     el.href = url.toString();
   });
 })();

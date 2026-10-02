@@ -323,6 +323,7 @@
   }
 </style>
 <!-- Consentimiento de cookies + Google Consent Mode v2 (las etiquetas de Google no se cargan hasta dar consentimiento) -->
+<script src="lead-source.js"></script>
 <script src="consent.js"></script>
 </head>
 <body>
@@ -765,6 +766,7 @@ function updateWAText() {
   text += `\nTotal estimado: ${formatPrice(total)}`;
   text += `\n\n¿Pueden confirmar disponibilidad y precio de entrega?`;
 
+  text = window.MR_tagWAText ? window.MR_tagWAText(text) : text;
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
   document.getElementById('wa-float-btn').href = url;
   document.getElementById('nav-wa-btn').href = url;

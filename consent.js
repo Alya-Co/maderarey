@@ -10,8 +10,8 @@
   var COOKIE_NAME = 'cookie_consent';
   var COOKIE_DAYS = 365;
   var GA4_ID = 'G-8CH1ZTZCZS';
-  var ADS_ID = 'AW-18002150784';
-  var ADS_CONVERSION_LABEL = 'AW-18002150784/zQPwCKKbq_0cEICLjIhD';
+  var ADS_ID = 'AW-11471104634';
+  var ADS_CONVERSION_LABEL = 'AW-11471104634/0txFCKLJ65EdEPrU7N0q';
 
   /* ---------- cookies propias (solo para recordar la decisión) ---------- */
   function getCookie(name) {

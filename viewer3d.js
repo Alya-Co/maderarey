@@ -8,6 +8,11 @@
  *  - three.js подгружается после загрузки страницы, когда ряд фото виден на экране (страница не тормозит).
  *  - Нет model3d.json — ничего не появляется, страница работает как раньше.
  * Создаёт model3d.json скрипт build_3d_models.py.
+ *
+ * События GA4 (только при согласии на аналитику):
+ *  tour_3d_open    — открыл 3D-тур (параметр casa)
+ *  tour_3d_vista   — переключил вид: ext / open / plan / int
+ *  whatsapp_click  — клик по WhatsApp на странице дома; tour_3d = si / no / sin_modelo
  */
 (function () {
   'use strict';
@@ -24,6 +29,25 @@
   if (!id) return;
   var modelUrl = 'houses/' + encodeURIComponent(id) + '/model3d.json';
   var model = null;
+
+  // ---------- analytics (GA4, only if the visitor accepted analytics cookies; see consent.js) ----------
+  var seen3d = false;
+  try { seen3d = sessionStorage.getItem('v3d_seen') === '1'; } catch (e) {}
+  function track(name, params) {
+    try {
+      var c = window.__ccConsent;
+      if (!c || !c.analytics || typeof window.gtag !== 'function') return;
+      params = params || {}; params.casa = id;
+      window.gtag('event', name, params);
+    } catch (e) {}
+  }
+  // WhatsApp clicks on house pages, marked with whether the visitor opened the 3D tour.
+  // Lets you compare in GA4: whatsapp_click where tour_3d = "si" vs "no" / "sin_modelo".
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest && e.target.closest('#btn-wa-main,#wa-float-btn,#nav-wa-btn,a[href*="wa.me"],a[href*="api.whatsapp.com"]');
+    if (!t) return;
+    track('whatsapp_click', { tour_3d: !model ? 'sin_modelo' : (seen3d ? 'si' : 'no'), origen: t.id || 'enlace' });
+  }, true);
 
   function loadScript(src) {
     return new Promise(function (res, rej) {
@@ -62,6 +86,14 @@
     '.v3d-cta{position:absolute;right:12px;bottom:12px;background:#25D366;color:#fff;border:0;border-radius:8px;padding:12px 16px;font:700 14px/1 inherit;font-family:inherit;cursor:pointer}' +
     '.v3d-cta:hover{background:#1da851}' +
     '.v3d-note{position:absolute;right:12px;bottom:58px;font-size:11px;color:#555;background:rgba(255,255,255,.8);padding:3px 8px;border-radius:4px}' +
+    '.v3d-rooms{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px}' +
+    '.v3d-rooms button{font:600 12px/1 inherit;font-family:inherit;color:#1B5E20;background:rgba(255,255,255,.95);border:1px solid #2E7D32;border-radius:999px;padding:7px 12px;cursor:pointer}' +
+    '.v3d-rooms button[aria-pressed="true"]{background:#1B5E20;color:#fff}' +
+    '.v3d-room{position:absolute;transform:translate(-50%,-50%);background:#fff;border:1.5px solid #2E7D32;color:#1B5E20;border-radius:8px;padding:5px 9px;font:700 12px/1.2 inherit;font-family:inherit;cursor:pointer;text-align:center;white-space:nowrap;box-shadow:0 1px 6px rgba(0,0,0,.15)}' +
+    '.v3d-room small{display:block;font-weight:500;color:#555}' +
+    '.v3d-room:hover{background:#2E7D32;color:#fff}.v3d-room:hover small{color:#e8f5e9}' +
+    '.v3d-hint{position:absolute;left:50%;bottom:62px;transform:translateX(-50%);background:rgba(26,26,26,.72);color:#fff;font-size:12px;padding:6px 10px;border-radius:6px;white-space:nowrap;pointer-events:none}' +
+    '@media(max-width:640px){.v3d-hint{bottom:104px;white-space:normal;width:max-content;max-width:90%;text-align:center}}' +
     '.v3d-dim{position:absolute;transform:translate(-50%,-50%);font:600 12px/1 ui-monospace,Menlo,Consolas,monospace;background:#fff;border:1px solid #d6dbd3;border-radius:4px;padding:3px 6px;pointer-events:none;white-space:nowrap}' +
     '.v3d-load{position:absolute;inset:0;display:grid;place-items:center;color:#555;font-size:14px}' +
     '.v3d-box button:focus-visible{outline:2px solid #2E7D32;outline-offset:2px}' +
@@ -136,6 +168,8 @@
 
   function open() {
     if (modal) return;
+    seen3d = true; try { sessionStorage.setItem('v3d_seen', '1'); } catch (e) {}
+    track('tour_3d_open');
     modal = document.createElement('div'); modal.className = 'v3d-modal';
     modal.setAttribute('role', 'dialog'); modal.setAttribute('aria-modal', 'true'); modal.setAttribute('aria-label', 'Vista 3D de la casa');
     modal.innerHTML = '<div class="v3d-box"><canvas></canvas><div class="v3d-load">Cargando 3D…</div>' +
@@ -143,7 +177,8 @@
       '<button type="button" data-v="ext" aria-pressed="true">Exterior</button>' +
       '<button type="button" data-v="open" aria-pressed="false">Sin tejado</button>' +
       '<button type="button" data-v="plan" aria-pressed="false">Planta</button>' +
-      '<button type="button" data-v="int" aria-pressed="false">Interior</button></div>' +
+      '<button type="button" data-v="int" aria-pressed="false">Interior</button><div class="v3d-rooms" hidden></div></div>' +
+      '<div class="v3d-hint" hidden>Doble clic en el suelo para caminar · arrastra para mirar</div>' +
       '<button type="button" class="v3d-x" aria-label="Cerrar">×</button>' +
       '<div class="v3d-tg"><label><input type="checkbox" class="v3d-roof" checked>Tejado</label><label><input type="checkbox" class="v3d-dims" checked>Medidas</label></div>' +
       '<div class="v3d-note">Recreación 3D orientativa · mobiliario no incluido</div>' +
@@ -329,15 +364,68 @@ const mats={
       ext:function(){setRoof(true);controls.minDistance=2;controls.maxPolarAngle=Math.PI*0.495;fly(extPos(),new THREE.Vector3(0,H*0.4,0))},
       open:function(){setRoof(false);controls.minDistance=2;controls.maxPolarAngle=Math.PI*0.495;var f=fit();fly(new THREE.Vector3(span*0.75*f,span*f,span*0.9*f),new THREE.Vector3(0,0.6,0))},
       plan:function(){setRoof(false);controls.minDistance=2;controls.maxPolarAngle=Math.PI*0.495;fly(new THREE.Vector3(0.01,span*1.75*fit(),0.6),new THREE.Vector3(0,0,0))},
-      int:function(){setRoof(true);controls.minDistance=0.01;controls.maxPolarAngle=Math.PI*0.9;
+      int:function(){ if(rooms.length){enterRoom(rooms[0]);return}
+        setRoof(true);controls.minDistance=0.01;controls.maxPolarAngle=Math.PI*0.9;
         var c=new THREE.Vector3(); wb.getCenter(c);
         var eye=new THREE.Vector3(c.x+ws.x*0.12,1.6,c.z+ws.z*0.12), look=new THREE.Vector3(wb.min.x+0.3,1.3,wb.min.z+0.3);
         fly(eye,eye.clone().lerp(look,0.04))}
     };
     var vbtns=box.querySelectorAll('[data-v]');
-    vbtns.forEach(function(b){b.addEventListener('click',function(){vbtns.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});views[b.dataset.v]()})});
+
+    // ---------- rooms: buttons in Interior mode, clickable labels in "Sin tejado"/"Planta", double-click on floor to walk ----------
+    var EYE=1.55, mode='ext';
+    var hab=0;
+    var rooms=(model.rooms||[]).map(function(r,i){
+      var name=(i===0&&r.a>=18)?'Salón':('Habitación '+(++hab));
+      var c=A.V([r.c[0],r.c[1],0]), p0=A.V([r.b[0],r.b[1],0]), p1=A.V([r.b[2],r.b[3],0]);
+      return {name:name,a:r.a,c:c,sx:Math.abs(p1.x-p0.x),sz:Math.abs(p1.z-p0.z),x0:Math.min(p0.x,p1.x),x1:Math.max(p0.x,p1.x),z0:Math.min(p0.z,p1.z),z1:Math.max(p0.z,p1.z)};
+    });
+    var roomBar=box.querySelector('.v3d-rooms'), hint=box.querySelector('.v3d-hint'), curRoom=null;
+    var fmtA=function(a){return Math.round(a)+' m²'};
+    rooms.forEach(function(r,i){
+      var b=document.createElement('button'); b.type='button'; b.textContent=r.name+' · '+fmtA(r.a); b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){enterRoom(r);track('tour_3d_habitacion',{habitacion:r.name})}); roomBar.appendChild(b); r.btn=b;
+      var l=document.createElement('button'); l.type='button'; l.className='v3d-room'; l.hidden=true;
+      l.innerHTML=r.name+'<small>'+fmtA(r.a)+' · entrar</small>';
+      l.addEventListener('click',function(){enterRoom(r);track('tour_3d_habitacion',{habitacion:r.name})}); box.appendChild(l); r.lbl=l;
+    });
+    function setMode(m){
+      mode=m;
+      camera.fov=m==='int'?72:42; camera.updateProjectionMatrix();
+      dimLines.visible=dimCb.checked&&m!=='int';
+      vbtns.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.v===m))});
+      roomBar.hidden=!(m==='int'&&rooms.length);
+      hint.hidden=m!=='int';
+      if(m!=='int'){curRoom=null;rooms.forEach(function(r){r.btn.setAttribute('aria-pressed','false')})}
+    }
+    function lookFrom(eye,dir){fly(eye,eye.clone().add(dir.clone().setY(0).normalize().multiplyScalar(0.05)).add(new THREE.Vector3(0,-0.004,0)))}
+    function enterRoom(r){
+      setRoof(true); controls.minDistance=0.01; controls.maxPolarAngle=Math.PI*0.9;
+      setMode('int'); curRoom=r;
+      rooms.forEach(function(x){x.btn.setAttribute('aria-pressed',String(x===r))});
+      // stand in the room corner farthest from the middle of the house and look to the opposite corner
+      var m=0.45, best=null;
+      [[r.x0+m,r.z0+m],[r.x1-m,r.z0+m],[r.x0+m,r.z1-m],[r.x1-m,r.z1-m]].forEach(function(p){var d=p[0]*p[0]+p[1]*p[1];if(!best||d>best.d)best={p:p,d:d}});
+      var eye=new THREE.Vector3(best.p[0],EYE,best.p[1]);
+      var opp=new THREE.Vector3(r.x0+r.x1-best.p[0],EYE,r.z0+r.z1-best.p[1]);
+      lookFrom(eye,opp.sub(eye));
+    }
+    // double-click / double-tap on the floor: walk there
+    var ray=new THREE.Raycaster(), ndc=new THREE.Vector2();
+    function walkTo(ev){
+      if(!groups.floor) return;
+      var rc=canvas.getBoundingClientRect(); ndc.set(((ev.clientX-rc.left)/rc.width)*2-1,-((ev.clientY-rc.top)/rc.height)*2+1);
+      ray.setFromCamera(ndc,camera); var hit=ray.intersectObject(groups.floor,false)[0]; if(!hit) return;
+      var dir=controls.target.clone().sub(camera.position); if(mode!=='int'||dir.lengthSq()<1e-6||Math.abs(dir.x)+Math.abs(dir.z)<1e-4) dir=hit.point.clone().sub(camera.position);
+      if(mode!=='int'){setRoof(true);controls.minDistance=0.01;controls.maxPolarAngle=Math.PI*0.9;setMode('int');rooms.forEach(function(x){x.btn.setAttribute('aria-pressed','false')})}
+      lookFrom(new THREE.Vector3(hit.point.x,EYE,hit.point.z),dir);
+      track('tour_3d_caminar');
+    }
+    canvas.addEventListener('dblclick',walkTo);
+    var lastTap=0; canvas.addEventListener('pointerup',function(e){if(e.pointerType!=='touch')return;var t=performance.now();if(t-lastTap<320){walkTo(e);lastTap=0}else lastTap=t});
+    vbtns.forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.v);views[b.dataset.v]();track('tour_3d_vista',{vista:b.dataset.v})})});
     roofCb.addEventListener('change',function(){setRoof(roofCb.checked)});
-    dimCb.addEventListener('change',function(){dimLines.visible=dimCb.checked});
+    dimCb.addEventListener('change',function(){dimLines.visible=dimCb.checked&&mode!=='int'});
 
     resize(); camera.position.copy(extPos()); controls.target.set(0,H*0.4,0);
     var idle=true; controls.addEventListener('start',function(){idle=false});
@@ -350,7 +438,9 @@ const mats={
       else if(idle&&!reduce&&vbtns[0].getAttribute('aria-pressed')==='true'){var r=camera.position.clone().sub(controls.target);r.applyAxisAngle(new THREE.Vector3(0,1,0),0.0015);camera.position.copy(controls.target).add(r)}
       controls.update(); renderer.render(scene,camera);
       var w=box.clientWidth,h=box.clientHeight;
-      dims.forEach(function(d){tmp.copy(d.p).project(camera);var vis=dimCb.checked&&tmp.z<1&&Math.abs(tmp.x)<1.1&&Math.abs(tmp.y)<1.1;
+      var showR=(mode==='open'||mode==='plan')&&!anim;
+      rooms.forEach(function(r){if(!showR){r.lbl.hidden=true;return}tmp.copy(r.c).setY(0.1).project(camera);var v=tmp.z<1&&Math.abs(tmp.x)<1&&Math.abs(tmp.y)<1;r.lbl.hidden=!v;if(v){r.lbl.style.left=((tmp.x+1)/2*w)+'px';r.lbl.style.top=((1-tmp.y)/2*h)+'px'}});
+      dims.forEach(function(d){tmp.copy(d.p).project(camera);var vis=dimCb.checked&&mode!=='int'&&tmp.z<1&&Math.abs(tmp.x)<1.1&&Math.abs(tmp.y)<1.1;
         d.el.hidden=!vis; if(vis){d.el.style.left=((tmp.x+1)/2*w)+'px';d.el.style.top=((1-tmp.y)/2*h)+'px'}});
       raf=requestAnimationFrame(loop);
     }

@@ -3,9 +3,9 @@
  *
  * Как работает:
  *  - Берёт id дома из адреса (?casa=...), проверяет, есть ли houses/<id>/model3d.json.
- *  - Если модель есть — добавляет на главное фото кнопку «Ver en 3D».
+ *  - Если модель есть — ставит первой в ряд миниатюр плитку «Tour 3D», где дом медленно вращается.
  *  - По нажатию открывает окно с 3D: вращение, без крыши, план, вид изнутри.
- *  - Библиотека three.js загружается только при открытии окна (страница не тяжелеет).
+ *  - three.js подгружается после загрузки страницы, когда ряд фото виден на экране (страница не тормозит).
  *  - Нет model3d.json — ничего не появляется, страница работает как раньше.
  * Создаёт model3d.json скрипт build_3d_models.py.
  */
@@ -37,11 +37,18 @@
 
   // ---------- styles ----------
   var css = '' +
-    '.v3d-btn{position:absolute;left:12px;bottom:12px;z-index:3;display:inline-flex;align-items:center;gap:8px;' +
-    'background:rgba(255,255,255,.95);color:#1B5E20;border:2px solid #2E7D32;border-radius:999px;padding:9px 16px;' +
-    'font:700 14px/1 "Segoe UI",system-ui,-apple-system,sans-serif;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.15)}' +
-    '.v3d-btn:hover{background:#2E7D32;color:#fff}' +
-    '.v3d-btn svg{width:18px;height:18px}' +
+    '.v3d-tile{position:relative;flex-shrink:0;width:120px;height:60px;border-radius:6px;overflow:hidden;cursor:pointer;padding:0;' +
+    'border:2px solid #2E7D32;background:linear-gradient(180deg,#eef3ea,#dfe8d8);box-shadow:0 0 0 0 rgba(46,125,50,.5);animation:v3dPulse 2.4s ease-out infinite}' +
+    '.v3d-tile canvas{position:absolute;inset:0;width:100%;height:100%;display:block}' +
+    '.v3d-tile .v3d-ico{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:26px;height:26px;color:#2E7D32;opacity:.55}' +
+    '.v3d-tile.live .v3d-ico{display:none}' +
+    '.v3d-tile .v3d-lbl{position:absolute;left:0;right:0;bottom:0;background:#2E7D32;color:#fff;font:700 11px/1 "Segoe UI",system-ui,-apple-system,sans-serif;' +
+    'letter-spacing:.02em;padding:4px 0;text-align:center;white-space:nowrap}' +
+    '.v3d-tile:hover{border-color:#1B5E20}.v3d-tile:hover .v3d-lbl{background:#1B5E20}' +
+    '.v3d-tile:focus-visible{outline:2px solid #2E7D32;outline-offset:2px}' +
+    '@keyframes v3dPulse{0%{box-shadow:0 0 0 0 rgba(46,125,50,.45)}70%{box-shadow:0 0 0 8px rgba(46,125,50,0)}100%{box-shadow:0 0 0 0 rgba(46,125,50,0)}}' +
+    '@media(max-width:768px){.v3d-tile{width:96px;height:48px}.v3d-tile .v3d-lbl{font-size:10px;padding:3px 0}}' +
+    '@media(prefers-reduced-motion:reduce){.v3d-tile{animation:none}}' +
     '.v3d-modal{position:fixed;inset:0;z-index:2147483000;background:rgba(20,26,22,.72);display:flex;align-items:center;justify-content:center;padding:16px}' +
     '.v3d-box{position:relative;width:min(1200px,100%);height:min(780px,100%);background:#eef1ec;border-radius:12px;overflow:hidden;' +
     'font-family:"Segoe UI",system-ui,-apple-system,sans-serif;color:#1A1A1A}' +
@@ -57,25 +64,65 @@
     '.v3d-note{position:absolute;right:12px;bottom:58px;font-size:11px;color:#555;background:rgba(255,255,255,.8);padding:3px 8px;border-radius:4px}' +
     '.v3d-dim{position:absolute;transform:translate(-50%,-50%);font:600 12px/1 ui-monospace,Menlo,Consolas,monospace;background:#fff;border:1px solid #d6dbd3;border-radius:4px;padding:3px 6px;pointer-events:none;white-space:nowrap}' +
     '.v3d-load{position:absolute;inset:0;display:grid;place-items:center;color:#555;font-size:14px}' +
-    '.v3d-box button:focus-visible,.v3d-btn:focus-visible{outline:2px solid #2E7D32;outline-offset:2px}' +
+    '.v3d-box button:focus-visible{outline:2px solid #2E7D32;outline-offset:2px}' +
     '@media(max-width:640px){.v3d-modal{padding:0}.v3d-box{height:100%;border-radius:0}.v3d-note{display:none}.v3d-cta{left:auto}.v3d-tg{bottom:60px}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
-  // ---------- button on the gallery (only if model exists) ----------
-  function addButton() {
-    var host = document.getElementById('gallery-main');
-    if (!host || host.querySelector('.v3d-btn')) return;
-    if (getComputedStyle(host).position === 'static') host.style.position = 'relative';
-    var b = document.createElement('button');
-    b.type = 'button'; b.className = 'v3d-btn';
-    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>Ver en 3D';
-    b.addEventListener('click', function (e) { e.stopPropagation(); open(); });
-    host.appendChild(b);
+  // ---------- "Tour 3D" tile: first item in the photo strip, house slowly rotating ----------
+  var tile = null, mini = null;
+  function addTile() {
+    var row = document.getElementById('gallery-thumbs');
+    if (!row || tile) return;
+    tile = document.createElement('button');
+    tile.type = 'button'; tile.className = 'v3d-tile';
+    tile.setAttribute('aria-label', 'Abrir tour 3D de la casa');
+    tile.innerHTML = '<svg class="v3d-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>' +
+      '<span class="v3d-lbl">Tour 3D</span>';
+    tile.addEventListener('click', function (e) { e.stopPropagation(); open(); });
+    row.insertBefore(tile, row.firstChild);
+    // start the small live preview once the strip is on screen (and the page has loaded)
+    var go = function () {
+      if (!('IntersectionObserver' in window)) return startMini();
+      var io = new IntersectionObserver(function (en) {
+        en.forEach(function (x) { if (mini) mini.visible = x.isIntersecting; else if (x.isIntersecting) startMini(); });
+      });
+      io.observe(tile);
+    };
+    if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
+  }
+  function startMini() {
+    if (mini) return;
+    mini = { visible: true };
+    libs().then(function () {
+      var A = houseAssets(), span = A.span, H = A.mx[2] - A.mn[2];
+      var cv = document.createElement('canvas'); tile.insertBefore(cv, tile.firstChild);
+      var r = new THREE.WebGLRenderer({ canvas: cv, antialias: true, alpha: true });
+      r.setPixelRatio(Math.min(window.devicePixelRatio, 2)); r.outputEncoding = THREE.sRGBEncoding;
+      var sc = new THREE.Scene();
+      sc.add(new THREE.HemisphereLight(0xfff4e0, 0x8a7558, 1.0));
+      var sun = new THREE.DirectionalLight(0xfff1dc, 0.85); sun.position.set(span, span * 1.3, span * 0.7); sc.add(sun);
+      addHouse(sc, false);
+      var cam = new THREE.PerspectiveCamera(32, 2, 0.1, 300);
+      var tgt = new THREE.Vector3(0, H * 0.3, 0), dist = span * 2.15, ang = 0.7;
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function size() { var w = tile.clientWidth, h = tile.clientHeight, lh = (tile.querySelector('.v3d-lbl') || {}).offsetHeight || 0; r.setSize(w, h, false); cam.aspect = w / h; cam.setViewOffset(w, h + lh, 0, lh, w, h); cam.updateProjectionMatrix(); }
+      size(); tile.classList.add('live');
+      var last = performance.now();
+      (function frame(now) {
+        if (!document.hidden && mini.visible && !modal) {
+          if (!reduce) ang += (now - last) * 0.00035;
+          cam.position.set(Math.sin(ang) * dist, H * 0.6 + span * 0.5, Math.cos(ang) * dist); cam.lookAt(tgt);
+          r.render(sc, cam);
+        }
+        last = now; requestAnimationFrame(frame);
+      })(last);
+      window.addEventListener('resize', size);
+    }).catch(function () {});
   }
   fetch(modelUrl, { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (m) {
     if (!m || !m.items) return;
     model = m;
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addButton); else addButton();
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addTile); else addTile();
   }).catch(function () {});
 
   var modal = null;
@@ -115,31 +162,17 @@
   }
 
   // ---------- 3D scene ----------
-  var texCache = null;
-  function build(box) {
-    var canvas = box.querySelector('canvas');
+  // ---------- shared house assets (built once, used by the thumbnail and the big viewer) ----------
+  var H3 = null;
+  function houseAssets() {
+    if (H3) return H3;
     var items = model.items;
     var mn=[1e9,1e9,1e9], mx=[-1e9,-1e9,-1e9];
     items.forEach(function(it){it.f.forEach(function(f){f.forEach(function(p){for(var d=0;d<3;d++){mn[d]=Math.min(mn[d],p[d]);mx[d]=Math.max(mx[d],p[d])}})})});
     var cx=(mn[0]+mx[0])/2, cy=(mn[1]+mx[1])/2;
     var V=function(p){return new THREE.Vector3(p[0]-cx,p[2],-(p[1]-cy))};
     var span=Math.max(mx[0]-mn[0],mx[1]-mn[1]);
-
-    var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
-    renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-    renderer.outputEncoding=THREE.sRGBEncoding;
-    var scene=new THREE.Scene();
-    var camera=new THREE.PerspectiveCamera(42,1,0.05,300);
-    var controls=new THREE.OrbitControls(camera,canvas);
-    controls.enableDamping=true; controls.dampingFactor=0.08; controls.maxPolarAngle=Math.PI*0.495;
-    scene.add(new THREE.HemisphereLight(0xfff4e0,0x8a7558,0.9));
-    var sun=new THREE.DirectionalLight(0xfff1dc,0.9);
-    sun.position.set(span*0.8,span*1.2,span*0.6); sun.castShadow=true; sun.shadow.mapSize.set(2048,2048);
-    var sc=span*0.9; Object.assign(sun.shadow.camera,{left:-sc,right:sc,top:sc,bottom:-sc,near:0.5,far:span*4}); sun.shadow.bias=-0.0006;
-    scene.add(sun);
-
-    var built = (function(){
+    var mats=(function(){
 // ---- procedural wood textures (canvas), 1 texture tile = TILE metres ----
 function rng(seed){return()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646}}
 function grain(ctx,x,y,w,h,base,r,dir){
@@ -189,7 +222,7 @@ function boards(opts){
   }
   return c;
 }
-const maxAniso=renderer.capabilities.getMaxAnisotropy();
+const maxAniso=8;
 function tex(canvas,tile){const t=new THREE.CanvasTexture(canvas);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.encoding=THREE.sRGBEncoding;t.anisotropy=maxAniso;t.tileM=tile;return t}
 const warm=['#ead6a6','#e5cf9c','#eddbb0','#e2ca96','#e8d3a3'];
 const T={
@@ -208,9 +241,8 @@ const mats={
   glass:new THREE.MeshStandardMaterial({color:0x9fc3d6,roughness:.08,metalness:.1,transparent:true,opacity:.32,side:THREE.DoubleSide,depthWrite:false})
 };
 
-      return {T:T,mats:mats};
+      return mats;
     })();
-    var mats=built.mats;
     function tileOf(k){var m=mats[k]||mats.wall;return m.map?m.map.tileM:1}
     function polyTris(poly,pos,uv,tile){
       var n=[0,0,0];
@@ -221,24 +253,56 @@ const mats={
       var c2=poly.map(function(p){return new THREE.Vector2(p[u],p[v])});
       THREE.ShapeUtils.triangulateShape(c2,[]).forEach(function(t){t.forEach(function(i){var p=poly[i],w=V(p);pos.push(w.x,w.y,w.z);uv.push(p[u]/tile,p[v]/tile)})});
     }
-    var groups={}, buckets={};
+    var geos={}, buckets={};
     items.forEach(function(it){var b=(buckets[it.k]=buckets[it.k]||{p:[],u:[]});var tl=tileOf(it.k);it.f.forEach(function(f){polyTris(f,b.p,b.u,tl)})});
     Object.keys(buckets).forEach(function(k){var b=buckets[k];
       var g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.Float32BufferAttribute(b.p,3)); g.setAttribute('uv',new THREE.Float32BufferAttribute(b.u,2)); g.computeVertexNormals();
-      var m=new THREE.Mesh(g,mats[k]||mats.wall); m.castShadow=true; m.receiveShadow=true; groups[k]=m; scene.add(m);
+      geos[k]=g;
     });
+    var panes=[];
     items.filter(function(it){return it.k==='window'}).forEach(function(it){
       var b=new THREE.Box3(); it.f.forEach(function(f){f.forEach(function(p){b.expandByPoint(V(p))})});
       var s=new THREE.Vector3(), c=new THREE.Vector3(); b.getSize(s); b.getCenter(c);
       var thin=s.x<s.z?'x':'z';
-      var m=new THREE.Mesh(new THREE.PlaneGeometry(thin==='x'?s.z:s.x,s.y),mats.glass); m.position.copy(c); if(thin==='x')m.rotation.y=Math.PI/2; scene.add(m);
+      panes.push({g:new THREE.PlaneGeometry(thin==='x'?s.z:s.x,s.y),c:c,r:thin==='x'?Math.PI/2:0});
     });
+    var wb=new THREE.Box3(); items.filter(function(it){return it.k==='wall'}).forEach(function(it){it.f.forEach(function(f){f.forEach(function(p){wb.expandByPoint(V(p))})})});
+    H3={mats:mats,geos:geos,panes:panes,mn:mn,mx:mx,span:span,V:V,wb:wb};
+    return H3;
+  }
+  // put the house into a scene; returns the mesh groups by element type
+  function addHouse(scene, shadows) {
+    var A=houseAssets(), groups={};
+    Object.keys(A.geos).forEach(function(k){
+      var m=new THREE.Mesh(A.geos[k],A.mats[k]||A.mats.wall); m.castShadow=shadows; m.receiveShadow=shadows; groups[k]=m; scene.add(m);
+    });
+    A.panes.forEach(function(p){var m=new THREE.Mesh(p.g,A.mats.glass);m.position.copy(p.c);m.rotation.y=p.r;scene.add(m)});
+    return groups;
+  }
+  function build(box) {
+    var canvas = box.querySelector('canvas');
+    var A = houseAssets(), mn=A.mn, mx=A.mx, span=A.span;
+
+    var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+    renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+    renderer.outputEncoding=THREE.sRGBEncoding;
+    var scene=new THREE.Scene();
+    var camera=new THREE.PerspectiveCamera(42,1,0.05,300);
+    var controls=new THREE.OrbitControls(camera,canvas);
+    controls.enableDamping=true; controls.dampingFactor=0.08; controls.maxPolarAngle=Math.PI*0.495;
+    scene.add(new THREE.HemisphereLight(0xfff4e0,0x8a7558,0.9));
+    var sun=new THREE.DirectionalLight(0xfff1dc,0.9);
+    sun.position.set(span*0.8,span*1.2,span*0.6); sun.castShadow=true; sun.shadow.mapSize.set(2048,2048);
+    var sc=span*0.9; Object.assign(sun.shadow.camera,{left:-sc,right:sc,top:sc,bottom:-sc,near:0.5,far:span*4}); sun.shadow.bias=-0.0006;
+    scene.add(sun);
+
+    var groups = addHouse(scene, true);
     var ground=new THREE.Mesh(new THREE.CircleGeometry(span*3,64),new THREE.MeshStandardMaterial({color:0xb2baa8,roughness:1}));
     ground.rotation.x=-Math.PI/2; ground.position.y=Math.min(-0.2,mn[2]-0.02); ground.receiveShadow=true; scene.add(ground);
 
     // dimensions from the wall outline
-    var wb=new THREE.Box3(); items.filter(function(it){return it.k==='wall'}).forEach(function(it){it.f.forEach(function(f){f.forEach(function(p){wb.expandByPoint(V(p))})})});
-    if(wb.isEmpty()) wb.setFromObject(scene);
+    var wb=A.wb.clone(); if(wb.isEmpty()) wb.setFromObject(scene);
     var ws=new THREE.Vector3(); wb.getSize(ws);
     var fmt=function(n){return n.toLocaleString('es-ES',{minimumFractionDigits:1,maximumFractionDigits:1})+' m'};
     var dims=[{t:fmt(ws.z),p:new THREE.Vector3(wb.max.x+0.6,0.05,(wb.min.z+wb.max.z)/2)},{t:fmt(ws.x),p:new THREE.Vector3((wb.min.x+wb.max.x)/2,0.05,wb.max.z+0.6)}]
@@ -293,8 +357,6 @@ const mats={
     var l=box.querySelector('.v3d-load'); if(l)l.remove();
     raf=requestAnimationFrame(loop);
     modal.cleanup=function(){alive=false;cancelAnimationFrame(raf);ro.disconnect();controls.dispose();
-      scene.traverse(function(o){if(o.geometry)o.geometry.dispose()});
-      Object.keys(mats).forEach(function(k){if(mats[k].map)mats[k].map.dispose();mats[k].dispose()});
       renderer.dispose();};
   }
 })();

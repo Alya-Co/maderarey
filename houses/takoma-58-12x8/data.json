@@ -3,10 +3,11 @@
   "thickness": "58mm",
   "size": "12x8",
   "price": 26400,
-  "description": "Una casa espaciosa con 114,9 m² de superficie interior, construida con madera de 58 mm y con techo a dos aguas. Incluye 4 habitaciones y suelo de tablones de 19 mm, ideal para espacios abiertos. Camión completo: 1 unidad. Dimensiones del paquete: (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x3000x1200), (ST900x2500x2200)",
+  "description": "Esta casa de campo de madera de 75 m² cuenta con 3 dormitorios con ventanas altas para disfrutar de la vista exterior, un baño y un trastero. Además, incluye una espaciosa terraza de 21 m² que da al salón con ventanas altas, permitiendo que entre mucha luz natural. Construida con madera de 58 mm, techo a dos aguas y suelo de tablones de 19 mm. Camión completo: 1 unidad. Dimensiones del paquete: (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x6000x1200), (880x3000x1200), (ST900x2500x2200)",
   "specs": {
     "Huella de la base (m)": "11,8 x 7,8",
     "Ancho x largo del edificio (m)": "12 x 8",
+    "Superficie construida (m²)": "96",
     "Superficie interior (m²)": "75.1",
     "Altura del edificio (m, hasta la cima de la cresta)": "3.91",
     "Voladizo del tejado": "1.0",
@@ -14,7 +15,7 @@
     "Altura de la pared lateral (m)": "2.3",
     "Superficie de la pared exterior (m²)": "114.0",
     "Grosor de las tablas del suelo (mm)": "19.0",
-    "Superficie de las terrazas (m²)": "22.3"
+    "Superficie de las terrazas (m²)": "21.0"
   },
   "photos": [
     "107-Takoma_12x8_59275.jpg",

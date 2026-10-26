@@ -36,8 +36,5 @@
   "options": {
     "ins_roof": 1450
   },
-  "category": [
-    "cabanas",
-    "premium"
-  ]
+  "category": "cabanas"
 }

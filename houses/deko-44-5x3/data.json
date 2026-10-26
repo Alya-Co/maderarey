@@ -37,8 +37,5 @@
     "tegola": 340,
     "ins_wall": 2220
   },
-  "category": [
-    "casetas",
-    "premium"
-  ]
+  "category": "casetas"
 }

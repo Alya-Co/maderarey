@@ -32,6 +32,10 @@ HOUSES_DIR = Path("houses")
 
 # ── Впиши сюда слаги домов по категориям ────────────────────────────────
 CABANAS = [
+    # Уточнено у Виктора 01.10.2026 (WhatsApp)
+    "oficina-bergen-44-4.2x8",
+    "oficina-emily-44-4.04x7.8",
+    "ottawa-44-6x4.5",
     # Отмечено клиентом в MaderaRey_categorias (28.08.2026)
     "eko-44-5x5.7",
     "hakan-a-44-6x5.2",
@@ -56,6 +60,9 @@ CABANAS = [
 ]
 
 CASETAS = [
+    # Уточнено у Виктора 01.10.2026 (WhatsApp)
+    "oficina-nuuk-44-5x3.84",
+    "oficina-wik-44-4.5x3.5",
     # Отмечено клиентом в MaderaRey_categorias (28.08.2026)
     "deko-44-5x3",
     "erna-44-2.5x4.5",
@@ -63,60 +70,25 @@ CASETAS = [
 ]
 
 PREMIUM = [
-    # Составлено по темам писем Виктора со скриншотов Gmail (28-29 июля).
-    # Слаги — это МОЯ реконструкция по правилам parse_subject()/
-    # make_folder_name(), а не прямое чтение папок houses/ (их у меня
-    # нет в этой сессии). Если слаг не совпадёт с реальным именем папки —
-    # ничего не сломается, скрипт просто выведет предупреждение
-    # "не найдены папки для слагов" и пропустит его.
-    "oficina-bergen-44-4.2x8",        # oficina 44 Bergen 4,2x8-Premium - 8000
-    "oficina-nuuk-44-5x3.84",         # oficina 44 Nuuk 5x3,84-Premium - 5000
-    "oficina-wik-44-4.5x3.5",         # oficina 44 Wik 4,5x3,5-Premium - 5300
-    "oficina-emily-44-4.04x7.8",      # oficina 44 Emily 4,04x7,8-Premium - 7600
-    "rico-44-4.04x7.8",               # 44 Rico 4,04x7,8-Premium - 7900
-    "roberto-44-5.6x4",               # 44 Roberto 5,6x4-Premium - 6500
-    "murray-44-4x6",                  # 44 Murray 4x6-Premium - 6100
-    "hakan-a-44-6x5.2",               # 44 Hakan A 6x5,2-Premium - 8600
-    "erna-44-2.5x4.5",                # 44 Erna 2,5x4,5-Premium - 3100
-    "eko-44-5x5.7",                   # 44 Eko 5x5,7-Premium - 7810
-    "deko-44-5x3",                    # 44 Deko 5x3-Premium - 4100
-    "helmand-44-3x9",                 # 44 Helmand 3x9-Premium - 7300
-    "ottawa-44-6x4.5",                # 44 Ottawa 6x4,5-Premium - 7000
-    "padova-a-44-6x4.5",              # 44 Padova A 6x4,5-Premium - 7700
-    "milano-44-3.8x5.3",              # 44 Milano 3,8x5,3-Premium - 4440
-    "trento-44-6x5",                  # 44 Trento 6x5-Premium - 7000
-    "linus-44-4x4",                   # 44 Linus 4x4-Premium - 3900
-    "linus-44-4x5",                   # 44 Linus 4x5-Premium - 4300
-    "linus-44-5x4",                   # 44 Linus 5x4-Premium - 4400
-    "linus-44-5x5",                   # 44 Linus 5x5-Premium - 4800
-    "linus-44-5x4-wc",                # 44 Linus 5x4 WC-Premium - 5700
-    "linus-44-5x5-wc",                # 44 Linus 5x5 WC-Premium - 6100
-    "linus-44-6x4",                   # 44 Linus 6x4-Premium - 4800
-    "linus-44-6x5",                   # 44 Linus 6x5-Premium - 5400
-    "linus-44-6x5-wc",                # 44 Linus 6x5 WC-Premium - 6800
-    "linus-44-6x6-wc",                # 44 Linus 6x6 WC-Premium - 7710
-    "linus-44-6x6",                   # 44 Linus 6x6-Premium - 6100
-    "scarlett-44-7x10.2",             # 44 Scarlett 7x10,2-Premium - 17000
-    "almería-44-6x8.87",              # 44 Almeria 6x8,87-Premium - 12000 (сверено по реальной папке — с "í")
-    "jennifer-44-10.5x8.52",          # 44 Jennifer 10,5x8,52-Premium - 18800
-    "orlando-44-8x9",                 # 44 Orlando 8x9-Premium - 15200
-    "lukas-44-6.5x7.7",               # 44 Lukas 6,5x7,7-Premium - 11800
-    "gustav-b-44-6x8-wc",             # 44 Gustav B 6x8 WC-Premium - 15900
-    "gustav-a-44-6x6-wc",             # 44 Gustav A 6x6 WC-Premium - 15000
-    "louise-44-6x6",                  # 44 Louise 6x6-Premium - 11200
-    "torino-44-4.5x6",                # 44 Torino 4,5x6-Premium - 9990
-    "gustav-b-44-6x8",                # 44 Gustav B 6x8-Premium - 15800
-    "gustav-a-44-6x6",                # 44 Gustav A 6x6-Premium - 12420
-    "alma-44-7.05x8",                 # 44 Alma 7,05x8-Premium - 10900
-    "ibérica-t3-44-7.92x11.84",       # 44 Ibérica T3 7,92x11,84-Premium - 20200 (сверено по реальной папке — с "é")
-    "sevilla-44-7.8x13.74",           # 44 Sevilla 7,8x13,74-Premium - 25750
-
-    # Гаражи с меткой Premium — по просьбе клиента показываются И в
-    # Garajes (это уже само собой, по названию), И здесь, в Premium:
-    "garaje-44-6x6",                  # 44 Garaje 6x6-Premium - 5600
-    "garaje-44-3.2x5.2",              # 44 Garaje 3,2x5,2-Premium - 3500
-    "garaje-44-4x6",                  # 44 Garaje 4x6-Premium - 4000
-    "garaje-44-5x5",                  # 44 Garaje 5x5-Premium - 4800
+    # ФИНАЛЬНЫЙ список Premium — прислал Виктор в WhatsApp 01.10.2026
+    # («Категория premium: Torino, Alma, Louise, Lukas, Almería, Gustav A 6x6,
+    # Gustav A wc 6x6, Orlando, Gustav B 6x8, Gustav B wc 6x8, Scarlett,
+    # Jennifer, Ibérica T3, Sevilla»). Всё остальное с пометкой Premium в
+    # письмах (Linus, Murray, гаражи и т.д.) во вкладку Premium НЕ входит.
+    "torino-44-4.5x6",               # Torino
+    "alma-44-7.05x8",                # Alma
+    "louise-44-6x6",                 # Louise
+    "lukas-44-6.5x7.7",              # Lukas
+    "almería-44-6x8.87",             # Almería
+    "gustav-a-44-6x6",               # Gustav A 6x6
+    "gustav-a-44-6x6-wc",            # Gustav A wc 6x6
+    "orlando-44-8x9",                # Orlando
+    "gustav-b-44-6x8",               # Gustav B 6x8
+    "gustav-b-44-6x8-wc",            # Gustav B wc 6x8
+    "scarlett-44-7x10.2",            # Scarlett
+    "jennifer-44-10.5x8.52",         # Jennifer
+    "ibérica-t3-44-7.92x11.84",      # Ibérica T3
+    "sevilla-44-7.8x13.74",          # Sevilla
 ]
 # ─────────────────────────────────────────────────────────────────────
 

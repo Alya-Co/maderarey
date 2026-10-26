@@ -1,2 +1,3 @@
 # Рабочие файлы Claude, не относящиеся к сайту
 Claude outputs/
+__pycache__/

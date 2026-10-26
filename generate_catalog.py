@@ -8,7 +8,10 @@ generate_catalog.py
 в index.html. Всё, что вручную дописано вне этих маркеров, не трогается.
 
 Запускать из корня репозитория (там же, где index.html и houses/):
-    python generate_catalog.py
+    python3 generate_catalog.py
+
+Перед записью скрипт ПОКАЗЫВАЕТ, какие карточки изменятся, и спрашивает
+"да/нет". Ничего не записывается, пока не подтвердишь (или не добавишь --yes).
 
 Как добавить новый дом в каталог:
     1. download_houses.py — скачать письмо в houses/<slug>/
@@ -26,6 +29,7 @@ generate_catalog.py
 
 import json
 import re
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -205,6 +209,77 @@ def build_featured_slide(slug, data):
     </div>
   </a>'''
 
+CARD_SPLIT = re.compile(r'(?=    <div class="card visible" data-cat=)')
+
+
+def _cards_by_slug(block):
+    """Разбирает блок каталога на карточки: {slug: html}."""
+    result = {}
+    for part in CARD_SPLIT.split(block):
+        m = re.search(r'data-casa="([^"]*)"', part)
+        if m:
+            result[m.group(1)] = part.strip()
+    return result
+
+
+def describe_changes(old_content, new_content):
+    """Сравнивает старый и новый каталог и возвращает список понятных строк
+    о том, ЧТО изменится в index.html. Пустой список = изменений в каталоге нет."""
+    def block(c):
+        m = re.search(re.escape(START_MARKER) + r"(.*?)" + re.escape(END_MARKER), c, re.DOTALL)
+        return m.group(1) if m else ""
+
+    old_cards = _cards_by_slug(block(old_content))
+    new_cards = _cards_by_slug(block(new_content))
+    lines = []
+    for slug in sorted(set(old_cards) | set(new_cards)):
+        if slug not in old_cards:
+            lines.append(f"  + НОВАЯ карточка: {slug}")
+            continue
+        if slug not in new_cards:
+            lines.append(f"  - карточка УДАЛЕНА: {slug}")
+            continue
+        o, n = old_cards[slug], new_cards[slug]
+        if o == n:
+            continue
+        reasons = []
+        for label, pattern in (
+            ("вкладки", r'data-cat="([^"]*)"'),
+            ("фото", r'<img src="([^"]*)"'),
+            ("значок", r'<span class="card-badge"[^>]*>([^<]*)</span>'),
+            ("цена", r'class="card-price">([^<]*)'),
+            ("название", r'class="card-name">([^<]*)'),
+        ):
+            mo, mn = re.search(pattern, o), re.search(pattern, n)
+            if (mo.group(1) if mo else None) != (mn.group(1) if mn else None):
+                reasons.append(f"{label}: {mo.group(1) if mo else '—'} → {mn.group(1) if mn else '—'}")
+        if not reasons:
+            reasons.append("другое (текст/разметка карточки)")
+        lines.append(f"  ~ {slug}: " + "; ".join(reasons))
+    return lines
+
+
+def confirm_write(old_content, new_content, auto_yes):
+    """Показывает, что изменится, и спрашивает подтверждение перед записью."""
+    changes = describe_changes(old_content, new_content)
+    if not changes and old_content == new_content:
+        print("\nИзменений в index.html нет — файл уже актуален.")
+        return False
+    print(f"\nИзменится карточек каталога: {len(changes)}")
+    for line in changes[:60]:
+        print(line)
+    if len(changes) > 60:
+        print(f"  … и ещё {len(changes) - 60}")
+    if not changes:
+        print("  (карточки те же, меняется только карусель/остальная разметка)")
+    if auto_yes:
+        return True
+    if not sys.stdin.isatty():
+        print("\nЗапуск без терминала: файл НЕ записан. Добавь --yes, чтобы записать без вопроса.")
+        return False
+    answer = input("\nЗаписать эти изменения в index.html? (да/нет): ").strip().lower()
+    return answer in ("да", "д", "y", "yes")
+
 
 def main():
     if not HOUSES_DIR.exists():
@@ -286,6 +361,10 @@ def main():
         new_content = featured_pattern.sub(featured_block, new_content, count=1)
     else:
         print(f"[!] Маркеры {FEATURED_START} / {FEATURED_END} не найдены — карусель скидок не обновлена")
+
+    if not confirm_write(content, new_content, "--yes" in sys.argv):
+        print("index.html НЕ изменён.")
+        return
 
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(new_content)

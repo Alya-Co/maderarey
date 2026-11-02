@@ -65,6 +65,18 @@ def format_price(n):
         return "—"
 
 
+IVA_RATE = 0.21  # цены в data.json — с IVA; мелкая строка показывает цену без налога
+
+
+def format_net(n):
+    """Цена без IVA в испанском формате: 42500 -> '35.123,97 €'."""
+    try:
+        s = f"{round(float(n) / (1 + IVA_RATE), 2):,.2f}"
+    except (TypeError, ValueError):
+        return "—"
+    return s.replace(",", "X").replace(".", ",").replace("X", ".") + " €"
+
+
 def get_area(data):
     specs = data.get("specs", {})
     for key, val in specs.items():
@@ -150,6 +162,8 @@ def build_card(slug, data):
     meta_html = "".join(meta_parts)
 
     price_html = format_price(price) if price is not None else "Consultar"
+    net_html = (f'<small class="card-net">Impuestos NO incl.: {format_net(price)}</small>'
+                if price is not None else "")
 
     card_name_display = esc(name) + (f" {esc(size)}" if size else "")
 
@@ -161,7 +175,7 @@ def build_card(slug, data):
       <div class="card-body">
         <div class="card-name">{card_name_display}</div>
         <div class="card-meta">{meta_html}</div>
-        <div class="card-price">{price_html} <span>IVA incluido · sin tejas/pintura</span></div>
+        <div class="card-price">{price_html} <span>IVA incluido · sin tejas/pintura</span>{net_html}</div>
         <a class="card-btn" href="house.html?casa={esc(slug)}">Ver ficha y precio</a>
       </div>
     </div>'''

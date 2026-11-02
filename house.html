@@ -137,6 +137,8 @@
   .price-label { font-size: 12px; color: var(--gray); margin-bottom: 4px; }
   .price-base { font-size: 32px; font-weight: 800; color: var(--green-dark); }
   .price-note { font-size: 12px; color: var(--gray); margin-top: 4px; }
+  .price-net { font-size: 12px; color: var(--gray); margin-top: 2px; }
+  .price-net strong { font-weight: 600; }
   .price-total-row {
     display: flex; justify-content: space-between; align-items: center;
     margin-top: 12px; padding-top: 12px;
@@ -374,10 +376,12 @@
     <div class="product-price-block">
       <div class="price-label">Precio base (sin tejas ni pintura)</div>
       <div class="price-base" id="price-base">—</div>
+      <div class="price-net">Impuestos NO incl.: <strong id="price-base-net">—</strong></div>
       <div class="price-note">Precio con IVA incluido · Montaje y entrega: consultar según ubicación</div>
       <div class="price-total-row">
         <span class="price-total-label">Total con opciones seleccionadas (IVA incluido)</span>
-        <span class="price-total" id="price-total">—</span>
+        <span style="text-align:right"><span class="price-total" id="price-total">—</span>
+        <span class="price-net" style="display:block">Impuestos NO incl.: <strong id="price-total-net">—</strong></span></span>
       </div>
     </div>
 
@@ -591,6 +595,7 @@ function renderHouse(d) {
   // Price
   basePrice = d.price || 0;
   document.getElementById('price-base').textContent = formatPrice(basePrice);
+  document.getElementById('price-base-net').textContent = formatNet(basePrice);
 
   // Options — only show the checkboxes this house actually offers.
   // A house's data.json "options" object is the source of truth: a key that's
@@ -712,6 +717,12 @@ function formatPrice(n) {
   return n.toLocaleString('es-ES') + '€';
 }
 
+// Precio sin impuestos: los precios de data.json incluyen IVA (21 %).
+const IVA_RATE = 0.21;
+function formatNet(n) {
+  return (n / (1 + IVA_RATE)).toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+}
+
 function toggleRoofColor() {
   const checkbox = document.getElementById('opt-roof');
   const colorsBlock = document.getElementById('roof-colors');
@@ -732,6 +743,7 @@ function updateTotal() {
 
   const total = basePrice + extras;
   document.getElementById('price-total').textContent = formatPrice(total);
+  document.getElementById('price-total-net').textContent = formatNet(total);
   updateWAText();
 }
 
@@ -764,7 +776,7 @@ function updateWAText() {
   let text = `Hola, me interesa la casa de madera ${houseData.name} (${houseData.size || ''}).`;
   text += `\n\nPrecio base: ${formatPrice(basePrice)}`;
   if (opts.length) text += `\nOpciones: ${opts.join(', ')}`;
-  text += `\nTotal estimado: ${formatPrice(total)}`;
+  text += `\nTotal estimado: ${formatPrice(total)} (IVA incluido; sin IVA: ${formatNet(total)})`;
   text += `\n\n¿Pueden confirmar disponibilidad y precio de entrega?`;
 
   text = window.MR_tagWAText ? window.MR_tagWAText(text) : text;

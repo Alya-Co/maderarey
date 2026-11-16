@@ -2,7 +2,7 @@
   "name": "Hakan B",
   "thickness": "44mm",
   "size": "7x7.19",
-  "price": 7700,
+  "price": 11035,
   "description": "Esta casa de verano de 46 m2 cuenta con una distribución bien planificada con una sala de estar, dormitorio y baño. La terraza de 6 m2 incluida la convierte en una opción popular para aquellos que buscan un refugio de verano cómodo y funcional.",
   "specs": {
     "Espesor de las paredes (mm)": "44",
@@ -38,8 +38,8 @@
   ],
   "whatsapp_text": "Hola, me interesa la casa Hakan B 7x7.19",
   "options": {
-    "ins_roof": 1700,
+    "ins_roof": 2541,
     "tegola": 650,
-    "ins_wall": 3200
+    "ins_wall": 4622
   }
 }
